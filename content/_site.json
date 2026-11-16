@@ -1,7 +1,9 @@
 {
   "title": "Stajnia 97 „Gardens”",
-  "subtitle": "Fallout: Equestria · kampania w Hoofington. „Plewimy, by rosło.”",
-  "hero": "01-swiat/grafiki/gardens-background.webp",
+  "short": "Stajnia 97",
+  "kicker": "Fallout: Equestria · Hoofington",
+  "subtitle": "Materiały kampanii: świat, gracze, postacie, mapy i notatki MG.",
+  "stamp": "„Plewimy, by rosło”",
   "logo": "01-swiat/grafiki/gardens-emblem.webp",
-  "footer": "Fallout: Equestria RPG V1.22 · materiały kampanii"
+  "footer": "Fallout: Equestria RPG V1.22"
 }

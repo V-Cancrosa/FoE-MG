@@ -354,6 +354,17 @@ class Builder:
 
         return re.sub(r'(href|src)=(["\'])([^"\']+)\2', repl, body)
 
+    @staticmethod
+    def callouts(body: str) -> str:
+        """Bloki jak w PDF: > cytat = „Do przeczytania”, **Notka MG.** = notka, **Sekret…** = sekret MG."""
+        body = re.sub(r"<p><strong>(Notka(?: MG)?\.?)</strong>", r'<p class="box note"><strong>\1</strong>', body)
+        body = re.sub(r"<p><strong>(Sekret[^<]*)</strong>:?\s*",
+                      r'<p class="box secret"><span class="box-label">\1</span>', body)
+        body = re.sub(r"<p><strong>(Wpis w księdze[^<]*)</strong>:?\s*",
+                      r'<p class="box ledger"><span class="box-label">\1</span>', body)
+        body = body.replace("<blockquote>", '<blockquote class="box read"><span class="box-label">Do przeczytania</span>')
+        return body
+
     # ---- skanowanie
     def scan(self):
         if not self.content.exists():
@@ -372,7 +383,7 @@ class Builder:
             if it.kind == "doc":
                 _, body = parse_front_matter(it.src.read_text(encoding="utf-8", errors="replace"))
                 html_body, toc = self.md(body)
-                it.body_html = self.rewrite_links(html_body, it)
+                it.body_html = self.callouts(self.rewrite_links(html_body, it))
                 it.toc_html = toc if toc.count("<li") >= 2 else ""
 
     def add_collection(self, d: Path):
@@ -545,19 +556,22 @@ class Builder:
     def ordered_collections(self) -> list[Collection]:
         return sorted(self.collections.values(), key=lambda c: c.order)
 
+    def col_index(self, c: Collection) -> int:
+        return self.ordered_collections().index(c) + 1
+
     def nav(self, root: str, active: str) -> str:
         links = [("index.html", "Start", "home"), ("os-czasu.html", "Oś czasu", "timeline"),
-                 ("wszystko.html", "Wszystko", "all")]
+                 ("wszystko.html", "Spis", "all")]
         main = "".join(f'<a href="{root}{h}" class="{"active" if active == k else ""}">{t}</a>' for h, t, k in links)
         cols = "".join(
             f'<a href="{root}e/{c.slug}/index.html" class="{"active" if active == "c:" + c.slug else ""}'
             f'{" spoiler-link" if c.spoiler else ""}">{esc(c.title)}</a>'
             for c in self.ordered_collections())
         logo = (f'<img class="logo-img" src="{root}{url(self.thumb_or_raw(self.site["logo"]))}" alt="">'
-                if self.site.get("logo") else '<span class="logo" aria-hidden="true">◆</span>')
+                if self.site.get("logo") else "")
         return f"""
 <header class="topbar">
-  <a class="brand" href="{root}index.html">{logo}<span>{esc(self.site['title'])}</span></a>
+  <a class="brand" href="{root}index.html">{logo}<span>{esc(self.site.get('short') or self.site['title'])}</span></a>
   <button class="menu-btn" aria-label="Menu" aria-expanded="false" data-menu>☰</button>
   <nav class="mainnav" data-nav>{main}<span class="sep" aria-hidden="true"></span>{cols}</nav>
   <div class="tools">
@@ -573,21 +587,23 @@ class Builder:
         return self.make_thumb(f) or self.raw_href(content_rel)
 
     def page(self, root: str, title: str, body: str, active: str = "", description: str = "",
-             spoiler: bool = False) -> str:
+             spoiler: bool = False, running: str = "") -> str:
         full_title = title if title == self.site["title"] else f"{title} · {self.site['title']}"
         footer = self.site.get("footer") or ""
-        built = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d")
+        built = dt.datetime.now(dt.timezone.utc).strftime("%d.%m.%Y")
         gate = ""
         if spoiler:
-            gate = """
+            gate = f"""
 <div class="gate" data-gate hidden>
-  <div class="gate-box">
-    <p class="eyebrow">Strefa Mistrza Gry</p>
+  <div class="box secret gate-box">
+    <span class="box-label">Sekret MG</span>
     <h2>Tu są spoilery</h2>
-    <p>Ta część zawiera scenariusze, sekrety Stajni i notatki prowadzącego. Jeśli jesteś graczem — zawróć.</p>
-    <div class="hero-actions"><a class="btn" href="ROOTindex.html">Wracam</a><button class="btn primary" data-gate-ok>Jestem MG — pokaż</button></div>
+    <p>Scenariusze, sekrety Stajni i notatki prowadzącego. Rzeczy, których gracz nie może zobaczyć.</p>
+    <div class="actions"><a class="btn" href="{root}index.html">Wracam</a><button class="btn primary" data-gate-ok>Jestem MG — pokaż</button></div>
   </div>
-</div>""".replace("ROOT", root)
+</div>"""
+        left = "Tylko dla MG" if spoiler else (self.site.get("kicker") or self.site["title"])
+        right = running or title
         return f"""<!doctype html>
 <html lang="{esc(self.site.get('lang', 'pl'))}">
 <head>
@@ -596,6 +612,9 @@ class Builder:
 <title>{esc(full_title)}</title>
 <meta name="description" content="{esc(description or self.site['subtitle'])}">
 <link rel="icon" href="{root}{url(self.thumb_or_raw(self.site['logo'])) if self.site.get('logo') else 'data:,'}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Courier+Prime:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap">
 <link rel="stylesheet" href="{root}assets/style.css">
 <script>try{{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}}catch(e){{}}</script>
 </head>
@@ -606,16 +625,16 @@ class Builder:
 </main>
 <footer class="foot">
   <div class="wrap">
-    <span>{esc(self.site['title'])}</span>
-    {f'<span class="muted">{esc(footer)}</span>' if footer else ''}
-    <span class="muted">Aktualizacja {built} · {len(self.items)} materiałów</span>
+    <span class="run run-left">{esc(left)}</span>
+    <span class="run run-right">{esc(right)}</span>
   </div>
+  <div class="wrap foot-note">{esc(footer) + ' · ' if footer else ''}stan na {built} · {len(self.items)} {plural(len(self.items))}</div>
 </footer>{gate}
 <div class="search-modal" data-search-modal hidden>
   <div class="search-box" role="dialog" aria-label="Wyszukiwarka">
     <input type="search" placeholder="Szukaj we wszystkich materiałach…" data-search-input autocomplete="off">
     <ul class="search-results" data-search-results></ul>
-    <p class="search-hint muted">Enter — otwórz · Esc — zamknij</p>
+    <p class="search-hint">Enter — otwórz · Esc — zamknij</p>
   </div>
 </div>
 <script src="{root}assets/app.js" defer></script>
@@ -628,13 +647,13 @@ class Builder:
         thumb = ""
         if it.kind == "image":
             thumb = f'<img class="thumb" src="{root}{url(it.thumb or it.href)}" alt="" loading="lazy">'
-        meta = [f'<span class="badge t-{it.kind}">{TYPE_ICON[it.kind]} {TYPE_LABEL[it.kind]}</span>']
+        meta = [f'<span class="label">{TYPE_LABEL[it.kind]}</span>']
         if show_col:
-            meta.append(f'<span class="badge col">{esc(col.title)}</span>')
+            meta.append(f'<span class="label col">{esc(col.title)}</span>')
         if it.date:
             meta.append(f'<time datetime="{esc(it.date)}">{esc(fmt_date(it.date))}</time>')
         if it.kind not in ("doc", "html"):
-            meta.append(f'<span class="muted">{human_size(it.size)}</span>')
+            meta.append(f'<span>{human_size(it.size)}</span>')
         tags = "".join(f'<span class="tag">#{esc(t)}</span>' for t in it.tags)
         target = ' target="_blank" rel="noopener"' if it.opens_new_tab else ""
         alts = ""
@@ -643,7 +662,7 @@ class Builder:
                 f'<a href="{root}{url(h)}"{"" if lbl in ("Czytaj", "Obraz") else " target=\"_blank\" rel=\"noopener\""}>{esc(lbl)}</a>'
                 for lbl, h in it.alts) + "</div>"
         text = (it.title + " " + it.summary + " " + " ".join(it.tags) + " " + it.rel).lower()
-        return f"""<article class="card kind-{it.kind}" data-kind="{it.kind}" data-col="{it.collection}" data-text="{esc(text)}">
+        return f"""<article class="card kind-{it.kind}{' is-secret' if it.spoiler else ''}" data-kind="{it.kind}" data-col="{it.collection}" data-text="{esc(text)}">
   {thumb}
   <div class="card-body">
     <h3><a class="card-link" href="{root}{url(it.href)}"{target}{' data-lightbox' if it.kind == 'image' else ''} title="{esc(it.title)}">{esc(it.title)}</a></h3>
@@ -655,8 +674,15 @@ class Builder:
 
     def gallery(self, items: list[Item], root: str) -> str:
         return '<div class="gallery">' + "".join(
-            f'<a href="{root}{url(x.href)}" data-lightbox title="{esc(x.title)}"><img src="{root}{url(x.thumb or x.href)}" alt="{esc(x.title)}" loading="lazy"><span>{esc(x.title)}</span></a>'
+            f'<figure><a href="{root}{url(x.href)}" data-lightbox title="{esc(x.title)}"><img src="{root}{url(x.thumb or x.href)}" alt="{esc(x.title)}" loading="lazy"></a><figcaption>{esc(x.title)}</figcaption></figure>'
             for x in items) + "</div>"
+
+    def chapter_head(self, kicker: str, title: str, subtitle: str = "", secret: bool = False) -> str:
+        return f"""<header class="chapter{' is-secret' if secret else ''}">
+  {f'<p class="kicker">{kicker}</p>' if kicker else ''}
+  <h1 class="display">{esc(title)}</h1>
+  {f'<p class="subtitle">{subtitle}</p>' if subtitle else ''}
+</header>"""
 
     # ---- strony
     def render_home(self):
@@ -667,55 +693,43 @@ class Builder:
             _, body = parse_front_matter(idx.read_text(encoding="utf-8", errors="replace"))
             intro_html, _ = self.md(body)
         cols = self.ordered_collections()
-        cards = []
+        rows = []
         for i, c in enumerate(cols, 1):
-            kinds: dict[str, int] = {}
-            for it in c.items:
-                kinds[it.kind] = kinds.get(it.kind, 0) + 1
-            counts = " · ".join(f"{TYPE_ICON[k]} {n}" for k, n in sorted(kinds.items(), key=lambda x: -x[1]))
-            cover = next((x for x in c.items if x.kind == "image"), None)
-            cover_html = (f'<img class="stage-cover" src="{url(cover.thumb or cover.href)}" alt="" loading="lazy">'
-                          if cover and not c.spoiler else "")
-            cards.append(f"""
-<li class="stage{' is-spoiler' if c.spoiler else ''}">
+            rows.append(f"""
+<li class="toc-row{' is-secret' if c.spoiler else ''}">
   <a href="e/{c.slug}/index.html">
-    {cover_html}
-    <span class="stage-inner">
-      <span class="stage-no">{i:02d}{' · spoilery' if c.spoiler else ''}</span>
-      <span class="stage-title">{esc(c.title)}</span>
-      {f'<span class="stage-desc">{esc(c.summary)}</span>' if c.summary else ''}
-      <span class="stage-count">{len(c.items)} {plural(len(c.items))}{(' · ' + counts) if counts else ''}</span>
-    </span>
+    <span class="toc-title">{esc(c.title)}{'<span class="stamp-inline">tylko MG</span>' if c.spoiler else ''}</span>
+    <span class="toc-num">{len(c.items):02d}</span>
   </a>
+  {f'<p class="toc-desc">{esc(c.summary)}</p>' if c.summary else ''}
 </li>""")
         public = [x for x in self.items if not x.spoiler and x.kind != "image"]
         recent = sorted(public, key=lambda x: (x.date, x.rel), reverse=True)[:6]
-        hero_bg = ""
-        if self.site.get("hero"):
-            hero_bg = (' style="background-image: linear-gradient(180deg, rgba(10,12,8,.35), rgba(10,12,8,.85)), '
-                       f'url(\'{url(self.raw_href(self.site["hero"]))}\')"')
+        logo = (f'<img class="cover-emblem" src="{url(self.thumb_or_raw(self.site["logo"]))}" alt="">'
+                if self.site.get("logo") else "")
         body = f"""
-<section class="hero{' has-image' if hero_bg else ''}"{hero_bg}>
-  <div class="hero-inner">
-    {f'<img class="hero-logo" src="{url(self.thumb_or_raw(self.site["logo"]))}" alt="">' if self.site.get("logo") else ''}
-    <div>
-      <h1>{esc(self.site['title'])}</h1>
-      <p class="lead">{esc(self.site['subtitle'])}</p>
-      <div class="hero-actions">
-        <a class="btn primary" href="wszystko.html">Przeglądaj wszystko</a>
-        <a class="btn" href="os-czasu.html">Oś czasu</a>
-      </div>
-    </div>
+<section class="cover">
+  <div class="cover-text">
+    <p class="kicker">{esc(self.site.get('kicker', ''))}</p>
+    <h1 class="display xl">{esc(self.site['title'])}</h1>
+    <p class="subtitle">{esc(self.site['subtitle'])}</p>
+    {f'<p class="stamp">{esc(self.site["stamp"])}</p>' if self.site.get('stamp') else ''}
   </div>
+  {logo}
 </section>
-{f'<section class="prose intro">{intro_html}</section>' if intro_html.strip() else ''}
-<section>
-  <h2 class="section-title">Działy</h2>
-  <ol class="stages">{''.join(cards) or '<li class="empty">Brak materiałów — dodaj pliki do katalogu <code>content/</code>.</li>'}</ol>
+<section class="contents">
+  <h2 class="h-slab">Spis treści</h2>
+  <ol class="toc">{''.join(rows) or '<li class="empty">Brak materiałów — dodaj pliki do katalogu <code>content/</code>.</li>'}</ol>
 </section>
-{f'<section><h2 class="section-title">Najnowsze</h2><div class="grid">{"".join(self.item_card(it, root, True) for it in recent)}</div></section>' if recent else ''}
+{f'<aside class="box read"><span class="box-label">Do przeczytania</span>{intro_html}</aside>' if intro_html.strip() else ''}
+<aside class="legend">
+  <div class="box read"><span class="box-label">Do przeczytania</span><p><em>Tekst do przeczytania graczom.</em></p></div>
+  <div class="box note"><p><strong>Notka MG.</strong> Wskazówki prowadzenia, nie dla graczy.</p></div>
+  <div class="box secret"><span class="box-label">Sekret MG</span><p>Rzeczy, których gracz nie może zobaczyć.</p></div>
+</aside>
+{f'<section><h2 class="h-slab">Najnowsze</h2><div class="grid">{"".join(self.item_card(it, root, True) for it in recent)}</div></section>' if recent else ''}
 """
-        self.write("index.html", self.page(root, self.site["title"], body, "home"))
+        self.write("index.html", self.page(root, self.site["title"], body, "home", running="Spis treści"))
 
     def render_collection(self, c: Collection):
         root = "../../"
@@ -736,28 +750,29 @@ class Builder:
             if folder:
                 name = " / ".join(pretty_name(p) for p in folder.split("/"))
                 fid = slugify(folder)
-                head = f'<h2 class="section-title" id="{fid}">{esc(name)}</h2>'
+                head = f'<h2 class="h-slab" id="{fid}">{esc(name)}</h2>'
                 toc.append(f'<a href="#{fid}">{esc(name)}</a>')
             cards = ('<div class="grid">' + "".join(self.item_card(x, root) for x in rest) + "</div>") if rest else ""
             sections.append(f"<section>{head}{cards}{self.gallery(imgs, root) if imgs else ''}</section>")
         pager = f"""<nav class="pager">
-  {f'<a href="../{prev_c.slug}/index.html" class="prev">← {esc(prev_c.title)}</a>' if prev_c else '<span></span>'}
-  {f'<a href="../{next_c.slug}/index.html" class="next">{esc(next_c.title)} →</a>' if next_c else '<span></span>'}
+  {f'<a href="../{prev_c.slug}/index.html" class="prev"><span class="label">Poprzedni dział</span>{esc(prev_c.title)}</a>' if prev_c else '<span></span>'}
+  {f'<a href="../{next_c.slug}/index.html" class="next"><span class="label">Następny dział</span>{esc(next_c.title)}</a>' if next_c else '<span></span>'}
 </nav>"""
+        kicker = f"Dział {i + 1:02d} z {len(cols):02d}" + (f" · {esc(c.period)}" if c.period else "")
+        desc = f'<div class="prose lead-prose">{c.description_html}</div>' if c.description_html else ''
+        if c.spoiler and desc:
+            desc = f'<div class="box secret"><span class="box-label">Sekret MG</span>{c.description_html}</div>'
         body = f"""
-<nav class="crumbs"><a href="{root}index.html">Start</a> / <span>{esc(c.title)}</span></nav>
-<header class="page-head">
-  <span class="eyebrow">Dział {i + 1:02d} z {len(cols):02d}{(' · ' + esc(c.period)) if c.period else ''}</span>
-  <h1>{esc(c.title)}</h1>
-  <p class="muted">{len(c.items)} {plural(len(c.items))}</p>
-</header>
-{f'<div class="prose lead-prose">{c.description_html}</div>' if c.description_html else ''}
+<nav class="crumbs"><a href="{root}index.html">Spis treści</a> / <span>{esc(c.title)}</span></nav>
+{self.chapter_head(kicker, c.title, f'{len(c.items)} {plural(len(c.items))}', c.spoiler)}
+{desc}
 {f'<nav class="subnav">{"".join(toc)}</nav>' if len(toc) > 1 else ''}
 {''.join(sections) if c.items else '<p class="empty">Ten dział jest jeszcze pusty.</p>'}
 {pager}
 """
         self.write(f"e/{c.slug}/index.html",
-                   self.page(root, c.title, body, "c:" + c.slug, c.summary, spoiler=c.spoiler))
+                   self.page(root, c.title, body, "c:" + c.slug, c.summary, spoiler=c.spoiler,
+                             running=f"{c.title} · {i + 1}"))
 
     def render_doc(self, it: Item):
         root = "../" * it.href.count("/")
@@ -766,60 +781,81 @@ class Builder:
         i = siblings.index(it)
         prev_d = siblings[i - 1] if i > 0 else None
         next_d = siblings[i + 1] if i + 1 < len(siblings) else None
-        crumbs = [f'<a href="{root}index.html">Start</a>', f'<a href="{root}e/{c.slug}/index.html">{esc(c.title)}</a>']
+        crumbs = [f'<a href="{root}index.html">Spis treści</a>', f'<a href="{root}e/{c.slug}/index.html">{esc(c.title)}</a>']
         if it.folder:
             crumbs.append(f'<a href="{root}e/{c.slug}/index.html#{slugify(it.folder)}">'
                           f'{esc(" / ".join(pretty_name(p) for p in it.folder.split("/")))}</a>')
         tags = "".join(f'<span class="tag">#{esc(t)}</span>' for t in it.tags)
         body_html = re.sub(r'^\s*<h1[^>]*>.*?</h1>', "", it.body_html, count=1, flags=re.S)
+        # krótki pierwszy akapit (data · autor, podtytuł) → podtytuł kursywą, jak w PDF
+        subtitle = ""
+        m = re.match(r"\s*<p>(.*?)</p>", body_html, re.S)
+        if m and len(strip_tags(m.group(1)).strip()) <= 90 and "<a " not in m.group(1):
+            subtitle = m.group(1).strip()
+            body_html = body_html[m.end():]
         source = os.path.relpath(self.raw_href(it.rel), os.path.dirname(it.href)).replace("\\", "/")
-        alts = "".join(f'<a class="muted src" href="{root}{url(h)}" target="_blank" rel="noopener">{esc(l)}</a>'
+        alts = "".join(f'<a href="{root}{url(h)}" target="_blank" rel="noopener">{esc(l)}</a>'
                        for l, h in it.alts if l != "Czytaj")
+        kicker = esc(c.title) + (" · " + esc(" / ".join(pretty_name(p) for p in it.folder.split("/"))) if it.folder else "")
         body = f"""
 <nav class="crumbs">{' / '.join(crumbs)}</nav>
 <div class="doc-layout{' has-toc' if it.toc_html else ''}">
   <article class="prose doc">
-    <header class="page-head">
-      <h1>{esc(it.title)}</h1>
-      <div class="meta">{f'<time datetime="{esc(it.date)}">{esc(fmt_date(it.date))}</time>' if it.date else ''}{tags}
-        <span class="doc-links">{alts}<a class="muted src" href="{url(source)}" download>pobierz .md</a></span></div>
-    </header>
+    {self.chapter_head(kicker, it.title, subtitle, it.spoiler)}
+    <div class="doc-meta">{f'<time datetime="{esc(it.date)}">{esc(fmt_date(it.date))}</time>' if it.date else ''}{tags}
+      <span class="doc-links">{alts}<a href="{url(source)}" download>pobierz .md</a></span></div>
     {body_html}
   </article>
-  {f'<aside class="toc"><strong>Spis treści</strong>{it.toc_html}</aside>' if it.toc_html else ''}
+  {f'<aside class="toc-side"><span class="label">Spis treści</span>{it.toc_html}</aside>' if it.toc_html else ''}
 </div>
 <nav class="pager">
-  {f'<a href="{root}{url(prev_d.href)}" class="prev">← {esc(prev_d.title)}</a>' if prev_d else '<span></span>'}
-  {f'<a href="{root}{url(next_d.href)}" class="next">{esc(next_d.title)} →</a>' if next_d else '<span></span>'}
+  {f'<a href="{root}{url(prev_d.href)}" class="prev"><span class="label">Poprzedni</span>{esc(prev_d.title)}</a>' if prev_d else '<span></span>'}
+  {f'<a href="{root}{url(next_d.href)}" class="next"><span class="label">Następny</span>{esc(next_d.title)}</a>' if next_d else '<span></span>'}
 </nav>
 """
-        self.write(it.href, self.page(root, it.title, body, "c:" + c.slug, it.summary, spoiler=it.spoiler))
+        self.write(it.href, self.page(root, it.title, body, "c:" + c.slug, it.summary, spoiler=it.spoiler,
+                                      running=f"{it.title} · {c.title}"))
 
     def render_all(self):
         root = ""
         cols = self.ordered_collections()
-        items = [x for x in self.items]
+        items = sorted(self.items, key=lambda x: (cols.index(self.collections[x.collection]), x.order))
         kinds = sorted({it.kind for it in items}, key=PRIMARY_ORDER.index)
         f_col = "".join(f'<option value="{c.slug}">{esc(c.title)}</option>' for c in cols)
-        f_kind = "".join(f'<option value="{k}">{TYPE_ICON[k]} {TYPE_LABEL[k]}</option>' for k in kinds)
-        cards = "".join(self.item_card(it, root, show_col=True) for it in
-                        sorted(items, key=lambda x: (cols.index(self.collections[x.collection]), x.order)))
+        f_kind = "".join(f'<option value="{k}">{TYPE_LABEL[k]}</option>' for k in kinds)
         spoiler_cols = [c.slug for c in cols if c.spoiler]
+        rows = []
+        for it in items:
+            col = self.collections[it.collection]
+            target = ' target="_blank" rel="noopener"' if it.opens_new_tab else ""
+            alts = " ".join(f'<a class="alt" href="{url(h)}"{"" if l in ("Czytaj", "Obraz") else " target=\"_blank\" rel=\"noopener\""}>{esc(l)}</a>'
+                            for l, h in it.alts if l not in ("Czytaj", "Otwórz", "Obraz"))
+            text = (it.title + " " + it.summary + " " + " ".join(it.tags) + " " + it.rel).lower()
+            folder = " / ".join(pretty_name(p) for p in it.folder.split("/")) if it.folder else ""
+            rows.append(f"""<tr class="card{' is-secret' if it.spoiler else ''}" data-kind="{it.kind}" data-col="{it.collection}" data-text="{esc(text)}">
+  <td class="c-title"><a href="{url(it.href)}"{target}{' data-lightbox' if it.kind == 'image' else ''}>{esc(it.title)}</a> {alts}
+    {f'<span class="row-sub">{esc(it.summary)}</span>' if it.summary else ''}</td>
+  <td>{esc(col.title)}{f'<span class="row-sub">{esc(folder)}</span>' if folder else ''}</td>
+  <td class="c-kind">{TYPE_LABEL[it.kind]}</td>
+  <td class="c-date"><time datetime="{esc(it.date)}">{esc(it.date)}</time></td>
+</tr>""")
         body = f"""
-<header class="page-head">
-  <h1>Wszystkie materiały</h1>
-  <p class="muted"><span data-count>{len(items)}</span> z {len(items)}</p>
-</header>
+{self.chapter_head("Wszystkie materiały", "Spis", f'<span data-count>{len(items)}</span> z {len(items)} — filtruj, szukaj, otwieraj.')}
 <div class="filters" data-filters data-spoiler-cols="{' '.join(spoiler_cols)}">
   <input type="search" placeholder="Filtruj po nazwie, opisie, tagu…" data-filter-text>
   <select data-filter-col><option value="">Wszystkie działy</option>{f_col}</select>
   <select data-filter-kind><option value="">Wszystkie typy</option>{f_kind}</select>
   {'<label class="check"><input type="checkbox" data-filter-spoiler> pokaż materiały MG</label>' if spoiler_cols else ''}
 </div>
-<div class="grid" data-filter-grid>{cards}</div>
+<div class="table-wrap">
+<table class="doc-table index-table">
+  <thead><tr><th>Materiał</th><th>Dział</th><th>Typ</th><th>Data</th></tr></thead>
+  <tbody data-filter-grid>{''.join(rows)}</tbody>
+</table>
+</div>
 <p class="empty" data-filter-empty hidden>Nic nie pasuje do filtrów.</p>
 """
-        self.write("wszystko.html", self.page(root, "Wszystko", body, "all"))
+        self.write("wszystko.html", self.page(root, "Spis", body, "all", running="Spis materiałów"))
 
     def render_timeline(self):
         root = ""
@@ -836,31 +872,24 @@ class Builder:
                 label = ym or "bez daty"
             entries = "".join(f"""
 <li class="tl-item">
-  <time datetime="{esc(it.date)}">{esc(fmt_date(it.date))}</time>
-  <span><a href="{url(it.href)}"{' target="_blank" rel="noopener"' if it.opens_new_tab else ''}{' data-lightbox' if it.kind == 'image' else ''}>{TYPE_ICON[it.kind]} {esc(it.title)}</a>
-  <span class="badge col">{esc(self.collections[it.collection].title)}</span></span>
+  <time datetime="{esc(it.date)}">{esc(it.date[8:10])}.{esc(it.date[5:7])}</time>
+  <span class="tl-what"><a href="{url(it.href)}"{' target="_blank" rel="noopener"' if it.opens_new_tab else ''}{' data-lightbox' if it.kind == 'image' else ''}>{esc(it.title)}</a></span>
+  <span class="tl-where">{esc(self.collections[it.collection].title)} · {TYPE_LABEL[it.kind]}</span>
 </li>""" for it in its)
             blocks.append(f"""
-<section class="tl-stage">
-  <div class="tl-marker"><span>{esc(ym[5:7] or '–')}</span></div>
-  <div class="tl-content">
-    <h2>{esc(label)}</h2>
-    <p class="muted">{len(its)} {plural(len(its))}</p>
-    <ol class="tl-list">{entries}</ol>
-  </div>
+<section class="tl-month">
+  <h2 class="h-slab">{esc(label)} <span class="count">{len(its)}</span></h2>
+  <ol class="tl-list">{entries}</ol>
 </section>""")
         body = f"""
-<header class="page-head">
-  <h1>Oś czasu</h1>
-  <p class="muted">Od najstarszych materiałów do najnowszych. Data pochodzi z dokumentu, metadanych pliku albo z chwili dodania do repozytorium. Materiały MG są pominięte.</p>
-</header>
+{self.chapter_head("Od najstarszych do najnowszych", "Oś czasu", "Data z dokumentu, z metadanych pliku albo z chwili dodania do repozytorium. Materiały MG są pominięte.")}
 <div class="timeline">{''.join(blocks) or '<p class="empty">Brak materiałów.</p>'}</div>
 """
-        self.write("os-czasu.html", self.page(root, "Oś czasu", body, "timeline"))
+        self.write("os-czasu.html", self.page(root, "Oś czasu", body, "timeline", running="Oś czasu"))
 
     def render_404(self):
-        body = """<section class="hero"><div class="hero-inner"><div><h1>404</h1><p class="lead">Nie ma takiej strony.</p>
-<div class="hero-actions"><a class="btn primary" href="index.html">Wróć na start</a></div></div></div></section>"""
+        body = self.chapter_head("Błąd 404", "Pusto tu", "Tej strony nie ma — może drzwi zamknęły się na dobre.") + \
+            '<p class="actions"><a class="btn primary" href="index.html">Wróć do spisu treści</a></p>'
         out = self.page("", "Nie znaleziono", body)
         out = out.replace("<head>", """<head>
 <script>(function(){var p=location.pathname.split('/').filter(Boolean);var b=(location.hostname.endsWith('github.io')&&p.length)?'/'+p[0]+'/':'/';document.write('<base href="'+b+'">');})();</script>""", 1)
