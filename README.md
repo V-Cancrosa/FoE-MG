@@ -54,3 +54,16 @@ pip install -r tools/requirements.txt
 python tools/build.py
 python -m http.server 8000   # http://localhost:8000
 ```
+
+## Wydanie zbiorcze „Jednostrzał i sesje zero” (PDF dla MG)
+
+Źródła są w `wydanie/`: rozdziały w `wydanie/rozdzialy/*.md` (Markdown z ramkami `::: read`, `::: note`,
+`::: ledger`, `::: secret`), styl w `wydanie/wydanie.css`, fonty w `wydanie/fonts/`.
+Część rozdziałów wczytuje pliki z `content/` na bieżąco (sesja zero dwellera, przewodnik, ściąga, handouty),
+więc po ich zmianie wystarczy przebudować:
+
+```bash
+pip install markdown weasyprint==70.0 python-docx Pillow
+python wydanie/build.py          # → content/05-dla-mg/FoE_Jednostrzal_i_sesje_zero_MG.pdf + .html
+python tools/build.py            # odświeża stronę
+```

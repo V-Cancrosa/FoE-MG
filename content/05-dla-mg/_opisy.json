@@ -2,24 +2,27 @@
   "Ekran MG Fallout Equestria.md": {
     "opis": "Wszystkie zasady pod ręką: rzuty, MFD, walka, obrażenia, strach, promieniowanie, przetrwanie — plus Stajnia 97, NPC i sekret."
   },
-  "Stajnia97_Jednostrzal.pdf": {
-    "title": "Jednostrzał: Stodoła, Krąg i łowcy niewolników",
-    "opis": "Scenariusz dla MG na 2–3 sesje dla 4 postaci 1. poziomu, po indywidualnych sesjach zero."
-  },
-  "FoE_Jednostrzal_i_sesje_zero_MG.pdf": {
-    "title": "Jednostrzał i sesje zero — komplet MG",
-    "opis": "Jednostrzał (Akt 1) oraz sesje zero: mieszkaniec Stajni Ogrodów, Uriel i Rusty Spur w jednym pliku."
-  },
-  "sesje zero/Sesja_zero_Rusty_MG_v2.pdf": {
-    "title": "Sesja zero: Rusty Spur — Noc w Cinder Ford",
-    "opis": "Wersja 2. Jedna noc w barze „Mokre Kopyto”, informatorka i wieści o Knocie."
-  },
-  "sesje zero/Sesja_zero_Uriel_MG.pdf": {
-    "title": "Sesja zero: Uriel — Księga Długu",
-    "opis": "Gunther czyta swoją księgę rachunkową, a każdy wpis otwiera retrospekcję i krok tworzenia postaci."
-  },
   "narzędzia/Echa-Stajni-42-przykład-2026-10-11.json": {
     "title": "Echa Stajni 42 — przykładowa kampania (JSON)",
     "opis": "Przykładowe dane kampanii do narzędzia MG: powiązane wpisy, wątki i plan aktów."
+  },
+  "FoE_Jednostrzal_i_sesje_zero_MG.html": {
+    "title": "Jednostrzał i sesje zero — wydanie zbiorcze",
+    "opis": "Wszystko w jednym dokumencie (116 stron): świat i sekret Stajni, pełny jednostrzał na trzech graczy, sesje zero Uriela, dwellera i Rusty'ego (v2), ekran MG, materiały graczy i handouty."
+  },
+  "starsze wersje/FoE_Jednostrzal_i_sesje_zero_MG (12.11.2026).pdf": {
+    "opis": "Poprzednie wydanie kompendium (34 strony), zastąpione wydaniem zbiorczym."
+  },
+  "starsze wersje/Stajnia97_Jednostrzal (12.10.2026).pdf": {
+    "title": "Jednostrzał: Stodoła, Krąg i łowcy niewolników (12.10.2026)",
+    "opis": "Pierwotny scenariusz na 4 graczy — w całości w wydaniu zbiorczym."
+  },
+  "starsze wersje/Sesja_zero_Rusty_MG_v2.pdf": {
+    "title": "Sesja zero: Rusty Spur — v2 (osobny PDF)",
+    "opis": "W całości w wydaniu zbiorczym."
+  },
+  "starsze wersje/Sesja_zero_Uriel_MG (17.10.2026).pdf": {
+    "title": "Sesja zero: Uriel (osobny PDF)",
+    "opis": "W całości w wydaniu zbiorczym."
   }
 }
