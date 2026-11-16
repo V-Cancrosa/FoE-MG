@@ -1,0 +1,443 @@
+{
+ "version": 1,
+ "campaign": "Echa Stajni 42 (przykład)",
+ "entries": {
+  "mul45jsyxud5a": {
+   "id": "mul45jsyxud5a",
+   "title": "Echa Stajni 42",
+   "type": "przygoda",
+   "parent": null,
+   "tags": [
+    "kampania"
+   ],
+   "body": "To jest **przykładowa kampania**. Pokazuje, jak łączyć wpisy. Możesz ją usunąć w ustawieniach na pulpicie („Nowa, pusta kampania”).\n\n## Założenie\nStajnia 42 otwiera się po raz pierwszy od dwustu lat. [[Nadzorczyni Silver Quill]] wysyła grupę ochotników — graczy — by sprawdzili, czy powierzchnia nadaje się do życia. Na zewnątrz czekają [[Łowcy niewolników z Fillydelphii]], a [[Stalowi Strażnicy]] interesują się technologią Stajni.\n\n## Główne wątki\n- Tajemnica, dlaczego Stajnia była zamknięta tak długo → [[Sekret Stajni 42]]\n- Kto przejmie kontrolę nad [[Posterunek Kamienne Kopyto|Posterunkiem Kamienne Kopyto]]?\n- Osobiste wątki postaci graczy\n\n## Plan aktów\n- [x] Akt I — Wyjście ze Stajni ([[Sesja 1 — Wrota]])\n- [ ] Akt II — Handel i pierwsze sojusze ([[Sesja 2 — Posterunek]])\n- [ ] Akt III — Oblężenie Stajni\n\n## Klimat\n> Szare niebo, wiatr niesie popiół. Gdzieś daleko gra radio Nadziei.\n\nZasady, które warto mieć pod ręką: [[Ściąga MG]].",
+   "stats": null,
+   "created": 1790591847298,
+   "updated": 1790591847298,
+   "pinned": true,
+   "viewed": 1790593171513
+  },
+  "mul45jsyr689h": {
+   "id": "mul45jsyr689h",
+   "title": "Sekret Stajni 42",
+   "type": "przygoda",
+   "parent": "mul45jsyxud5a",
+   "tags": [
+    "sekret"
+   ],
+   "body": "Wątek poboczny ukryty przed graczami.\n\n## Prawda\nStajnia była eksperymentem. Drzwi zamknęła celowo Nadzorczyni sprzed stu lat, bo na zewnątrz czekało coś gorszego niż promieniowanie.\n\n## Wskazówki do rozsiania\n- [ ] Zapiski w terminalu biura [[Nadzorczyni Silver Quill]]\n- [ ] Plotka u [[Rusty Bolt]]\n- [ ] Znak Stajni na zbroi jednego ze [[Stalowi Strażnicy|Stalowych Strażników]]",
+   "stats": null,
+   "created": 1790591847298,
+   "updated": 1790591847298,
+   "pinned": false,
+   "viewed": 1790591882871
+  },
+  "mul45jsyzai41": {
+   "id": "mul45jsyzai41",
+   "title": "Sesja 1 — Wrota",
+   "type": "sesja",
+   "parent": "mul45jsyxud5a",
+   "tags": [
+    "akt1"
+   ],
+   "body": "**Data:** 2026-10-03\n**Obecni:** wszyscy\n\n## Cel sesji\nWyprowadzić drużynę ze [[Stajnia 42|Stajni]] i pokazać, że Pustkowia są groźne, ale pełne możliwości.\n\n## Sceny\n- [ ] Odprawa u [[Nadzorczyni Silver Quill]]\n- [ ] Otwarcie wrót, pierwszy widok na Pustkowia\n- [ ] Atak [[Bloatsprite|bloatsprite'ów]] w tunelu (2–3 sztuki)\n- [ ] Spotkanie z [[Rusty Bolt]] na drodze\n\n## Spotkania / walki\n| Kto | Ile | Uwagi |\n|---|---|---|\n| [[Bloatsprite]] | 3 | ucieka, gdy zostanie jeden |\n\nSzybkie rzuty: [[r:k100|Losowe spotkanie]] · [[r:2k6|Nastrój Rusty'ego]]\n\n## Łupy i nagrody\n- 25 kapsli, [[Pip-Buck]] dla każdego\n\n## Co się faktycznie wydarzyło\n",
+   "stats": null,
+   "created": 1790591847298,
+   "updated": 1790592995704,
+   "pinned": false,
+   "viewed": 1790592995706
+  },
+  "mul45jsyawv7d": {
+   "id": "mul45jsyawv7d",
+   "title": "Sesja 2 — Posterunek",
+   "type": "sesja",
+   "parent": "mul45jsyxud5a",
+   "tags": [
+    "akt2"
+   ],
+   "body": "## Cel sesji\nWprowadzić [[Posterunek Kamienne Kopyto]] i konflikt z [[Łowcy niewolników z Fillydelphii]].\n\n## Sceny\n- [ ] Przybycie na posterunek\n- [ ] Targ u [[Rusty Bolt]]\n- [ ] Nocny napad łowców niewolników\n",
+   "stats": null,
+   "created": 1790591847298,
+   "updated": 1790591847298,
+   "pinned": false,
+   "viewed": 1790593046837
+  },
+  "mul45jsyna5md": {
+   "id": "mul45jsyna5md",
+   "title": "Stajnia 42",
+   "type": "lokacja",
+   "parent": null,
+   "tags": [
+    "stajnia"
+   ],
+   "body": "## Pierwsze wrażenie\n> Stalowe korytarze pachną olejem i chłodną mgiełką z oczyszczaczy powietrza. Wszędzie ten sam niebiesko-żółty kolor.\n\n## Co tu jest\n- Atrium i biuro [[Nadzorczyni Silver Quill]]\n- Hydroponika, reaktor, sala kinowa\n- Wielkie wrota w kształcie koła zębatego\n\n## Sekrety\n- Zamknięty sektor C → [[Sekret Stajni 42]]",
+   "stats": null,
+   "created": 1790591847298,
+   "updated": 1790591847298,
+   "pinned": false
+  },
+  "mul45jsyuvkdz": {
+   "id": "mul45jsyuvkdz",
+   "title": "Posterunek Kamienne Kopyto",
+   "type": "lokacja",
+   "parent": null,
+   "tags": [
+    "osada"
+   ],
+   "body": "Osada handlowa pół dnia drogi od [[Stajnia 42|Stajni]].\n\n## Mieszkańcy / zagrożenia\n- Handlarz [[Rusty Bolt]]\n- Patrole [[Stalowi Strażnicy|Stalowych Strażników]] przechodzą tędy raz w tygodniu\n- Zwiadowcy [[Łowcy niewolników z Fillydelphii|łowców niewolników]] obserwują osadę\n\n## Łupy\n- Sklep Rusty'ego: amunicja, leki, stare [[Pip-Buck|Pip-Bucki]] na części",
+   "stats": null,
+   "created": 1790591847298,
+   "updated": 1790591847298,
+   "pinned": false,
+   "viewed": 1790593071175
+  },
+  "mul45jsyvmbw3": {
+   "id": "mul45jsyvmbw3",
+   "title": "Nadzorczyni Silver Quill",
+   "type": "npc",
+   "parent": "mul45jsyna5md",
+   "tags": [
+    "stajnia"
+   ],
+   "body": "**Rasa:** jednorożec\n**Rola:** zarządczyni Stajni 42 (Overmare)\n\n## Wygląd i zachowanie\nSiwa grzywa, okulary, zawsze z notatnikiem. Mówi spokojnie, ale nie znosi sprzeciwu.\n\n## Czego chce\nUtrzymać porządek w [[Stajnia 42|Stajni]] i nie dopuścić, by wyszedł na jaw [[Sekret Stajni 42]].\n\n## Co wie\n- Zna część prawdy o sektorze C\n- Wie, że [[Stalowi Strażnicy]] kiedyś pukali do wrót",
+   "stats": [
+    [
+     "S",
+     "3"
+    ],
+    [
+     "P",
+     "6"
+    ],
+    [
+     "E",
+     "4"
+    ],
+    [
+     "C",
+     "7"
+    ],
+    [
+     "I",
+     "8"
+    ],
+    [
+     "A",
+     "4"
+    ],
+    [
+     "L",
+     "5"
+    ],
+    [
+     "HP",
+     "25"
+    ],
+    [
+     "AP",
+     "7"
+    ],
+    [
+     "DT",
+     "0"
+    ],
+    [
+     "Sekwencja",
+     "8"
+    ]
+   ],
+   "created": 1790591847298,
+   "updated": 1790591847298,
+   "pinned": false,
+   "viewed": 1790593731440
+  },
+  "mul45jsyusfq3": {
+   "id": "mul45jsyusfq3",
+   "title": "Rusty Bolt",
+   "type": "npc",
+   "parent": null,
+   "tags": [
+    "handel",
+    "sojusznik"
+   ],
+   "body": "**Rasa:** kucyk ziemski\n**Rola:** wędrowny handlarz\n\n## Wygląd i zachowanie\nRdzawa sierść, wóz pełen złomu i dwie kozy juczne. Targuje się o każdy kapsel.\n\n## Czego chce\nZarobić, przeżyć i nie wchodzić w drogę [[Łowcy niewolników z Fillydelphii|łowcom niewolników]].\n\n## Co wie\n- Plotki o znaku [[Stajnia 42|Stajni 42]] na zbroi Strażnika\n- Gdzie łowcy mają kryjówkę (za odpowiednią cenę)\n\nAtak: [[r:2k6+2|Strzelba myśliwska]]",
+   "stats": [
+    [
+     "S",
+     "5"
+    ],
+    [
+     "P",
+     "6"
+    ],
+    [
+     "E",
+     "6"
+    ],
+    [
+     "C",
+     "7"
+    ],
+    [
+     "I",
+     "5"
+    ],
+    [
+     "A",
+     "5"
+    ],
+    [
+     "L",
+     "7"
+    ],
+    [
+     "HP",
+     "32"
+    ],
+    [
+     "AP",
+     "8"
+    ],
+    [
+     "DT",
+     "2"
+    ],
+    [
+     "Sekwencja",
+     "11"
+    ]
+   ],
+   "created": 1790591847298,
+   "updated": 1790591847298,
+   "pinned": false,
+   "viewed": 1790593690291
+  },
+  "mul45jsy5yowa": {
+   "id": "mul45jsy5yowa",
+   "title": "Stalowi Strażnicy",
+   "type": "frakcja",
+   "parent": null,
+   "tags": [
+    "frakcja"
+   ],
+   "body": "Zakon kucyków w pancerzach wspomaganych, zbierający przedwojenną technologię.\n\n## Cele\nZabezpieczyć technologię [[Stajnia 42|Stajni 42]].\n\n## Stosunek do graczy\nNeutralny, dopóki gracze nie mają czegoś, czego Strażnicy chcą.\n\n## Postępy planów\n- [ ] Zwiad w okolicy Stajni\n- [ ] Propozycja „ochrony” dla [[Posterunek Kamienne Kopyto|posterunku]]\n- [ ] Siłowe przejęcie, jeśli negocjacje zawiodą",
+   "stats": null,
+   "created": 1790591847298,
+   "updated": 1790591847298,
+   "pinned": false,
+   "viewed": 1790593064217
+  },
+  "mul45jsyllnlh": {
+   "id": "mul45jsyllnlh",
+   "title": "Łowcy niewolników z Fillydelphii",
+   "type": "frakcja",
+   "parent": null,
+   "tags": [
+    "wróg"
+   ],
+   "body": "Bezwzględna banda łapiąca kucyki na sprzedaż.\n\n## Cele\nPojmać „czyste” kucyki ze Stajni — są cenne na targach.\n\n## Przywódcy\n- Herszt Brimstone (jeszcze bez wpisu — kliknij, aby go utworzyć: [[Herszt Brimstone]])",
+   "stats": null,
+   "created": 1790591847298,
+   "updated": 1790591847298,
+   "pinned": false,
+   "viewed": 1790593802130
+  },
+  "mul45jsyphkkp": {
+   "id": "mul45jsyphkkp",
+   "title": "Bloatsprite",
+   "type": "stwor",
+   "parent": null,
+   "tags": [
+    "pustkowia"
+   ],
+   "body": "Zmutowany, napuchnięty i latający kuzyn parasprite'a. Atakuje w chmarach.\n\n## Ataki\n- Ugryzienie: [[r:1k6|obrażenia]]\n\n## Taktyka\nNadlatuje z góry, ucieka, gdy zostanie sam.\n\nZasady walki: [[str:1|strona z podręcznika (ustaw właściwą)]]",
+   "stats": [
+    [
+     "HP",
+     "10"
+    ],
+    [
+     "AP",
+     "6"
+    ],
+    [
+     "DT",
+     "0"
+    ],
+    [
+     "Sekwencja",
+     "12"
+    ]
+   ],
+   "created": 1790591847298,
+   "updated": 1790591847298,
+   "pinned": false,
+   "viewed": 1790592964101
+  },
+  "mul45jsy8sa8w": {
+   "id": "mul45jsy8sa8w",
+   "title": "Pip-Buck",
+   "type": "przedmiot",
+   "parent": null,
+   "tags": [
+    "sprzęt"
+   ],
+   "body": "Naręczny komputer każdego mieszkańca Stajni: mapa, radio, licznik promieniowania, inwentarz.\n\nSzczegóły działania według podręcznika: [[str:1]] (podmień numer strony).",
+   "stats": null,
+   "created": 1790591847298,
+   "updated": 1790591847298,
+   "pinned": false,
+   "viewed": 1790591918389
+  },
+  "mul45jsy56elz": {
+   "id": "mul45jsy56elz",
+   "title": "Przykładowa postać gracza",
+   "type": "gracz",
+   "parent": null,
+   "tags": [],
+   "body": "**Gracz:** Ania\n**Rasa:** pegaz\n**Znaczek:** kompas\n\n## Wątki osobiste\n- Szuka zaginionej siostry, która wyszła ze [[Stajnia 42|Stajni]] w tajemnicy",
+   "stats": [
+    [
+     "S",
+     "4"
+    ],
+    [
+     "P",
+     "7"
+    ],
+    [
+     "E",
+     "5"
+    ],
+    [
+     "C",
+     "6"
+    ],
+    [
+     "I",
+     "5"
+    ],
+    [
+     "A",
+     "8"
+    ],
+    [
+     "L",
+     "6"
+    ],
+    [
+     "HP",
+     "28"
+    ],
+    [
+     "AP",
+     "9"
+    ],
+    [
+     "DT",
+     "0"
+    ],
+    [
+     "Sekwencja",
+     "12"
+    ]
+   ],
+   "created": 1790591847298,
+   "updated": 1790591847298,
+   "pinned": false,
+   "viewed": 1790593806290
+  },
+  "mul45jsyqcbuv": {
+   "id": "mul45jsyqcbuv",
+   "title": "Ściąga MG",
+   "type": "zasada",
+   "parent": null,
+   "tags": [
+    "zasady"
+   ],
+   "body": "Uzupełnij własnymi skrótami zasad z podręcznika i dodaj numery stron, aby jednym kliknięciem otwierać PDF.\n\n## Testy\n- Test umiejętności: … ([[str:1]])\n- Trudności i modyfikatory: …\n\n## Walka\n- Kolejność tur: …\n- Punkty akcji: …\n- Trafienia krytyczne: …\n\n## Przydatne tabele\n| Co | Strona |\n|---|---|\n| Rasy | [[str:1]] |\n| Umiejętności | [[str:1]] |\n| Ekwipunek | [[str:1]] |",
+   "stats": null,
+   "created": 1790591847298,
+   "updated": 1790591847298,
+   "pinned": true,
+   "viewed": 1790593838626
+  },
+  "mul5a52nlqql7": {
+   "id": "mul5a52nlqql7",
+   "title": "Herszt Brimstone",
+   "type": "npc",
+   "parent": null,
+   "tags": [],
+   "body": "**Rasa:** \n**Rola:** \n\n## Wygląd i zachowanie\n\n## Czego chce\n\n## Co wie\n- \n\n## Sekrety\n- \n\n## Powiązania\n- ",
+   "stats": [
+    [
+     "S",
+     "5"
+    ],
+    [
+     "P",
+     "5"
+    ],
+    [
+     "E",
+     "5"
+    ],
+    [
+     "C",
+     "5"
+    ],
+    [
+     "I",
+     "5"
+    ],
+    [
+     "A",
+     "5"
+    ],
+    [
+     "L",
+     "5"
+    ],
+    [
+     "Poziom",
+     "1"
+    ],
+    [
+     "Rana",
+     "10"
+    ],
+    [
+     "DT",
+     "0"
+    ]
+   ],
+   "created": 1790593741103,
+   "updated": 1790593784891,
+   "pinned": false,
+   "viewed": 1790593784893
+  }
+ },
+ "notes": "",
+ "combat": {
+  "round": 1,
+  "turn": 0,
+  "list": []
+ },
+ "bookmarks": [
+  {
+   "page": 1,
+   "label": "Początek"
+  }
+ ],
+ "ui": {
+  "theme": "green",
+  "rightW": 380,
+  "tab": "book",
+  "collapsed": {
+   "przedmiot": false
+  },
+  "toolsHidden": false,
+  "preview": true,
+  "bookRepo": true
+ }
+}
