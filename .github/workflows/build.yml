@@ -1,0 +1,68 @@
+name: Budowanie strony
+
+# Po każdym pushu: pliki wrzucone luzem do katalogu głównego trafiają do content/99-do-posortowania,
+# strona jest przebudowywana, a wynik commitowany z powrotem na tę samą gałąź.
+# GitHub Pages publikuje ją potem sam (Settings → Pages → Deploy from a branch, / (root)).
+
+on:
+  push:
+    branches: [main, master, "claude/**"]
+    paths-ignore:
+      - "index.html"
+      - "os-czasu.html"
+      - "wszystko.html"
+      - "404.html"
+      - "search.json"
+      - "e/**"
+      - "p/**"
+      - "t/**"
+      - "assets/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # pełna historia => daty dodania plików
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r tools/requirements.txt
+
+      - name: Przenieś nowe pliki z katalogu głównego do content/
+        shell: bash
+        run: |
+          keep='^(README\.md|LICENSE.*|\.gitignore|\.gitattributes|\.nojekyll|index\.html|os-czasu\.html|wszystko\.html|404\.html|search\.json|CNAME)$'
+          inbox="content/99-do-posortowania"
+          git -c core.quotepath=off ls-files -z | while IFS= read -r -d '' f; do
+            case "$f" in */*) continue;; esac
+            if ! [[ "$f" =~ $keep ]]; then
+              mkdir -p "$inbox"
+              git mv -k -- "$f" "$inbox/$f" && echo "→ $inbox/$f"
+            fi
+          done
+          if [ -d "$inbox" ] && [ ! -f "$inbox/_info.md" ]; then
+            printf -- '---\ntitle: Do posortowania\nokres: nowe pliki\n---\nPliki wrzucone ostatnio do repozytorium, jeszcze nieprzypisane do działu.\n' > "$inbox/_info.md"
+          fi
+
+      - run: python tools/build.py
+
+      - name: Zapisz zbudowaną stronę
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "Bez zmian."; exit 0; fi
+          git commit -m "Przebudowa strony"
+          git push

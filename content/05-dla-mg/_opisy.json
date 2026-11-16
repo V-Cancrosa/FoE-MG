@@ -1,0 +1,25 @@
+{
+  "Ekran MG Fallout Equestria.md": {
+    "opis": "Wszystkie zasady pod ręką: rzuty, MFD, walka, obrażenia, strach, promieniowanie, przetrwanie — plus Stajnia 97, NPC i sekret."
+  },
+  "Stajnia97_Jednostrzal.pdf": {
+    "title": "Jednostrzał: Stodoła, Krąg i łowcy niewolników",
+    "opis": "Scenariusz dla MG na 2–3 sesje dla 4 postaci 1. poziomu, po indywidualnych sesjach zero."
+  },
+  "FoE_Jednostrzal_i_sesje_zero_MG.pdf": {
+    "title": "Jednostrzał i sesje zero — komplet MG",
+    "opis": "Jednostrzał (Akt 1) oraz sesje zero: mieszkaniec Stajni Ogrodów, Uriel i Rusty Spur w jednym pliku."
+  },
+  "sesje zero/Sesja_zero_Rusty_MG_v2.pdf": {
+    "title": "Sesja zero: Rusty Spur — Noc w Cinder Ford",
+    "opis": "Wersja 2. Jedna noc w barze „Mokre Kopyto”, informatorka i wieści o Knocie."
+  },
+  "sesje zero/Sesja_zero_Uriel_MG.pdf": {
+    "title": "Sesja zero: Uriel — Księga Długu",
+    "opis": "Gunther czyta swoją księgę rachunkową, a każdy wpis otwiera retrospekcję i krok tworzenia postaci."
+  },
+  "narzędzia/Echa-Stajni-42-przykład-2026-10-11.json": {
+    "title": "Echa Stajni 42 — przykładowa kampania (JSON)",
+    "opis": "Przykładowe dane kampanii do narzędzia MG: powiązane wpisy, wątki i plan aktów."
+  }
+}

@@ -1,5 +1,7 @@
-Ta strona zbiera w jedną całość wszystkie materiały projektu **FoE-MG** —
-od najstarszych wersji, przez etapy przejściowe, po to, co aktualne.
+Dwieście lat po tym, jak megazaklęcia spaliły Equestrię, pustkowia wokół **Hoofington** wciąż należą
+do tych, którzy mają więcej kul, więcej szczęścia albo mniej skrupułów. Głęboko pod ziemią przetrwała
+**Stajnia 97 „Gardens”** — pacyfistyczna społeczność żyjąca z przedwojennych upraw. Aż do dziś,
+kiedy jej drzwi otworzyły się same.
 
-Wybierz etap poniżej, przejdź do **osi czasu**, żeby zobaczyć wszystko po kolei,
-albo użyj wyszukiwarki (klawisz <kbd>/</kbd>).
+Tu jest wszystko w jednym miejscu: świat, materiały dla graczy, postacie, mapy i notatki prowadzącego.
+Szukaj klawiszem <kbd>/</kbd>.

@@ -20,25 +20,42 @@
     menuBtn.setAttribute("aria-expanded", open);
   });
 
+  // bramka spoilerów (strefa MG) — zapamiętana w przeglądarce
+  const MG_KEY = "mg-ok";
+  const mgOk = () => { try { return localStorage.getItem(MG_KEY) === "1"; } catch (e) { return false; } };
+  const gate = $("[data-gate]");
+  if (gate && !mgOk()) {
+    gate.hidden = false; document.body.classList.add("gated");
+    $("[data-gate-ok]", gate).addEventListener("click", () => {
+      try { localStorage.setItem(MG_KEY, "1"); } catch (e) {}
+      gate.hidden = true; document.body.classList.remove("gated");
+    });
+  }
+
   // filtry na stronie "Wszystko"
   const grid = $("[data-filter-grid]");
   if (grid) {
     const txt = $("[data-filter-text]"), col = $("[data-filter-col]"), kind = $("[data-filter-kind]");
     const count = $("[data-count]"), empty = $("[data-filter-empty]");
+    const spoilerBox = $("[data-filter-spoiler]");
+    const spoilerCols = ($("[data-filters]").dataset.spoilerCols || "").split(" ").filter(Boolean);
+    if (spoilerBox) spoilerBox.checked = mgOk();
     const params = new URLSearchParams(location.search);
     if (params.get("q")) txt.value = params.get("q");
     if (params.get("etap")) col.value = params.get("etap");
     if (params.get("typ")) kind.value = params.get("typ");
     const apply = () => {
       const q = norm(txt.value), c = col.value, k = kind.value;
+      const showMg = (spoilerBox && spoilerBox.checked) || spoilerCols.includes(c);
       let n = 0;
       $$(".card", grid).forEach((el) => {
-        const ok = (!q || norm(el.dataset.text).includes(q)) && (!c || el.dataset.col === c) && (!k || el.dataset.kind === k);
+        const ok = (!q || norm(el.dataset.text).includes(q)) && (!c || el.dataset.col === c) && (!k || el.dataset.kind === k) &&
+          (showMg || !spoilerCols.includes(el.dataset.col));
         el.hidden = !ok; if (ok) n++;
       });
       count.textContent = n; empty.hidden = n > 0;
     };
-    [txt, col, kind].forEach((el) => el.addEventListener("input", apply));
+    [txt, col, kind, spoilerBox].filter(Boolean).forEach((el) => el.addEventListener("input", apply));
     apply();
   }
 
@@ -71,7 +88,7 @@
     const q = norm(input.value.trim());
     const words = q.split(/\s+/).filter(Boolean);
     results = !words.length ? [] : index
-      .filter((d) => words.every((w) => d._all.includes(w)))
+      .filter((d) => (!d.x || mgOk()) && words.every((w) => d._all.includes(w)))
       .map((d) => ({ d, score: words.reduce((s, w) => s + (d._t.includes(w) ? 10 : 1), 0) }))
       .sort((a, b) => b.score - a.score).slice(0, 30).map((x) => x.d);
     sel = 0;
