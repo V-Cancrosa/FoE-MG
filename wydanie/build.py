@@ -40,6 +40,8 @@ OUT_NAME = "FoE_Jednostrzal_i_sesje_zero_MG"
 STAN = dt.date.today().strftime("%d.%m.%Y")
 
 LABELS = {"read": "Do przeczytania", "ledger": "Wpis w księdze", "secret": "Sekret MG", "note": "", "box": ""}
+SIDE_LABELS = {"secret": "Sekret MG", "hint": "Podpowiedź", "later": "Na później · kierunek, nie wyrok",
+               "todo": "Do ustalenia", "player": "", "fig": ""}
 
 
 def esc(s: str) -> str:
@@ -189,6 +191,15 @@ def preprocess(text: str, base: Path) -> str:
         m = re.match(r"^:::\s*(\w+)?\s*(.*)$", line)
         if m and m.group(1):
             kind, label = m.group(1), m.group(2).strip()
+            if kind == "side":
+                sk, _, slabel = label.partition(" ")
+                sk = sk or "secret"
+                slabel = slabel.strip() or SIDE_LABELS.get(sk, "")
+                out.append(f'\n<div class="side {sk}" markdown="1">\n')
+                if slabel:
+                    out.append(f'<p class="box-label">{esc(slabel)}</p>\n')
+                stack.append("side")
+                continue
             if kind == "cols":
                 out.append('\n<div class="cols" markdown="1">\n<div class="col" markdown="1">\n')
                 stack.append("cols")
@@ -208,7 +219,7 @@ def preprocess(text: str, base: Path) -> str:
             continue
         # „**Notka MG.** …” poza blokiem → notka
         nm = re.match(r"^\*\*(Notka MG\.|Dla MG\.|Krytycznie\.|Przejście\.|Zostaw ślad\.)\*\*(.*)$", line)
-        if nm and not any(k in ("note", "read", "ledger", "secret", "box") for k in stack):
+        if nm and not any(k in ("note", "read", "ledger", "secret", "box", "side") for k in stack):
             out.append(f'\n<div class="box note" markdown="1">\n\n{line}\n\n</div>\n')
             continue
         out.append(line)
@@ -222,6 +233,7 @@ def md(text: str) -> str:
                              extension_configs={"toc": {"permalink": False}})
     h = conv.convert(text)
     h = h.replace("<blockquote>", '<blockquote class="box read"><p class="box-label">Do przeczytania</p>')
+    h = h.replace("<p>→", '<p class="ref">→')
     return h
 
 
@@ -291,7 +303,8 @@ def build():
         html_body = re.sub(r'<h2 id="([^"]+)"', lambda m: f'<h2 id="{cid}--{m.group(1)}"', html_body)
         html_body = re.sub(r'<h3 id="([^"]+)"', lambda m: f'<h3 id="{cid}--{m.group(1)}"', html_body)
         html_body = re.sub(r'<h4 id="[^"]+"', "<h4", html_body)
-        parts.append(f"""<section class="chapter {typ}">
+        side = " with-side" if meta.get("marginesy", "").lower() in ("tak", "1", "true") else ""
+        parts.append(f"""<section class="chapter {typ}{side}">
   <header class="chapter-head">
     {f'<p class="kicker">{esc(kicker)}</p>' if kicker else ''}
     <h1 class="chapter-title" id="{cid}" data-run="{esc(run)}">{esc(title)}</h1>
@@ -335,6 +348,14 @@ def build():
     <div class="box note"><p><strong>Notka MG.</strong> Wskazówki prowadzenia, nie dla graczy.</p></div>
     <div class="box ledger"><p class="box-label">Wpis w księdze</p><p>Wpisy Gunthera (tylko sesja Uriela).</p></div>
     <div class="box secret"><p class="box-label">Sekret MG</p><p>Rzeczy, których gracz nie może zobaczyć.</p></div>
+  </div>
+  <p class="legend-title kicker">Na marginesie</p>
+  <div class="legend legend-side">
+    <div class="side secret"><p class="box-label">Sekret MG</p><p>Nie pomyl, nie zdradź.</p></div>
+    <div class="side hint"><p class="box-label">Podpowiedź</p><p>Gdy gracz się zatnie.</p></div>
+    <div class="side later"><p class="box-label">Na później</p><p>Kierunek, nie wyrok — zależy od graczy.</p></div>
+    <div class="side todo"><p class="box-label">Do ustalenia</p><p>Decyzja przed sesją.</p></div>
+    <div class="side player"><p class="box-label">Gracz</p><p>Nić konkretnej postaci. <span class="ref">→ wraca: gdzie</span></p></div>
   </div>
   <div class="cover-foot">{md(cover_body)}</div>
 </section>

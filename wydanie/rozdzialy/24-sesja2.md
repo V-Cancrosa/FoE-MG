@@ -2,6 +2,7 @@
 tytul: Sesja 2: Obrona i warunek
 podtytul: Gracze bronią ludzi, którzy im nie ufali — gołymi kopytami albo po drodze do szafki. Miarą sukcesu jest liczba uratowanych, nie zabitych.
 stopka: Sesja 2: Obrona i warunek
+marginesy: tak
 ---
 ## Pole walki: poziom 0
 
@@ -26,9 +27,26 @@ Cała walka toczy się przy Wrotach: koło zębate, śluza odkażająca, stanowi
 - **Dlaczego Wrota są otwarte:** protokół blokuje ich zamknięcie, a stanowisko kontroli nie ma uprawnień, żeby go nadpisać. Winter Rye od dwóch dni żąda, żeby to obejść.
 :::
 
+## Mieszkańcy przy Wrotach
+
+Osadnicy z przyszłej eskorty — twarze w tłumie, które gracze ratują albo tracą.
+
+::: side secret Nettle i chwast
+Znaczek-chwast to jedyny ślad eksperymentu w one-shocie. Willow Bark notuje o nim więcej niż o innych. Nie tłumacz.
+:::
+
+- **Moss** (mech), ogrodniczka-weteranka: zna uprawy najlepiej, boi się otwartego nieba. Stara ziemska klacz, ciemnozielona, ziemia wbita w kopyta; patrzy w podłogę. *Znaczek:* kępka mchu na kamieniu w cieniu.
+- **Horsetail** (skrzyp), inżynier: zbuduje nawadnianie, nie zna pustkowi. Podkrążone oczy, smar na pysku, łaty na łokciach. *Znaczek:* pęd skrzypu oplatający koło zębate. Kolega Ricka z drużyny technicznej.
+- **Clover z Pea i Pod:** jednorożec, pastelowo-różowa; źrebaki w kombinezonach po starszych, bez znaczków. *Znaczek Clover:* koniczyna, każdy listek w innym odcieniu. Test wartości drużyny.
+- **Nettle** (pokrzywa), zbuntowany młodzik: ciemniejsza sierść, obgryzione kopyta, oderwana naszywka liścia. Pierwszy pacyfista, który sięgnie po broń. *Znaczek:* liść pokrzywy.
+
 ## Ruch 1. Pertraktacje u Wrót
 
 Tally Mark proponuje odejść w zamian za obcych i kilku zdrowych mieszkańców. Krąg debatuje przy graczach — postacie słyszą, jak ich los jest przedmiotem głosowania. Winter Rye skłania się ku oddaniu obcych. Lily Pad odmawia.
+
+::: side player
+**Uriel** słyszy rachunek z Igły: „sztuka”, „należność”. **Rusty** widzi Knota. **Rick** widzi, jak Krąg głosuje o obcych, którzy go uratowali.
+:::
 
 ::: read Czytaj na głos
 „Liczyłam was po drodze — mówi Tally Mark i stuka ołówkiem w księgę. — Za dużo was tam w środku, słychać przez ściany. Proponuję tak: oddacie mi tych dwoje obcych, bo to nie wasi. Do tego, powiedzmy, sześć sztuk waszych. Młodych, zdrowych. Wy będziecie mieli mniej gąb, ja będę miała towar, a nikt nie musi krwawić. To przecież rozsądne. Wy lubicie rozsądne.”
@@ -40,7 +58,6 @@ Tally Mark proponuje odejść w zamian za obcych i kilku zdrowych mieszkańców.
 - **Pilnuj tempa.** Jeśli debata trwa dłużej niż kilka minut, Tally Mark traci cierpliwość, zamyka księgę i daje znak.
 - **Zdeprawowana logika pacyfizmu:** ktoś z Kręgu — nie Winter Rye, on chce zamknąć drzwi — może zaproponować oddanie ochotników „za spokój”. Mocna scena moralna bez walki.
 - Gracze mogą próbować negocjować, blefować albo zaatakować pierwsi. Każdy z tych wyborów jest dobry; szturm i tak nastąpi.
-- **Uriel** słyszy kucykowy rachunek, który zna z Igły: „sztuka”, „należność”. **Rusty** widzi przed sobą Knota.
 :::
 
 ## Ruch 2. Szturm (zegar 6 rund)
@@ -68,6 +85,14 @@ To daje graczom realne narzędzie: każdy oprych związany walką to oprych, kt�
 
 Przyszpilają postacie, które biegną do szafki z bronią albo odbijają jeńców. Nie strzelają do mieszkańców.
 
+::: side secret Światła mrugają
+W rundzie 2 inżynier mamrocze, że „szóstka znowu żre prąd”. **Rick** przy stanowisku kontroli może przełączyć zasilanie — i zobaczyć, że coś na 6 bierze go najwięcej.
+:::
+
+::: side player Zasady graczy w szturmie
+**Rusty** — „nawet zakładnika”: łowca zasłania się osadnikiem. **Uriel** — „celem nie jest źrebak”: Pea i Pod, Clover nie nadąża.
+:::
+
 #### Rytm rund
 
 | Runda | Co się dzieje |
@@ -84,9 +109,6 @@ Przyszpilają postacie, które biegną do szafki z bronią albo odbijają jeńc�
 
 - Mieszkańców prowadź grupami (np. 3 tokeny po kilka kucyków), nie pojedynczo. Chwycony mieszkaniec dostaje własny token.
 - Grupuj inicjatywę gangu (oprychy, strzelcy, Tally Mark), jeśli tury przeciwników spowalniają stół.
-- **Ślad o mocy:** w rundzie 2 światła mrugają, inżynier mamrocze, że „szóstka znowu żre prąd”.
-- **Rusty, „nawet zakładnika”:** jeden łowca z siecią i kolonistą przed sobą jako tarczą to scena napisana dla niego.
-- **Uriel, „celem nie jest źrebak”:** Pea i Pod przy Wrotach, Clover nie nadąża.
 :::
 
 ## Ruch 3. Odwrót
@@ -101,7 +123,9 @@ U Tally Mark (jeśli padła) albo w wozie / w punkcie zbiórki, upuszczony przy 
 Kartka złożona na cztery, zatłuszczona na zgięciach. Liczby, zakreślenia, cena za „sztukę”. Na dole dwie linijki innym, starannym charakterem pisma: *Nasiona nietknięte. Medyk żywy.* Zamiast podpisu jest znak — odciśnięty, niewyraźny, jakby ktoś celowo przekręcił pieczęć.
 :::
 
-**Notka MG.** Znak ma być nieczytelny w jednostrzale. Rozszyfrowanie go to wątek kampanii. (Nie jest to znak trzech kresek i koła — tamten należy do bandy z Cichych Brodów.)
+::: side secret Nie pomyl znaków
+Pieczęć zleceniodawcy ma być **nieczytelna**. To nie trzy kreski i koło (banda z Cichych Brodów). Rozszyfrowanie — kampania.
+:::
 
 ## Ruch 5. Skutki
 
@@ -111,8 +135,14 @@ Ranni, porwani i mieszkańcy, którzy pierwszy raz w życiu zobaczyli przemoc. W
 **Notka MG.**
 
 - To moment dla graczy, nie dla BN-ów: daj każdemu jedną krótką scenę z kimś, kogo uratował albo nie.
-- Ranny mieszkaniec, majacząc: „Nie kompost… Spoczynek, jak syn Thornów?” — ślad, który nic jeszcze nie znaczy.
-- **Rusty i Knot:** żywy czy martwy? 250 kapsli wraca do Haywarda (zasada 4). Gdy Knot się poddaje — Code of Honor.
+:::
+
+::: side secret Majaczenie
+Ranny mieszkaniec: „Nie kompost… Spoczynek, jak syn Thornów?” — ślad do kapsuł, który nic jeszcze nie znaczy.
+:::
+
+::: side player Rusty i Knot
+Żywy czy martwy? 250 kapsli wraca do Haywarda (zasada 4). Gdy Knot się poddaje — Code of Honor.
 :::
 
 ## Ruch 6. Warunek Kręgu
@@ -124,6 +154,10 @@ Krąg zbiera się jeszcze tej samej nocy, tym razem przy Wrotach, bo nikt nie ch
 :::
 
 **Koniec jednostrzału.** Otwarte zakończenie: kto wyjdzie, dokąd, z kim i co z porwanymi.
+
+::: side later Akt 2
+Kilka tygodni po otwarciu zasilanie kapsuł zawodzi i pierwsi uśpieni się budzą — gdy drużyna straci wsparcie frakcji.
+:::
 
 ## Hak na kampanię
 

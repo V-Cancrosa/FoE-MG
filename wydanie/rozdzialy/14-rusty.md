@@ -1,9 +1,13 @@
 ---
 tytul: Sesja 0: Rusty Spur
+kicker: Sesja zero · 3 z 3 · przeszłość
+marginesy: tak
 podtytul: Gracz: Erwin (Nikodem) · wtorek 24.11 · Noc w Cinder Ford · kucyk ziemny · wersja 2, z odpowiedziami z zeszytu.
 stopka: Sesja 0: Rusty Spur
 ---
-{{img: 03-postacie/Rusty Spur/Rusty Spur.png | Rusty Spur | portrait}}
+::: side fig
+{{img: 03-postacie/Rusty Spur/Rusty Spur.png | Rusty Spur}}
+:::
 
 - **Rama.** Teraźniejszość, jedna noc w barze „Mokre Kopyto” w Cinder Ford, osadzie przy brodzie w dole tej samej rzeki, nad którą leżały Ciche Brody. Rusty czeka na informatorkę z wieściami o Knocie. Za ścianą leży pobity Hayward, mąż porwanej Sweet Briar.
 - **Retrospekcje.** Każdy krok tworzenia postaci otwiera wspomnienie z Cichych Brodów: dźwiganie wody z ojcem, zebranie, manierka na rozstajach, noc przy karawanie, popioły.
@@ -43,6 +47,14 @@ Odpowiedzi Nikodema z zeszytu „Spisane Prawo” (pełny zeszyt w dodatkach).
 | Znaczek | Manierka na skrzyżowaniu dróg. Jako dziesięciolatek oddał wodę przeznaczoną na leki dla matki źrebakowi umierającemu z pragnienia na rozstajach. |
 | Wyposażenie | Łatany płaszcz przeciwpyłowy (jeszcze z czasów gońca), hełm z maską kupiony od karawany ze zużytymi filtrami, bandaże na oparzeniach od grzebania w popiołach, dzwonek przy siodle, gwiazda, torby gońca, manierka, zeszyt, list gończy, mikstura lecznicza. |
 
+::: side todo Przed 24.11
+**Broń** — w zeszycie jej nie ma. Zapytaj Nikodema, czym strzela i skąd to ma.
+:::
+
+::: side todo
+Kolejność: upadek osady → gwiazda → Mudhoof → list na Knota. Ile czasu minęło? Ustal raz.
+:::
+
 #### O cena: co działa, co trzeba rozwiązać
 
 - **Najmocniejsza rzecz to zasada 3** („łowca niewolników nie dostaje drugiej szansy”). Zderza się ze wszystkim, co już przygotowałeś: Knot jest wart 250 kapsli tylko żywy i tylko żywy powie, gdzie jest Sweet Briar. Burr to łowca niewolników i dawny sąsiad. Do tego zasada 1 obiecuje każdemu słowo przed kulą. Nie łagodź tego: to oś jego jednostrzału.
@@ -51,34 +63,6 @@ Odpowiedzi Nikodema z zeszytu „Spisane Prawo” (pełny zeszyt w dodatkach).
 - **Ciche Brody i Cinder Ford brzmią podobnie.** Zamiast zmieniać nazwę (list gończy już ją ma), ustaw je nad tą samą rzeką: Cinder Ford leży w dole nurtu. Wtedy Rusty pije w barze wodę z tej samej rzeki, którą kiedyś nosił.
 - **Daisy przeżyła tamtą chorobę,** skoro jest na liście bliskich. Przy znaczku zapytaj, jak: czy ktoś inny przyniósł leki, czy Rusty poszedł drugi raz? To jedno pytanie mówi, czy ojciec był na niego zły.
 - **Kolejność zdarzeń:** upadek osady, gwiazda, Mudhoof, szukanie praw, a potem list na Knota. Jeśli list miał być wystawiony „chwilę po” upadku, Mudhoof musiał zdarzyć się szybko, w kilka tygodni. Albo przyjmij, że od upadku minęło kilka miesięcy. Ustal to raz i trzymaj się tego.
-
-## Decyzje MG przed sesją
-
-::: secret Sekret MG · 1. Trzy kreski i koło
-To znak bandy, która wymordowała Ciche Brody, a nie Kantaru. Kantar ma kantary i ochrę. Znak bez nazwy daje Rusty'emu trop na kampanię: będzie pytał o niego każdego. Propozycja: banda szukała źródła wody Cichych Brodów, na przykład przedwojennego talizmanu oczyszczającego albo pompy. Dlatego zasypali studnię i zostawili znak. Każdy, kto widział znak, wie, że „to miejsce już przeszukano”. Kantar przyszedł za nimi i zabrał tych, którzy przeżyli.
-:::
-
-::: secret Sekret MG · 2. Co z rodzicami
-Propozycja: Old Anvil leży przy bramie, z bronią, której zabrakło amunicji (tej, po którą poszedł syn). Daisy nie ma wśród ciał. Rusty nie wie, że zabrał ją Kantar. Sweet Briar to wtedy lustro: inna porwana klacz, której szuka cudzy mąż. Ryzyko: zemsta robi się bardzo osobista i może przejąć jednostrzał, w którym Rusty nie znajdzie odpowiedzi. Bezpieczniejsza wersja to oboje rodzice martwi, a brakuje tylko Sheafa i kilku innych.
-:::
-
-::: secret Sekret MG · 3. Serce dzwonka
-Dzwonek nie ma serca. Propozycja: nosi je Burr na rzemieniu pod ochrową płachtą. Zabrał je jako jedyną rzecz z domu. Gdy gracze złapią go w sesji 1, Rusty zobaczy serce, zanim zobaczy łan pszenicy pod farbą. Do tego jeden rzut na Spostrzegawczość: ten dźwięk zna.
-:::
-
-::: secret Sekret MG · 4. Art. 14 w Stajni 97
-Rusty przychodzi z konkretnym pytaniem, więc Stajnia musi mieć odpowiedź. Kodeks Equestrii leży w archiwum Strażniczki Nasion, nietknięty od dwustu lat, bo w Ogrodach nikt nikogo nie sądził. Trzy wersje art. 14 do wyboru:
-
-- **A, ciężar:** „W razie braku sędziego sprawca jest przetrzymywany do czasu ustanowienia sądu. Wymierzenie kary bez sądu stanowi przestępstwo”. Rusty dostaje odpowiedź, że nie ma prawa robić tego, co robi.
-- **B, furtka:** „…funkcję sędziego pełni przedstawiciel Korony obecny na miejscu”. Gwiazda z napisem „Z upoważnienia Korony” nagle coś znaczy. Słuszność czy samooszukiwanie: to rozstrzygnie gracz.
-- **C, wspólnota:** „…sprawę rozstrzyga zgromadzenie mieszkańców”. To dokładnie to, co zrobiła osada z Mudhoofem. I to, co robi Krąg Ogrodów.
-
-Polecam B w jednostrzale i A jako dalszy ciąg artykułu odkryty w kampanii. Karta z art. 14 jest też idealną nagrodą fabularną za pomoc Stajni.
-:::
-
-::: secret Sekret MG · Sheaf to Burr
-Rolnik ze znaczkiem łanu pszenicy, który w kroku 2 ręczy za Wytrzymałość Rusty'ego, to dziś Burr, zwiadowca Kantaru ze znaczkiem zamalowanym ochrą. W kroku 4 Rusty nie znajduje jego ciała. W sesji 1 jednostrzału, gdy gracze złapią Burra, spod zdrapanej ochry wyjrzy łan pszenicy. Nie podkreślaj go w sesji zero bardziej niż innych sąsiadów: ma być jednym z siedmiu głosów, nie podejrzanym.
-:::
 
 ## Obsada
 
@@ -143,6 +127,11 @@ Do gońca pasuje Strong Back i to wynika wprost z tej sceny. High Ho Silver to s
 Zebranie w Cichych Brodach, kilka lat później. Jedyna izba, w której mieści się więcej niż dziesięć kucyków. Chodzi o ciebie: czy można ci powierzyć wodę osady i drogę do traktu. Old Penny stuka kopytem w podłogę. „Kto za nim poręczy?”
 :::
 
+::: side secret Sheaf to Burr
+Rolnik ze znaczkiem łanu pszenicy to dziś **Burr**, zwiadowca Kantaru ze znaczkiem zamalowanym ochrą. Jeden z siedmiu głosów — nie wyróżniaj go.
+→ wraca: krok 4 (brakuje go), one-shot sesja 1 scena 4
+:::
+
 Każdy głos to jeden atrybut. Czytaj głos, a gracz decyduje, ile punktów w niego wkłada. Po każdym możesz zapytać: „Miał rację?”.
 
 | Atr. | Kto | Co mówi |
@@ -177,7 +166,13 @@ Zatrzymaj się tu. Zapytaj: „Ile czasu stałeś, zanim odkręciłeś manierkę
 Wracasz do domu z pustą manierką. I z czymś ciepłym na boku.
 :::
 
-{{img: 03-postacie/Rusty Spur/Znaczek Rusty Spur.png | Znaczek Rusty'ego: manierka na skrzyżowaniu dróg | portrait}}
+::: side fig
+{{img: 03-postacie/Rusty Spur/Znaczek Rusty Spur.png | Znaczek Rusty'ego: manierka na skrzyżowaniu dróg}}
+:::
+
+::: side later
+Bezimienny **źrebak z rozstajów** — dobry BN na kampanię, jeśli Nikodem go nie zamknie.
+:::
 
 **Pytania do gracza:** Co powiedział ojciec? Jak Daisy dostała leki, skoro przeżyła? Co stało się ze źrebakiem? Jeśli Nikodem nie wie, zostaw ten wątek otwarty. Bezimienny źrebak z rozstajów to dobry BN na kampanię.
 
@@ -197,13 +192,29 @@ Premie ziemne (+5 do dwóch): Przetrwanie i Naprawa (filtry do maski) albo Walka
 
 *Retrospekcja.* **Wyzwalacz.** Hayward, cicho: „Mnie nie było przy niej, kiedy przyszli. Byłem w polu”. Daj ciszy trochę wybrzmieć.
 
+::: side secret Nie pomyl: to NIE Kantar
+**Trzy kreski i koło** to znak bandy, która wymordowała Ciche Brody, szukając źródła wody (talizman oczyszczający? pompa?). Stąd zasypana studnia. Znak mówi: „to miejsce już przeszukano”. Kantar = kantary i ochra; przyszedł później i zabrał ocalałych.
+Opisz oba ślady, nie łącz ich, nie nazywaj bandy.
+→ wraca: Magpie (krok 6), kampania
+:::
+
+::: side secret Serce dzwonka
+Nosi je **Burr** na rzemieniu pod ochrową płachtą — jedyna rzecz z domu. Nie mów, że ktoś je zabrał.
+→ wraca: one-shot, sesja 1, scena 4 (Rusty zobaczy serce, zanim zobaczy łan pszenicy)
+:::
+
 ::: read
 Obóz karawany na trakcie. Ogień, braminy, kupiec liczy naboje po jednym, jakby każdy był ze złota. Osada nigdy nie miała dość amunicji. Tym razem przyniesiesz jej pełne torby.
 
 Dym widzisz rano, w połowie drogi powrotnej. Biegniesz z torbami pełnymi naboi, które obijają ci się o boki. Brama stoi otworem. Na drewnie ktoś wydrapał znak: trzy kreski i koło. Studnia jest zasypana. Dzwonek nad bramą wisi krzywo i nie ma w nim serca.
 :::
 
-**Ojciec przy bramie** (jeśli przyjmujesz decyzję 2): Old Anvil leży z bronią w kopytach. Komora pusta. Nie mów tego wprost. Wystarczy „pusta”, a gracz sam połączy to z pełnymi torbami na swoim grzbiecie.
+::: side todo Rodzice — wybierz przed sesją
+**A)** Old Anvil przy bramie z pustą komorą; **Daisy nie ma** wśród ciał — zabrał ją Kantar (Sweet Briar to lustro). Mocne, ale zemsta może przejąć one-shot.
+**B)** oboje martwi, brakuje tylko Sheafa i kilku innych — bezpieczniej.
+:::
+
+**Ojciec przy bramie** (jeśli wybierasz wersję A): Old Anvil leży z bronią w kopytach. Komora pusta. Nie mów tego wprost. Wystarczy „pusta”, a gracz sam połączy to z pełnymi torbami na swoim grzbiecie.
 
 ::: read
 Kopiesz w popiołach gołymi kopytami, bo może ktoś jest pod spodem. Nie czujesz, że się parzysz. Poczujesz to za trzy dni.
@@ -211,7 +222,11 @@ Kopiesz w popiołach gołymi kopytami, bo może ktoś jest pod spodem. Nie czuje
 Liczysz ich dwa razy. Za drugim razem wychodzi tyle samo, czyli mniej, niż powinno.
 :::
 
-**Kogo brakuje.** Zapytaj gracza: „Kogo nie znalazłeś?”. Jeśli nie ma pomysłu, w braku jest Sheaf (i Daisy, jeśli przyjmujesz decyzję 2). Nie komentuj tego. Ślady wleczenia w stronę traktu możesz opisać, jeśli gracz szuka: rzut na Przetrwanie albo Spostrzegawczość.
+::: side hint
+Jeśli nie ma pomysłu: brakuje **Sheafa** — wymień go jako jednego z kilku.
+:::
+
+**Kogo brakuje.** Zapytaj gracza: „Kogo nie znalazłeś?”. Jeśli nie ma pomysłu, w braku jest Sheaf (i Daisy, jeśli wybrałeś wersję A). Nie komentuj tego. Ślady wleczenia w stronę traktu możesz opisać, jeśli gracz szuka: rzut na Przetrwanie albo Spostrzegawczość.
 
 ### Dzwonek i gwiazda
 
@@ -243,6 +258,12 @@ Na końcu kroku 4 zamknij atrybuty: dodaj punkty z przeszkód i wymaż ołówek.
 „Szeryf bez miasta”, mówi na tyle głośno, żeby usłyszał cały bar, czyli trzy osoby. „Gwiazdę to sobie każdy może przypiąć. Z jakiej łaski sądzisz?”
 :::
 
+::: side later Art. 14 w Stajni
+Kodeks Equestrii leży w archiwum **Frozen Seed**. Trzy wersje: **A** ciężar („kara bez sądu to przestępstwo”), **B** furtka („sędzią jest przedstawiciel Korony obecny na miejscu” — gwiazda nagle coś znaczy), **C** wspólnota („rozstrzyga zgromadzenie” — jak z Mudhoofem, jak Krąg).
+Polecam **B** w one-shocie, **A** jako dalszy ciąg w kampanii. Karta z art. 14 = nagroda za pomoc Stajni.
+→ wraca: one-shot, scena 5 (Krąg)
+:::
+
 To test zasady 5 („jak nie wiem, to nie strzelam”) i tablicy przy bramie. Tinder patrzy na broń, nie na Slaga.
 
 - **Słowo:** rzut na Krasomówstwo albo zastraszenie. Tinder mu to zapamięta.
@@ -264,6 +285,10 @@ Cechy: najwyżej dwie na start, jedna za 1 pkt jest darmowa dla ziemnego.
 | Dzwonek, gwiazda, zeszyt, list | przedmioty fabularne | Bez wagi mechanicznej. |
 | Broń | brak w zeszycie | Ustal przed sesją. |
 
+::: side later
+Nowe filtry do maski — dobra nagroda w Stajni (Rick jest technikiem!).
+:::
+
 **Do zapamiętania:** w podręczniku jest też Sheriff's Duster (s. 159): DT 6, +1 CHA, +5 Broń lekka, 170 kapsli. To dobra nagroda na koniec jednostrzału, na przykład od Haywarda. Gracz dostaje wtedy prawdziwy strój szeryfa, kiedy już przestaje go udawać, albo kiedy zaczyna udawać lepiej.
 
 ## Krok 6. Wyjście: sygnał
@@ -283,6 +308,10 @@ Magpie chce 20 kapsli z góry. Można się targować (Handel) albo ją przycisn�
 - W jednej klatce była klacz. Leżała, nie stała. Hayward słyszy to z zaplecza. (Nie mów, czy żyła.)
 - Jechali w stronę starej farmy na wschodzie. „Tam, gdzie od trzech dni gada radio”.
 - Opcjonalnie: jeśli Rusty pokaże jej znak z bramy (trzy kreski i koło), Magpie blednie. „Nie pytaj o to głośno”. Więcej nie powie. To haczyk na kampanię, nie na jednostrzał.
+
+::: side secret Magpie i znak
+Magpie zna znak trzech kresek i koła i boi się go. Więcej nie powie — haczyk na kampanię, nie na one-shot.
+:::
 
 I wtedy odzywa się radio nad barem.
 
@@ -304,8 +333,8 @@ Ostatnie słowo należy do Haywarda. Niech wyjdzie z zaplecza.
 
 **Tajny cel na jednostrzał.** To odpowiednik rozkazu frakcji. Rusty ma dwa cele, które mogą się wykluczać: Knot żywy (bo tylko żywy powie, gdzie jest Sweet Briar, i za żywego jest 250 kapsli) oraz zemsta i zasada 3 (Knot był w Kantarze, który zabrał jego sąsiadów). Nie mów graczowi, że to konflikt. Niech sam to odkryje.
 
-::: secret Sekret MG · gdzie jest Sweet Briar
-Decyzja przed sesją 2 jednostrzału. Opcja 1: jest w klatce przy punkcie zbiórki Kantaru, do odbicia podczas szturmu. Opcja 2: sprzedana dalej, zanim gang dotarł do Stajni. Knot zna kupca, więc wątek przechodzi do kampanii. Opcja 2 lepiej uzasadnia, czemu Knot musi przeżyć mimo zasady 3.
+::: side todo Gdzie jest Sweet Briar
+Przed sesją 2 one-shota. **1:** w klatce przy punkcie zbiórki — do odbicia w szturmie. **2:** sprzedana dalej; Knot zna kupca → kampania. Opcja 2 lepiej tłumaczy, czemu Knot musi przeżyć mimo zasady 3.
 :::
 
 ### Przejście do jednostrzału

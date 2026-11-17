@@ -2,6 +2,7 @@
 tytul: Gang Kantar
 podtytul: Łowcy niewolników. Na powierzchni zwykły gang — w rzeczywistości wynajęty przez frakcję, która chce nasion i medyka, ale nie może wziąć ich otwarcie.
 stopka: Gang Kantar
+marginesy: tak
 ---
 ## Tally Mark, herszt
 
@@ -17,7 +18,11 @@ Popielata klacz w kamizelce najemnika nie podnosi broni. W bladej poświacie jej
 „Dzień dobry, Ogrody. Nazywam się Tally Mark. Nie przyszłam was skrzywdzić — krzywda to strata towaru. Przyszłam zrobić porządek w waszych liczbach. Macie za dużo pyszczków do wykarmienia. Ja mam za mało. Myślę, że się dogadamy.”
 :::
 
-**Notka MG.** Linia przewodnia Tally Mark: wszystko jest rachunkiem — jak u Gunthera, którego księgę zna Uriel. Jako jednorożec może jednocześnie trzymać księgę i pistolet, więc szybko stanie się celem strzelców drużyny — dlatego trzyma się z tyłu.
+::: side player Uriel
+Tally Mark liczy w księdze jak Gunther. „Sztuka”, „należność” — ten język zna z Igły.
+:::
+
+**Notka MG.** Linia przewodnia Tally Mark: wszystko jest rachunkiem. Jako jednorożec może jednocześnie trzymać księgę i pistolet, więc szybko stanie się celem strzelców drużyny — dlatego trzyma się z tyłu.
 
 ## Wygląd gangu
 
@@ -34,8 +39,8 @@ Popielata klacz w kamizelce najemnika nie podnosi broni. W bladej poświacie jej
 - **Burr** (rzep), zwiadowca do złapania w sesji 1. Pod zdrapaną farbą widać łan pszenicy: był kiedyś rolnikiem w osadzie. Daje graczom powód, żeby z nim porozmawiać, a nie tylko go przesłuchać. Jeśli zostanie złapany, nie wraca w sesji 2.
 - **Knot** (węzeł), prowodyr oprychów i jedyny szeregowy, który nie zamalował znaczka: węzeł sieci. Wysoki ziemny, ciężka budowa. Dumny z tego, co robi. To on sięga po koktajl Mołotowa i dostaje za to od Tally Mark. Poszukiwany listem gończym z Cinder Ford: porwanie Sweet Briar i pobicie Haywarda — **250 kapsli żywy, 100 martwy**.
 
-::: secret Sekret MG · Rusty
-**Burr to Sheaf** z Cichych Brodów — rolnik, który w sesji zero Rusty'ego ręczy za jego Wytrzymałość. Nosi na rzemieniu pod ochrową płachtą serce dzwonka z bramy osady (jedyna rzecz z domu). **Ciche Brody wymordowała inna banda** (znak: trzy kreski i koło), Kantar przyszedł za nią jak sęp i zabrał tych, którzy przeżyli. Rusty widział ślady obu grup, ale nie wie, że to dwa gangi.
+::: side secret Rusty · nie pomyl gangów
+**Burr = Sheaf** z Cichych Brodów, nosi serce dzwonka. Ciche Brody wymordowała **inna banda** (trzy kreski i koło); Kantar przyszedł jak sęp i zabrał ocalałych. Rusty nie wie, że to dwa gangi.
 :::
 
 ## Skład na 3 postacie 1. poziomu
@@ -59,8 +64,12 @@ Pancerz łowców: barding Mercenary/Slaver z listy bardingów (s. 159). Opisy ar
 - **Skąd wiedzą:** zleceniodawca przechwycił sygnał przepełnienia i od razu ich wynajął.
 - **Cel:** żywe, zdrowe kucyki. Z rozkazu zleceniodawcy także nasiona nietknięte i medyk (Willow Bark) żywy.
 - **Dlatego bez ognia i materiałów wybuchowych.** Pokaż to graczom: Tally Mark warczy na Knota, który sięga po koktajl Mołotowa.
+::: side todo
+Zleceniodawca gangu — po decyzjach graczy, nie frakcja żadnej postaci.
+:::
+
 - **Zleceniodawca:** wybierasz po decyzjach graczy. Na start nie może to być frakcja żadnej postaci — zerwanie z frakcją ma wynikać z wyboru gracza, nie z dekretu MG.
 
-::: secret Sekret MG · gdzie jest Sweet Briar
-Decyzja przed sesją 2. **Opcja 1:** jest w klatce przy punkcie zbiórki Kantaru, do odbicia podczas szturmu (dokłada jednego BN-a do pilnowania). **Opcja 2:** sprzedana dalej, zanim gang dotarł do Stajni; Knot zna kupca, więc wątek przechodzi do kampanii. Opcja 2 lepiej uzasadnia, czemu Knot musi przeżyć mimo zasady 3 Rusty'ego.
+::: side todo Gdzie jest Sweet Briar
+Przed sesją 2: **1)** w klatce przy punkcie zbiórki (do odbicia; +1 BN pilnuje) albo **2)** sprzedana dalej, Knot zna kupca → kampania.
 :::

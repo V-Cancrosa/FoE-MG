@@ -25,20 +25,21 @@
   "Uriel/Znaczek Uriel.png": {
     "title": "Znaczek Uriela"
   },
-  "Tymianox/Karta postaci - Tymianox.pdf": {
-    "opis": "Karta postaci (Fallout: Equestria V1.22) — Tymianox."
-  },
-  "Tymianox/Tymianox.png": {
-    "title": "Tymianox — szkic postaci"
-  },
-  "Tymianox/Znaczek Tymianox.png": {
-    "title": "Znaczek Tymianox"
-  },
   "starsze wersje/Ksiega_Szponu (wcześniejsza wersja).pdf": {
     "title": "Księga Szponu (wcześniejsza wersja)",
     "opis": "Poprzednia wersja Księgi Szponu, zachowana dla porównania."
   },
   "Rusty Spur/Znaczek Rusty Spur.png": {
     "title": "Znaczek Rusty'ego: manierka na rozstajach"
+  },
+  "Rick Scrapper/Rick Scrapper.png": {
+    "title": "Rick Scrapper — wygląd",
+    "opis": "Wzór wyglądu od Tymka. Napis na grafice nie jest wiążący."
+  },
+  "Rick Scrapper/Znaczek Rick Scrapper.png": {
+    "title": "Znaczek Ricka: klucz i śruba z błyskawicą"
+  },
+  "Rick Scrapper/Karta postaci - Rick Scrapper.pdf": {
+    "opis": "Wycinek podręcznika V1.22 dla kucyka ziemskiego. Gracz: Tymek (Tymianox)."
   }
 }

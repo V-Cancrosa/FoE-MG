@@ -2,6 +2,7 @@
 tytul: Sesja 1: Stodoła i Krąg
 podtytul: Zbudować drużynę z ludzi, którzy nie mają powodu sobie ufać, i doprowadzić ich za Wrota z pustymi kopytami dokładnie wtedy, gdy przychodzi gang.
 stopka: Sesja 1: Stodoła i Krąg
+marginesy: tak
 ---
 ::: note
 **Notka MG.** Czas. Pierwsza walka w nowym systemie, w nowym Foundry, z trzema nowymi graczami potrafi zjeść połowę wieczoru. Regulatorem jest scena 5 (przed Kręgiem): jeśli jest późno, Krąg trwa pięć minut i bije alarm. Jeśli jest wcześnie, pozwól obcym zwiedzić Stajnię z Runner Beanem. Jeśli sesja bardzo się przeciągnie, Krąg może przejść na początek sesji 2, a cliffhangerem będzie żądanie złożenia broni.
@@ -17,18 +18,20 @@ Od trzech dni na każdej częstotliwości, w każdym odbiorniku między Hoofingt
 Każde z was usłyszało to gdzie indziej. Każde dostało inny powód, żeby tu przyjść. A teraz każde z was widzi na horyzoncie to samo: płaską, szarą równinę, kępę martwych drzew i pochyloną stodołę z dziurą w dachu.
 :::
 
-**Notka MG.** Dweller tego nie słyszy — jest już w środku stodoły. Uriel słyszał sygnał przy tablicy zleceń; Rusty w barze w Cinder Ford, razem z wieściami Magpie.
+::: side player Skąd przychodzą
+**Rick** tego nie słyszy — jest już w stodole. **Uriel**: ogłoszenie o stworach z tablicy zleceń. **Rusty**: bar w Cinder Ford, wieści Magpie, Knot.
+:::
 
 ## Scena 2. Walka w stodole
 
-Gracz ze Stajni zaczyna sam. Uriel i Rusty wchodzą po kolei, każdy inną drogą. Walka ma 4–6 rund i trzy fazy. Pełna walka, bez skracania — to pierwsza lekcja systemu dla wszystkich.
+Rick zaczyna sam. Uriel i Rusty wchodzą po kolei, każdy inną drogą. Walka ma 4–6 rund i trzy fazy. Pełna walka, bez skracania — to pierwsza lekcja systemu dla wszystkich.
 
 {{img: 04-mapy/stodola_mapa_taktyczna (grafika).png | Stodoła — mapa taktyczna (Foundry) | half}}
 {{img: 04-mapy/stodola_mapa_taktyczna.png | Stodoła — schemat z numeracją | half}}
 
 ### Mapa (ustawienie w Foundry)
 
-Skala: 1 kratka = 5 stóp. Mapa ok. 22 × 28 kratek, stodoła 12 × 18. Dweller wychodzi włazem pod sianem, tuż obok zapadniętej podłogi, z której wychodzą mrówki.
+Skala: 1 kratka = 5 stóp. Mapa ok. 22 × 28 kratek, stodoła 12 × 18. Rick wychodzi włazem pod sianem, tuż obok zapadniętej podłogi, z której wychodzą mrówki.
 
 | Element | Gdzie | W walce |
 |---|---|---|
@@ -46,6 +49,10 @@ Skala: 1 kratka = 5 stóp. Mapa ok. 22 × 28 kratek, stodoła 12 × 18. Dweller 
 **Wejścia drużyny:** A — drogą z południa (osłona: wyrwane skrzydło wrót) — **Rusty** (szlak ze wschodu przez równinę zakręca na drogę); B — polem od wschodu (boczne drzwi) albo C — od zachodu przez ruiny (wyrwa w ścianie) — **Uriel**, zależnie od tego, skąd przyszedł. Kolejność wejść ustal rzutem albo dramaturgią.
 
 **Foundry:** ściany blokują ruch i widok; wrota, boczne drzwi, wyrwa i właz jako drzwi. Wnętrze ciemne, jedno szare światło pod dziurą w dachu, na zewnątrz dzień. Strych jako region z notatką „10 stóp, wejście po drabinie”.
+
+::: side hint Mrówki
+Kolonię sprowokował tunel Stajni — da się ją odstraszyć bez wybijania. Rick, technik, może zauważyć, że tunel przebił ich korytarze.
+:::
 
 ### Przeciwnicy i ich role
 
@@ -65,9 +72,9 @@ Inicjatywa grupowa: radroache jedna grupa, mrówki druga, bloatsprite osobno. Po
 
 | Rundy | Co się dzieje | Wejścia drużyny |
 |---|---|---|
-| 1–2 · pułapka | Po odlocie Watchera siano szeleści. 2 radroache wychodzą z siana na samego dwellera. Właz się zacina — dweller nie ucieknie tunelem. Może walczyć, wspiąć się na strych, schować za wozem, odpalić SATS. | — |
+| 1–2 · pułapka | Po odlocie Watchera siano szeleści. 2 radroache wychodzą z siana na samego Ricka. Właz się zacina — Rick nie ucieknie tunelem. Może walczyć, wspiąć się na strych, schować za wozem, odpalić SATS. | — |
 | 2–4 · mrówki | Hałas budzi kolonię pod zapadniętą podłogą: najpierw 2 robotnice, potem żołnierz. | runda 2: pierwsza postać z zewnątrz |
-| 4–6 · kulminacja | Młody bloatsprite wlatuje przez dziurę w dachu, zwabiony zapasami jedzenia dwellera. Gdy żołnierz padnie albo zostanie odpędzony, kolonia się wycofuje. | runda 3–4: druga postać |
+| 4–6 · kulminacja | Młody bloatsprite wlatuje przez dziurę w dachu, zwabiony zapasami jedzenia Ricka. Gdy żołnierz padnie albo zostanie odpędzony, kolonia się wycofuje. | runda 3–4: druga postać |
 
 ::: read Czytaj na głos
 Coś szeleści w sianie. Coś, co ma więcej nóg niż cokolwiek, co widziałeś w życiu. W Ogrodach nie było ani jednego owada — zapylały pegazy i pędzelki. To, co wyłazi spod zbutwiałego siana, ma rozmiar kota, lśniący brązowy pancerz i czułki, które drgają w twoją stronę.
@@ -76,7 +83,7 @@ Coś szeleści w sianie. Coś, co ma więcej nóg niż cokolwiek, co widziałeś
 ::: note
 **Notka MG.**
 
-- **Potrzask bez bezradności.** Dweller nie może kilka rund tylko rzucać na obronę. Daj mu konkretne opcje: zatrzasnąć i przytrzymać właz, wspiąć się na strych, odciągnąć uwagę, rzucić jedzenie bloatsprite'owi.
+- **Potrzask bez bezradności.** Rick nie może kilka rund tylko rzucać na obronę. Daj mu konkretne opcje: zatrzasnąć i przytrzymać właz, wspiąć się na strych, odciągnąć uwagę, rzucić jedzenie bloatsprite'owi.
 - **Wejście każdego obcego to jego moment.** Jedno zdanie opisu, pierwsza akcja z bonusem zaskoczenia albo dobrą pozycją. Uriel: odepchnięcie telekinezą (Aard) albo miecz. Rusty: zasada 5 — „jak nie wiem, to nie strzelam”: na kogo celuje w półmroku?
 - **Wyjście bez zabijania.** Pacyfista może przekonać resztę, żeby odpędzić mrówki zamiast je wybić. Zapamiętaj, kto co zrobił.
 - **Kopiec przy wylocie tunelu** to zaczepka na później: mrówki mogą kiedyś pójść tunelem do Stajni.
@@ -85,19 +92,23 @@ Coś szeleści w sianie. Coś, co ma więcej nóg niż cokolwiek, co widziałeś
 
 ## Scena 3. Po walce: pierwsze spotkanie
 
-Dweller widzi obcych pierwszy raz w życiu i konfrontuje ich z tym, czego uczyły materiały edukacyjne (okrojona wiedza o pustkowiach, Aneks C o „innych rasach”). Obcy przyszli za sygnałem, a dweller jest drogą do jego źródła. Każdy ma powód, żeby ten drugi przeżył.
+Rick widzi obcych pierwszy raz w życiu i konfrontuje ich z tym, czego uczyły materiały edukacyjne (okrojona wiedza o pustkowiach, Aneks C o „innych rasach”). Obcy przyszli za sygnałem, a Rick jest drogą do jego źródła. Każdy ma powód, żeby ten drugi przeżył.
 
 ::: note
 **Notka MG.**
 
 - Daj scenie oddychać: kto opatruje, kto pierwszy się przedstawia, kto trzyma broń w pogotowiu.
-- Uriel — jednorożec w barwach Szponu, z krótkim rogiem — i Rusty z gwiazdą „Z upoważnienia Korony” to dla dwellera żywe rozdziały podręcznika. Niech gracz sam zdecyduje, czy wierzy materiałom.
-- Uriel może chcieć zapłaty za „zlecenie na stwory” — od kogo? Rusty może zapytać dwellera o prawo Stajni. Dweller wie, że ma meldować się na kanale trzecim co godzinę — i że ma za chwilę meldunek.
+- Uriel — jednorożec w barwach Szponu, z krótkim rogiem — i Rusty z gwiazdą „Z upoważnienia Korony” to dla Ricka żywe rozdziały podręcznika. Niech gracz sam zdecyduje, czy wierzy materiałom.
+- Uriel może chcieć zapłaty za „zlecenie na stwory” — od kogo? Rusty może zapytać Ricka o prawo Stajni. Rick wie, że ma meldować się na kanale trzecim co godzinę — i że ma za chwilę meldunek.
+:::
+
+::: side secret Burr to Sheaf
+Złapany zwiadowca to dawny sąsiad Rusty'ego z Cichych Brodów. Rusty najpierw zobaczy **serce dzwonka** na rzemieniu, potem **łan pszenicy** spod zdrapanej ochry (rzut na Spostrzegawczość: ten dźwięk zna). Zasada 1 kontra zasada 3 — jego scena.
 :::
 
 ## Scena 4. Zegar: zwiadowcy gangu
 
-Ktoś zauważa dwóch obserwatorów na skraju farmy (rzut na Percepcję; przy porażce zauważa ich ten, kto ma najlepszą pozycję). To zwiadowcy gangu Kantar, który też odebrał sygnał. Dweller musi ostrzec Stajnię i zabiera obcych tunelem do środka, łamiąc rozkazy zwiadu.
+Ktoś zauważa dwóch obserwatorów na skraju farmy (rzut na Percepcję; przy porażce zauważa ich ten, kto ma najlepszą pozycję). To zwiadowcy gangu Kantar, który też odebrał sygnał. Rick musi ostrzec Stajnię i zabiera obcych tunelem do środka, łamiąc rozkazy zwiadu.
 
 ::: read Czytaj na głos
 Na grzbiecie za silosem, tam gdzie kończą się martwe drzewa, coś błyska. Szkło. Lornetka. Dwie sylwetki leżą płasko w trawie i patrzą prosto na stodołę. Kiedy orientują się, że zostały zauważone, jedna odczołguje się w tył. Druga nie spieszy się wcale.
@@ -107,8 +118,7 @@ Na grzbiecie za silosem, tam gdzie kończą się martwe drzewa, coś błyska. Sz
 **Notka MG.**
 
 - Gracze mogą ruszyć w pościg. Złapany zwiadowca (najlepiej **Burr**) wie mało, ale wygada, że „szef ma klienta”. Ucieknie przynajmniej jeden — gang i tak musi przyjść.
-- **Rusty i Burr:** jeśli złapią Burra, Rusty najpierw zobaczy serce dzwonka na rzemieniu, potem łan pszenicy spod zdrapanej ochry (rzut na Spostrzegawczość: ten dźwięk zna). Zasada 1 („każdy dostaje słowo przed kulą”) kontra zasada 3 („łowca niewolników bez drugiej szansy”) — przesłuchanie dawnego sąsiada to jego scena. Szczegóły w sesji zero Rusty'ego.
-- Meldunek na kanale trzecim: inżynier w panice przekazuje Lily Pad. Odpowiedź: „Wracaj natychmiast. Sam.” Dweller decyduje, czy przyprowadza obcych.
+- Meldunek na kanale trzecim: inżynier w panice przekazuje Lily Pad. Odpowiedź: „Wracaj natychmiast. Sam.” Rick decyduje, czy przyprowadza obcych.
 - Droga tunelem to dobry moment na rozmowę bez walki i na pierwszy wspólny plan.
 :::
 
@@ -122,15 +132,27 @@ Wrota stoją otworem, tak jak zostawił je protokół. Za nimi, w żółtym świ
 „Witamy w Ogrodach — mówi kucyk z podkładką, i słychać, że to zdanie wyćwiczył. — W Stajni 97 nie wnosimy broni. Każda rzecz dostanie numerek. Oddamy wszystko, kiedy będziecie wychodzić.”
 :::
 
+::: side secret Przejęzyczenie
+„Nie wszyscy, którzy złamali nasz pokój, zniknęli” — Winter Rye mówi o 24 uśpionych. Rick mógł to słyszeć w stołówce.
+:::
+
+::: side secret Pytanie o plan
+Jeśli obcy pytają o plan Stajni: poziom 6 „to magazyn”. Runner Bean wzrusza ramionami. Krata się nie otwiera.
+:::
+
 Na posiedzeniu Kręgu:
 
-- **Lily Pad:** uprzejma, zmęczona, chce wiedzieć, kto ich przysłał i czego chcą. Dziękuje za uratowanie dwellera.
+- **Lily Pad:** uprzejma, zmęczona, chce wiedzieć, kto ich przysłał i czego chcą. Dziękuje za uratowanie Ricka.
 - **Winter Rye:** głośno przeciw obcym. „Protokół to nie wyrok, tylko wymówka. Zamknijmy drzwi.” W złości przejęzycza się: „Nie wszyscy, którzy złamali nasz pokój, zniknęli. Nie zapraszajmy reszty z zewnątrz.” Potem milknie.
-- **Frozen Seed:** pyta obcych wprost, czego chcą od Skarbca. Pamięta odpowiedź. Rusty może zapytać o kodeks — Frozen Seed trzyma archiwum (art. 14).
+- **Frozen Seed:** pyta obcych wprost, czego chcą od Skarbca. Pamięta odpowiedź.
 - **Runner Bean:** podsłuchuje pod drzwiami, potem łazi za obcymi.
 
+::: side player Broń przy Wrotach
+**Rusty**: „W Stajni uszanuję” — sprawdź, czy dotrzyma. Zapyta o kodeks: Frozen Seed trzyma archiwum (art. 14, wersja B). **Uriel**: oddaje miecz wydarty Guntherowi kucykowi z podkładką? **Rick**: zna tych z Ochrony po imieniu.
+:::
+
 ::: note
-**Notka MG.** Krąg działa przez konsensus, więc nie podejmie decyzji szybko — to działa na twoją korzyść. Gracze, którzy odmówią złożenia broni, nie wchodzą dalej niż poziom 0 i czekają przy Wrotach. Wtedy szturm zaczyna się przy nich, a szafka jest dla innych. **Rusty** odpowiedział w zeszycie: „W Stajni uszanuję” — sprawdź, czy dotrzyma. **Uriel** składa miecz, który być może wydarł Guntherowi — czy odda go kucykom z podkładką?
+**Notka MG.** Krąg działa przez konsensus, więc nie podejmie decyzji szybko — to działa na twoją korzyść. Gracze, którzy odmówią złożenia broni, nie wchodzą dalej niż poziom 0 i czekają przy Wrotach. Wtedy szturm zaczyna się przy nich, a szafka jest dla innych. 
 :::
 
 ## Scena 6. Cliffhanger

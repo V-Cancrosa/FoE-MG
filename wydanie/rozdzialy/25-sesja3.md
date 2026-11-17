@@ -2,10 +2,26 @@
 tytul: Sesja 3 (opcjonalna): Wyjście
 podtytul: Bufor, nie zaplanowana treść. Pierwsze sesje w nowym systemie zawsze się przeciągają.
 stopka: Sesja 3 · ściągi
+marginesy: tak
 ---
 - **Jako bufor:** dokończ szturm, skutki i warunek Kręgu.
 - **Jako epilog:** pierwszy dzień eskorty osadników. Moss pierwszy raz pod szarym niebem. Wybór miejsca na nowy ogród. Ślady wozu Kantaru prowadzą w jedną stronę, nowy ogród — w drugą.
 - **Most do kampanii:** drużyna dostaje pierwsze propozycje od frakcji, które kłócą się z warunkiem Kręgu.
+
+## Co dalej, jeśli gracze chcą grać dalej
+
+::: side later
+Wszystko poniżej to kierunek. Gracze prowadzą tę historię razem z tobą.
+:::
+
+- **Akt 1 w pełnej wersji:** sabotaż w cieniu (tajne rozkazy frakcji), eskalacja (atak albo zatrucie wody, za które każda frakcja obwinia inną), ultimatum na granicy wartości postaci. Zerwanie z frakcjami wynika z wyborów graczy.
+- **Akt 2:** nowa „organizacja” w postaci ogrodu-osady drużyny i budzący się uśpieni.
+- **Osadnicy** mają realną wartość — leczą, budują, karmią — i się zmieniają, żeby uniknąć syndromu misji eskortowej.
+- **Wątki postaci:** Gunther, który „czeka” (Uriel); znak trzech kresek i koła, zaginieni z Cichych Brodów, art. 14 (Rusty); przodkowie Ricka i to, co buczy na poziomie 6.
+
+::: side todo
+Miejsce nowej osady; punkt na osi czasu Horizons; przysięga Steel Rangers i ścieżka zebr — tylko jeśli ktoś je wybierze.
+:::
 
 ## Ściąga tempa
 

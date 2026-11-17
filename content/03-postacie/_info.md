@@ -2,4 +2,4 @@
 title: Postacie
 okres: drużyna
 ---
-Postacie graczy: karty, portrety, znaczki i ich osobiste materiały.
+Uriel (zychu), Rick Scrapper (Tymek) i Rusty Spur (Erwin): karty, portrety, znaczki i osobiste materiały.

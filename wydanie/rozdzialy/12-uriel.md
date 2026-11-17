@@ -1,9 +1,13 @@
 ---
 tytul: Sesja 0: Uriel
+kicker: Sesja zero · 1 z 3 · przeszłość
+marginesy: tak
 podtytul: Gracz: zychu · środa 18.11 · Księga Długu: Gunther czyta swoją księgę rachunkową, a każdy wpis otwiera retrospekcję i jeden krok tworzenia postaci. Wiedźmin jest posypką, rdzeniem jest Fallout: kapsle, dług i kontrakt.
 stopka: Sesja 0: Uriel
 ---
-{{img: 03-postacie/Uriel/Uriel Portret.png | Uriel | portrait}}
+::: side fig
+{{img: 03-postacie/Uriel/Uriel Portret.png | Uriel}}
+:::
 
 ## Zasady prowadzenia
 
@@ -47,6 +51,15 @@ Pytania zadawaj z perspektywy postaci: „Co Uriel pamięta z…?”, „Jak to 
 
 ## Obsada i miejsca
 
+::: side todo
+Brannok, Kestrel i **dwa pozostałe gniazda** Iron Claw — nazwać przed punktem 5.
+:::
+
+::: side later
+Gunther liczy w księdze jak **Tally Mark** liczy „towar”. Zychu może to rozpoznać przy pertraktacjach.
+→ wraca: one-shot, sesja 2, ruch 1
+:::
+
 | Kto / co | Opis |
 |---|---|
 | Gunther | Gryf, właściciel Uriela. Metalowa proteza jednego szponu (nigdy nie wyjaśnia skąd). Pisze księgę jak księgowy. |
@@ -71,6 +84,15 @@ Pytania zadawaj z perspektywy postaci: „Co Uriel pamięta z…?”, „Jak to 
 ## 1. „Należność odebrana”: rasa
 
 *Cel:* rasa i ton relacji z Guntherem od pierwszych minut.
+
+::: side secret Pochodzenie Uriela
+**Prawda:** matka jednorożec, formalny ojciec pegaz z EVC uciekający od Enklawy. Iron Claw wynajęto do ucieczki; zapłata to Prawo Niespodzianki (poz. 112). Ciąże się nie udawały, Gunther zabrał ich do zebrzej szamanki. Uriel **wyklął się z jaja** z jej mikstury — „odbiór przy wykluciu” to dosłowna prawda.
+**Wersja Uriela** (Księga Szponu): klacz poroniła, szamanka „zrobiła dziecko” z krwi albo sierści matki. Nie prostuj.
+:::
+
+::: side hint Jeśli zychu wyłapie za wcześnie
+Zamień na „odbiór po porodzie”. Przekreślony „Koszt własny” to proteza; zapytany Gunther: „Nie twoja sprawa”.
+:::
 
 ::: ledger Wpis otwierający
 **KSIĘGA SZPONU IRON CLAW. RACHUNEK GUNTHERA.**
@@ -108,7 +130,6 @@ Rasa: jednorożec. Premia rasowa +1 do Percepcji, Inteligencji albo Szczęścia:
 Uwagi: Nie płacze. [Patrzy / Uczy się / Przeżywa].
 :::
 
-**Dla MG.** „Odbiór przy wykluciu” brzmi jak gryfie słownictwo, a jest dosłowną prawdą o jaju. Jeśli boisz się, że zychu wyłapie to za wcześnie, zamień na „odbiór po porodzie”. Przekreślony „Koszt własny” to proteza; zapytany Gunther odpowiada: „Nie twoja sprawa”.
 
 ## 2. S.P.E.C.I.A.L.: cztery sceny
 
@@ -265,13 +286,18 @@ Wilki z drewna i mchu podchodzą nocą pod zagrody. Farmer płaci za trzy łby. 
 Rano na twoim boku jest znak: trójkąt w wirach wiatru. Gunther ogląda go jak zepsuty sprzęt. „Kucyki mówią, że to pokazuje, do czego jesteś”. Pauza. „Ja ci mówię, do czego jesteś”.
 :::
 
-{{img: 03-postacie/Uriel/Znaczek Uriel.png | Znaczek Uriela: trójkąt w wirach wiatru | portrait}}
+::: side fig
+{{img: 03-postacie/Uriel/Znaczek Uriel.png | Znaczek Uriela: trójkąt w wirach wiatru}}
+:::
 
 ::: ledger Wpis zamykający
 Crabgrass: wykonane. [Straty: — / rany psa: __]. Uwagi: znak na boku.
 :::
 
-Tu rodzi się zasada „celem nie jest źrebak”. Nie mów tego zychowi; sam to połączy.
+::: side later
+Zasada „celem nie jest źrebak” rodzi się tutaj. Nie mów tego zychowi; sam to połączy.
+→ wraca: one-shot, szturm (Pea i Pod przy Wrotach)
+:::
 
 ### Scena nocna: premia rasowa (+3 ×3)
 
@@ -283,7 +309,9 @@ Zychu wybiera trzy z pięciu i jednym zdaniem mówi, czego uczył się po nocach
 
 <div class="clear"></div>
 
-**Dla MG.** Melee, Small Guns i Magic jako trzy umiejętności wiodące dają mocną postać bojową bez umiejętności terenowej: tropienie i trucizny z jego tekstu zostaną na poziomie bazowym. Pokaż mu to przed trzecim wyborem. Statystyki drzewnych wilków: bestiariusz od s. 490 albo improwizacja (stwór wielkości kucyka, około 10 obrażeń na ranę).
+::: side hint Przed trzecim wyborem
+Melee, Small Guns i Magic jako trzy umiejętności wiodące dają mocną postać bojową bez umiejętności terenowej: tropienie i trucizny z jego tekstu zostaną na poziomie bazowym. Pokaż mu to przed trzecim wyborem. Statystyki drzewnych wilków: bestiariusz od s. 490 albo improwizacja (stwór wielkości kucyka, około 10 obrażeń na ranę).
+:::
 
 ## 4. „Koszty szkolenia”: przeszkody
 
@@ -330,7 +358,9 @@ Po długiej chwili: „Pies z zasadami. Zapiszę to w kosztach”.
 [Róg: krótki, wystarczy.] [Odruchy: wyrobione / Odruchy: krnąbrne.] [Nieposłuszeństwo: 1 raz.]
 :::
 
-**Dla MG.** Slave to najcięższa opcja: gracz na chwilę traci kontrolę nad postacią. Prideful jest łatwiejsze w graniu i pasuje do kogoś, kto sam odszedł; Slave daje więcej dramatu przy powrocie Gunthera. Pokaż obie, nie wybieraj za niego. Nie dokładaj więcej przeszkód: razem z Enemy cztery to górna granica.
+::: side hint Slave czy Prideful
+Slave to najcięższa opcja: gracz na chwilę traci kontrolę nad postacią. Prideful jest łatwiejsze w graniu i pasuje do kogoś, kto sam odszedł; Slave daje więcej dramatu przy powrocie Gunthera. Pokaż obie, nie wybieraj za niego. Nie dokładaj więcej przeszkód: razem z Enemy cztery to górna granica.
+:::
 
 ## 5. „Dług niespłacony”: cechy, ekwipunek, walka
 
@@ -342,6 +372,10 @@ Zlecenie: Mudwater. Porządki, zaległy haracz.
 
 ::: read
 Osada wygląda tak, jak ją zapamiętałeś. Ten sam kucyk, którego wyciągnąłeś z piwnicy, stoi przy studni i patrzy na ciebie. Nikt nie sięga po broń. Nikt nawet nie ucieka. Gunther ląduje na dachu stodoły. „Spichlerz. Potem dom sołtysa. Ty pierwszy”.
+:::
+
+::: side todo
+Co naprawdę stało się z **Mudwater** po odejściu Uriela — ustal dla siebie, nie na sesji.
 :::
 
 Uriel nie wykonuje rozkazu. Bez przemowy odwraca się i odchodzi, przekonany, że niezauważony. Tak, jak napisał zychu. Co stało się potem z Mudwater, Uriel nie wie: nie rozstrzygaj tego na sesji zero, ale zapisz sobie prawdę.
@@ -378,6 +412,10 @@ Miecz: [odzyskany / utracony]. Rewolwer: [odzyskany / utracony].
 Gunther: [bez strat / rana, ___].
 :::
 
+::: side later
+„Pies zawsze wraca”. Gunther (Enemy) wróci w kampanii; rana ze stawki ma być widoczna. Kiedy i jak — zależy od zycha.
+:::
+
 #### Dezerter czy strata
 
 Uriel nazywa siebie dezerterem, bo przejął etos Szponu: to słowo z kodeksu, w którym go wychowano. Żaden gryf tak go nie nazwie, bo dezerterem może być tylko Szpon. W księdze jest stratą, której Gunther nie spisał ze stanu: wciąż liczy go jako swojego. Nie poprawiaj zycha. Jego wersja to prawda z perspektywy postaci i jedyne miejsce, w którym Uriel uważa się za jednego z nich.
@@ -393,14 +431,16 @@ Do wydania: punkty z przeszkód (punkt 4), punkt z Enemy i ewentualne resztki z 
 | Named Weapon | Bez Mercenary tylko raz; z Mercenary do trzech. Miecz za darmo (stawka), rewolwer za 1 punkt. |
 | Omnivore | Mięso w misce z punktu 1. Może jeść mięso, +3 do Survival. |
 
-**Dla MG.** Walka ma być krótka: pięć rund to górna granica, przy złych rzutach skończ wcześniej. Nie dawaj stawek za darmo. Linijkę „na rachunek psa” przeczytaj, ale nie komentuj; jeśli zychu zapyta, co znaczy, Gunther już odleciał.
+::: side hint Walka z Guntherem
+Walka ma być krótka: pięć rund to górna granica, przy złych rzutach skończ wcześniej. Nie dawaj stawek za darmo. Linijkę „na rachunek psa” przeczytaj, ale nie komentuj; jeśli zychu zapyta, co znaczy, Gunther już odleciał.
+:::
 
 ## 6. Pierwsza minuta
 
 Bez wpisu w księdze. Pierwszy raz od dziecka nikt nie rozlicza Uriela.
 
 1. **Pytanie do zycha:** co Uriel robi w pierwszej minucie samotności? Nie podpowiadaj. Ta odpowiedź powie o postaci więcej niż cała karta.
-2. **Przeskok:** tablica zleceń w osadzie, kilka tygodni później. Ogłoszenie o stworach w starej stodole przy farmie. Uriel bierze je jako pierwsze zlecenie na własny rachunek i płynnie przechodzi do jednostrzału (scena 1, „Sygnał”).
+2. **Przeskok:** tablica zleceń w osadzie, kilka tygodni później. Ogłoszenie o stworach w starej stodole przy farmie. Uriel bierze je jako pierwsze zlecenie na własny rachunek i płynnie przechodzi do jednostrzału (scena 1, „Sygnał”). Ogłoszenie o stworach w stodole to jego powód, żeby tam być.
 
 ## Ryzyka całej sesji
 
@@ -409,10 +449,6 @@ Bez wpisu w księdze. Pierwszy raz od dziecka nikt nie rozlicza Uriela.
 - **Wpisy przesądzające wynik:** wszystko, co zależy od wyboru albo kości, idzie do wpisu zamykającego.
 - **Tajemnica:** blizna Uriela pochodzi z poczęcia; w sesji zero najwyżej raz zapiecze. Jajo, szamanka i rodzice zostają poza sesją.
 
-::: secret Sekret MG · pochodzenie Uriela
-**Prawda (z notatek MG):** matka — jednorożec; formalny ojciec — pegaz z EVC uciekający od Enklawy. Szpon Iron Claw wynajęto do ucieczki, a zapłatą było Prawo Niespodzianki (pozycja 112). Ciąże kończyły się niepowodzeniem; Gunther zabrał ich do zebrzej szamanki. Uriel wyklął się z jaja z jej mikstury („odbiór przy wykluciu”), a rodzice oddali go uczciwie — dług spłacony. Stąd krótki róg (Stubby Little Horn, „rodzice z różnych ras”) i ziarno hybrydy.
-
-**Wersja Uriela (Księga Szponu):** ojciec obiecał gryfowi „to, czego nie spodziewał się zastać w domu”; klacz poroniła, matka oddała krew albo sierść, a zebrza szamanka zrobiła z tego dziecko. Na sesji zero nie potwierdzaj szczegółów (jajo, szamanka, rodzice).
-
-**Kampania, tylko za zgodą zycha:** możliwa hybryda gryfa i jednorożca. Proteza szponu Gunthera zostaje niewyjaśniona.
+::: side later
+Hybryda gryfa i jednorożca — tylko w kampanii i tylko za zgodą zycha. Proteza szponu Gunthera zostaje niewyjaśniona.
 :::
