@@ -405,8 +405,8 @@ Slave to najcięższa opcja: gracz na chwilę traci kontrolę nad postacią. Pri
 
 ## 5. „Dług niespłacony”: cechy, ekwipunek, walka
 
-::: side todo Mudwater — do przepisania
-Zagrane skrótowo pod presją czasu: wejście, obrót na pięcie, wyjście. MG przepisze tę część. Co stało się z Mudwater po odejściu Uriela — wciąż otwarte.
+::: side later Mudwater · wisi
+Zagrane skrótowo: wejście, odmowa, wyjście — miała to być tylko próba zasad Uriela (robota bez wiedzy, co ma zrobić; atak na niewinnych), nie walka. Los osady **nierozstrzygnięty i bez pośpiechu**: spalona, splądrowana, wyrżnięta — albo Szpon ten jeden raz przeczytał kontrakt „w granicach umowy”: kamień na kamieniu, ale kucyki nietknięte, straciły tylko stare budy. Szyj słowem, gdy gracze tam trafią, albo nie wracaj wcale.
 :::
 
 ::: side todo Katana
