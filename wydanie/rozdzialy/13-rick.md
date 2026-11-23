@@ -27,9 +27,10 @@ To, co zagrane, jest kanonem. Sceny niezagrane (niżej oznaczone) nie wydarzyły
 
 | | |
 |---|---|
-| **Rasa** | kucyk ziemski, +1 STR i +1 INT; **Strong Back**; +5 Repair i (prawdopodobnie) Science — Survival cofnięty przez Stable Dweller |
+| **Rasa** | kucyk ziemski, +1 STR i +1 INT; **Strong Back**; +5 Repair i Science |
 | **Atrybuty** | silny (trzy krzesła zamiast dwóch), przeciętna percepcja, niższa charyzma; MG rozważał niską Zwinność |
-| **Wady i cechy** | Stable Dweller; **Good Natured** pewne; reszta według karty |
+| **Wady i cechy** | wady: Scavenger, Good Natured, Studious · cechy: Brave, Foal at Heart, Specialization (**Sneak**), Clear Conscience · **Stable Dweller za darmo** (decyzja MG) · perk Strong Back |
+| **Atrybuty (karta)** | S 7 · P 5 · E 5 · C 3 · I 6 · A 4 · L 7 · tagi: Repair, Science, Sneak |
 | **Znaczek** | klucz i śruba z błyskawicą — naprawił zepsute urządzenie technika (przerwane kable), które jednorożec **Seidz** spisał na straty |
 | **Przydział** | poziomy techniczne. Samotnik i majsterkowicz (jury-rigging) |
 | **Rodzina** | mama i tata, bez rodzeństwa. Ojciec dał mu szczepkę rodzinnej roślinki (od pradziadka): „Nie masz tu przyjaciół, może tam kogoś znajdziesz” |
@@ -39,12 +40,12 @@ To, co zagrane, jest kanonem. Sceny niezagrane (niżej oznaczone) nie wydarzyły
 | **Wyposażenie** | kombinezon Ogrodów, **PipBuck 3000**, klucz 10/13, taśma, młotek, elektronika, długi pręt, racje, mikstura lecznicza; **jabłko z kolacji schowane** na powierzchnię; szczepka od ojca; koperta od Frozen Seed (przyniosła ją **Willow Bark przy Wrotach**) |
 {: .plain}
 
-::: side todo Z karty
-Drugi bonus rasowy +5 (Science?) i pełna lista wad i cech — potwierdzić na karcie w Foundry.
+::: side player Kapsle
+Stajnia nie zna kapsli — ostatnio płaciło się tam bitami. Rick wychodzi z **0 kapsli** i garścią przedwojennych bitów; 300 z zasad to wartość przydziału z magazynu.
 :::
 
 ::: side player W systemie
-Jumpsuit, Utility (Stable) · Pipbuck 3000 · Wrench · Duct Tape · Hammer · Scrap Electronics · Lead Pipe (długi pręt — improwizowana broń, 3d8+STR) · Healing Potion · Fresh Apple · Fresh Seeds (koperta).
+Jumpsuit, Utility (Stable) · Pipbuck 3000 · Wrench · Duct Tape · Hammer · Scrap Electronics · Lead Pipe (długi pręt — improwizowana broń, 3d8+STR) · InstaMash ×3 · Healing Potion · Fresh Apple · Fresh Seeds (koperta).
 :::
 
 ::: side secret Niezagrane

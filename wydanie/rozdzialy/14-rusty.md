@@ -48,7 +48,7 @@ Odpowiedzi Nikodema z zeszytu „Spisane Prawo” (pełny zeszyt w dodatkach).
 | Wyposażenie | Łatany płaszcz przeciwpyłowy (jeszcze z czasów gońca), hełm z maską kupiony od karawany ze zużytymi filtrami, bandaże na oparzeniach od grzebania w popiołach, dzwonek przy siodle, gwiazda, torby gońca, manierka, zeszyt, list gończy, mikstura lecznicza. |
 
 ::: side todo Przed 24.11
-**Broń** — w zeszycie jej nie ma. Zapytaj Nikodema, czym strzela i skąd to ma.
+**Broń** — w zeszycie jej nie ma. Propozycja: **.357 Magnum Revolver** + 24 naboje (mieści się w 300 kapslach). Potwierdź z Nikodemem.
 :::
 
 ::: side todo
@@ -283,7 +283,7 @@ Cechy: najwyżej dwie na start, jedna za 1 pkt jest darmowa dla ziemnego.
 | Manierka | Canteen (s. 218): 4 jednostki wody, czyli zapas na dzień | Ta ze znaczka? Zapytaj. |
 | Mikstura lecznicza | Healing Potion (s. 179–180) | Jedna. |
 | Dzwonek, gwiazda, zeszyt, list | przedmioty fabularne | Bez wagi mechanicznej. |
-| Broń | brak w zeszycie | Ustal przed sesją. |
+| Broń | **.357 Magnum Revolver**: 4d8, ×2, mag. 6, 110 kapsli + 24 naboje (48) | Propozycja; alternatywy: .32 Hunting Rifle (150), Single Shotgun (175). Całość z zeszytu + rewolwer = 291 z 300 kapsli. |
 
 ::: side later
 Nowe filtry do maski — dobra nagroda w Stajni (Rick jest technikiem!).

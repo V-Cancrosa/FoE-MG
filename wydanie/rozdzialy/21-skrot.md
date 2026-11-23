@@ -44,14 +44,46 @@ Szerszy Akt 1 (eskorta, intryga, ultimatum) i Akt 2 gramy tylko, jeśli gracze c
 
 ## Z czym przychodzą
 
-Zasada: każdy zaczyna z wyposażeniem, jakie powinien mieć ktoś taki jak on.
+Zasada: każdy zaczyna z wyposażeniem, jakie powinien mieć ktoś taki jak on. Nazwy jak w katalogu systemu w Foundry.
 
-| Postać | Kim jest | Wyposażenie na start |
+#### Uriel — najemnik Żelaznego Szponu
+
+| Skąd | Przedmiot | Parametry |
 |---|---|---|
-| Uriel | jednorożec, najemnik Żelaznego Szponu | **katana jako Named Weapon** — dopracowana w przeskoku między ucieczką a stodołą, gdy leczy rany i zarabia na przeżycie; wtedy też obkupuje się w to, czego nie zabrał z Igły (Organization: Mercenary: pancerz, nóż bojowy; torby, mikstura). Bez rewolweru — został u Gunthera. |
-| Rick | kucyk ziemski prosto ze Stajni | Stable Dweller: PipBuck 3000, kombinezon Ogrodów; z magazynu klucz 10/13, taśma, młotek, elektronika, długi pręt, racje, mikstura; jabłko, szczepka, koperta z nasionami. |
-| Rusty | kucyk ziemski, wędrowiec pustkowi | sprzęt z zeszytu w ramach 300 kapsli (duster, hełm z maską, torby gońca, manierka, mikstura, gwiazda); broń ustalona na sesji 24.11. |
-{: .plain}
+| stawka z Gunthera | **Katana — Named Weapon** (dopracowana w przeskoku przed stodołą) | 4d8+STR, ×2, SATS 20 + 5 pkt ulepszeń |
+| Organization: Mercenary | **Equestrian Combat Barding** | DT 22, tułów, waga 25 |
+| Organization: Mercenary | **Combat Knife** | 3d6+STR, ×3, SATS 15 |
+| Organization: Mercenary | **9mm Pistol** albo **FS-4 10mm Pistol** (zwykła, nie nazwana) | 4d6; mag. 13 / 12 |
+| 300 kapsli (zarobione po opatrunku) | 30 naboi 9mm/10mm (30), **Frag Grenade ×2** (80), Saddlebags/Backpack (25), Healing Potion ×2 (50), Talon Combat Helmet (40) | razem 225, zostaje **75** |
+
+Bez rewolweru — został u Gunthera. Explosives: granaty i rzucanie przedmiotami telekinezą (zasada „Rock”: 1d4 na każde 5 wagi + STR).
+
+#### Rick Scrapper — prosto ze Stajni
+
+| Skąd | Przedmiot | Uwagi |
+|---|---|---|
+| Stable Dweller (**za darmo, decyzja MG**) | **Pipbuck 3000**, **Jumpsuit, Utility (Stable)** | DT 0, +5 Repair, +5 Lockpicking |
+| przydział z magazynu | Wrench, Duct Tape, Hammer, Scrap Electronics, Lead Pipe (długi pręt, 3d8+STR), InstaMash ×3 (racje), Healing Potion | wartość 139; reszta budżetu niewydana albo jako dodatkowy przydział |
+| prezenty z sesji zero | Fresh Apple (jabłko z kolacji), Fresh Seeds (koperta od Frozen Seed przez Willow Bark), szczepka rodzinnej roślinki | fabularne |
+| kieszeń | **0 kapsli**; garść przedwojennych **bitów** | na pustkowiach ciekawostka; kolekcjoner albo stary ghul coś za nie da, handlarz pozna świeżaka |
+
+Specialization: **Sneak** (+15 w oknie rzutu). Good Natured: −10 do walki — w swojej chwili walki niech błyszczy siłą (S 7) i techniką, nie prętem.
+
+#### Rusty Spur — wędrowiec pustkowi
+
+| Przedmiot | Kapsle |
+|---|---|
+| Armored Duster (DT 6, +5 Small Guns) | 70 |
+| Filtration Helmet (DT 9, maska; zużyte filtry — zasada domowa) | 8 |
+| Saddlebags/Backpack (torby gońca) | 25 |
+| Canteen | 3 |
+| Healing Potion | 25 |
+| Sheriff's Badge (gwiazda) | 2 |
+| **.357 Magnum Revolver** (4d8, ×2, 6 naboi) | 110 |
+| 24 naboje .357 | 48 |
+| **Razem z 300** | **291 → zostaje 9** |
+
+Fabularne: dzwonek bez serca, zeszyt „Spisane Prawo”, list gończy Knota. Na sesji dochodzą już tylko drobiazgi. Gdyby Erwin wolał inną broń: .32 Hunting Rifle (150) albo Single Shotgun (175), z mniejszym zapasem amunicji.
 
 ## Jak czytać tę część
 

@@ -23,7 +23,8 @@ To, co zagrane, jest kanonem. Wątki niezagrane wiszą i mogą wrócić, o ile �
 | **Wady** | Scavenger, Scarred (−10 do rzutów CHA, +15 Speechcraft przy zastraszaniu), Code of Honor |
 | **Cechy** | Omnivore (+3 Survival), Organization: Mercenary — Żelazny Szpon (2 pkt) |
 | **Nie wziął** | Slave ani Prideful („tak po prostu jest”), Stubby Little Horn, Enemy, Named Weapon |
-| **Broń** | **katana** wydarta Guntherowi (stawka); **rewolwer został u Gunthera** |
+| **Broń** | **katana** wydarta Guntherowi (stawka) → Named Weapon w przeskoku; **rewolwer został u Gunthera** |
+| **Wyposażenie startowe** | Mercenary: Equestrian Combat Barding, Combat Knife, pistolet 9mm/10mm; z 300 kapsli: amunicja, 2 granaty, torby, 2 mikstury, hełm Talonów — szczegóły w one-shocie, „Z czym przychodzą” |
 | **Rany** | 2 rany przedniej lewej nogi po drzewnych wilkach; opatrzony w osadzie (zapłacił wszystkim, co miał) |
 | **Księga** | „Pozycja 112: strata. Nie spisano ze stanu. Miecz: odzyskany. Rewolwer: utracony. Gunther: bez strat.” |
 {: .plain}
@@ -426,10 +427,6 @@ Zlecenie: Mudwater. Porządki, zaległy haracz.
 
 ::: read
 Osada wygląda tak, jak ją zapamiętałeś. Ten sam kucyk, którego wyciągnąłeś z piwnicy, stoi przy studni i patrzy na ciebie. Nikt nie sięga po broń. Nikt nawet nie ucieka. Gunther ląduje na dachu stodoły. „Spichlerz. Potem dom sołtysa. Ty pierwszy”.
-:::
-
-::: side todo
-Co naprawdę stało się z **Mudwater** po odejściu Uriela — ustal dla siebie, nie na sesji.
 :::
 
 Uriel nie wykonuje rozkazu. Bez przemowy odwraca się i odchodzi, przekonany, że niezauważony. Tak, jak napisał zychu. Co stało się potem z Mudwater, Uriel nie wie: nie rozstrzygaj tego na sesji zero, ale zapisz sobie prawdę.
