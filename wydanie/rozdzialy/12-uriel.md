@@ -23,13 +23,13 @@ To, co zagrane, jest kanonem. Wątki niezagrane wiszą i mogą wrócić, o ile �
 | **Wady** | Scavenger, Scarred (−10 do rzutów CHA, +15 Speechcraft przy zastraszaniu), Code of Honor |
 | **Cechy** | Omnivore (+3 Survival), Organization: Mercenary — Żelazny Szpon (2 pkt) |
 | **Nie wziął** | Slave ani Prideful („tak po prostu jest”), Stubby Little Horn, Enemy, Named Weapon |
-| **Broń** | rewolwer (odzyskany od Gunthera); **miecz utracony** |
+| **Broń** | **katana** wydarta Guntherowi (stawka); **rewolwer został u Gunthera** |
 | **Rany** | 2 rany przedniej lewej nogi po drzewnych wilkach; opatrzony w osadzie (zapłacił wszystkim, co miał) |
-| **Księga** | „Pozycja 112: strata. Nie spisano ze stanu. Miecz utracony, rewolwer odzyskany, Gunther bez ran.” |
+| **Księga** | „Pozycja 112: strata. Nie spisano ze stanu. Miecz: odzyskany. Rewolwer: utracony. Gunther: bez strat.” |
 {: .plain}
 
 ::: side player Do one-shota
-Uriel przychodzi **bez miecza**, z rewolwerem, „Podmuchem” i telekinezą; zostaje mu rzucanie (Explosives). Scavenger: zbiera wszystko, co ma wartość — także w pacyfistycznej Stajni.
+Uriel przychodzi z **kataną** (w telekinezie albo w pysku), „Podmuchem” i rzucaniem telekinezą (Explosives) — **bez rewolweru**, ten został u Gunthera. Scavenger: zbiera wszystko, co ma wartość — także w pacyfistycznej Stajni.
 → wraca: one-shot, sesja 1 (stodoła, Krąg)
 :::
 
@@ -406,11 +406,15 @@ Slave to najcięższa opcja: gracz na chwilę traci kontrolę nad postacią. Pri
 ## 5. „Dług niespłacony”: cechy, ekwipunek, walka
 
 ::: side todo Mudwater — do przepisania
-Zagrane skrótowo; MG chce przepisać tę część. Co stało się z Mudwater po odejściu Uriela — wciąż otwarte.
+Zagrane skrótowo pod presją czasu: wejście, obrót na pięcie, wyjście. MG przepisze tę część. Co stało się z Mudwater po odejściu Uriela — wciąż otwarte.
+:::
+
+::: side todo Katana
+Stawka dawała „broń nazwaną za darmo”, a Uriel nie wziął cechy Named Weapon. Czy katana jest bronią nazwaną (5 pkt ulepszeń), czy zwykłą Kataną (4d8+STR, ×2)?
 :::
 
 ::: side player Zagrane · walka
-Katana, potem rewolwer i ucieczka. **Miecz utracony, rewolwer odzyskany, Gunther bez ran.** Na odchodne: „Jeszcze wrócisz. Pies zawsze wraca”.
+Słabe rzuty: pierwszy atak chybiony, nawet karta szczęścia nie pomogła. Drugi trafił — Uriel wybrał **katanę**. Gunther oddawał mocno. Przy wyborze 2 z 3 (atak, rewolwer, ucieczka) próba odzyskania rewolweru nie wypaliła, więc Uriel **uciekł o własnych siłach**. Na rewolwerze mu nie zależało — był „jego” tylko w księdze. Gunther bez ran: „Jeszcze wrócisz. Pies zawsze wraca”.
 :::
 
 Mudwater to ta sama osada, w której Uriel znalazł zaginionych w punkcie 3.
@@ -457,12 +461,12 @@ Gunther odlatuje. Jedno zdanie, z góry, zanim zniknie: „Pies zawsze wraca”.
 
 ::: ledger Wpis zamykający (czytany po walce)
 Pozycja 112: strata. Nie spisano ze stanu.
-Miecz: utracony. Rewolwer: odzyskany.
+Miecz: odzyskany. Rewolwer: utracony.
 Gunther: bez strat.
 :::
 
 ::: side later
-„Jeszcze wrócisz. Pies zawsze wraca”. Gunther nie jest Enemy w mechanice — wraca tylko fabularnie, jeśli zechcesz. Bez ran: Uriel nic mu nie zabrał poza rewolwerem. Miecz Uriela jest teraz u Gunthera.
+„Jeszcze wrócisz. Pies zawsze wraca”. Gunther nie jest Enemy w mechanice — wraca tylko fabularnie, jeśli zechcesz. Bez ran. Gunther zatrzymał rewolwer — zapłatę z Rusty Gate, wciąż „na rachunku psa”.
 :::
 
 #### Dezerter czy strata
