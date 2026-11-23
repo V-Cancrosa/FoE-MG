@@ -19,7 +19,7 @@ Każde z was usłyszało to gdzie indziej. Każde dostało inny powód, żeby tu
 :::
 
 ::: side player Skąd przychodzą
-**Rick** tego nie słyszy — jest już w stodole. **Uriel**: ogłoszenie o radkaraluchach i mrówkach w starej stodole, a równocześnie radio o otwarciu Stajni; wydał ostatnie kapsle na opatrunek. **Rusty**: bar w Cinder Ford, wieści Magpie, Knot.
+**Rick** jest już w stodole; w PipBucku słyszał DJ Pon-3, który ostrzegał łowców, że w Stajni są „nowi”. **Uriel**: ogłoszenie o radkaraluchach i mrówkach w starej stodole, a równocześnie radio o otwarciu Stajni; wydał ostatnie kapsle na opatrunek. **Rusty**: bar w Cinder Ford, wieści Magpie, Knot.
 :::
 
 ## Scena 2. Walka w stodole
@@ -39,7 +39,7 @@ Skala: 1 kratka = 5 stóp. Mapa ok. 22 × 28 kratek, stodoła 12 × 18. Rick wyc
 | Zapadnięta podłoga | NW róg, deski z okrągłymi dziurami | stąd wychodzą mrówki |
 | Siano i właz | pod strychem, na zachód od środka | osłona częściowa, teren trudny; właz można zatrzasnąć i przytrzymać |
 | Belki stropowe | dwie leżące belki i dwa pieńki w środku; na belce plakat | osłona częściowa, teren trudny |
-| Plama światła | środek-wschód | światło spod dziury w dachu; tędy zszedł spritebot Watchera i tędy wlatuje bloatsprite |
+| Plama światła | środek-wschód | światło spod dziury w dachu; tędy wlatuje bloatsprite |
 | Boksy | wschodnia ściana, 4 przegrody | ścianki do połowy: osłona częściowa |
 | Wóz | SW róg wnętrza | pełna osłona, można się wspiąć |
 | Wrota | południowa ściana; jedno skrzydło leży na podwórzu | skrzydło daje osłonę wchodzącym od drogi |
@@ -58,12 +58,16 @@ Kolonię sprowokował tunel Stajni — da się ją odstraszyć bez wybijania. Ri
 Wóz w stodole, plakat, zardzewiałe narzędzia — Uriel musi podnieść wszystko, co ma jakąkolwiek wartość. Dobry moment na krótką scenę po walce.
 :::
 
+::: side player Rick · pierwsza walka
+Obiecana dłuższa chwila w walce. Ma pod kopytem **długi pręt** (Lead Pipe, 3d8+STR), młotek i właz do zatrzaśnięcia. Jest silny — może przewrócić belkę albo wóz na mrówki.
+:::
+
 ### Przeciwnicy i ich role
 
 - **Radroache:** wielkości kota, lśniący brązowy pancerz, długie drgające czułki. Wolne i słabe, ale groźne dla zaskoczonego, nieuzbrojonego kucyka. Terytorialne. Start pacyfisty.
 - **Mrówki:** robotnice wielkości źrebaka, matowo czerwonobrązowe; żołnierz dwa razy większy, z ogromnymi żuwaczkami i pancerzem jak spękana glina. Robotnice prawie nieagresywne, żołnierz bardzo groźny dla nieprzygotowanych. Kolonia atakuje, bo czuje zagrożenie — tunel Stajni przebija jej korytarze. To Ogrody same sprowokowały atak. Da się je odstraszyć bez wybijania.
 - **Bloatsprite (młody):** napuchnięta kula wielkości arbuza, futro w kolorze zgniłej brzoskwini, za małe skrzydełka brzęczą jak trzmiel, paszcza otwiera się szerzej, niż powinna. Pluje kolcami z dystansu, z bliska próbuje pożreć. Młody osobnik: bez trucizny (paraliż dorosłych trwa 1d4 dni i wyłączyłby gracza z jednostrzału) i bez przenoszenia chorób.
-- **Bez spritebotów i bez mrówek ognistych.** Spritebot przed chwilą mówił głosem Watchera; ogień w stodole pełnej siana to ryzyko wybicia drużyny.
+- **Bez spritebotów i bez mrówek ognistych.** Watchera zostaw na później (może wpaść jako deus ex machina); ogień w stodole pełnej siana to ryzyko wybicia drużyny.
 
 | Graczy | Radroache | Robotnice | Żołnierze | Bloatsprite |
 |---|---|---|---|---|
@@ -76,7 +80,7 @@ Inicjatywa grupowa: radroache jedna grupa, mrówki druga, bloatsprite osobno. Po
 
 | Rundy | Co się dzieje | Wejścia drużyny |
 |---|---|---|
-| 1–2 · pułapka | Po odlocie Watchera siano szeleści. 2 radroache wychodzą z siana na samego Ricka. Właz się zacina — Rick nie ucieknie tunelem. Może walczyć, wspiąć się na strych, schować za wozem, odpalić SATS. | — |
+| 1–2 · pułapka | Muzyka w PipBucku cichnie. Siano szeleści. 2 radroache wychodzą z siana na samego Ricka. Właz się zacina — Rick nie ucieknie tunelem. Może walczyć, wspiąć się na strych, schować za wozem, odpalić SATS. | — |
 | 2–4 · mrówki | Hałas budzi kolonię pod zapadniętą podłogą: najpierw 2 robotnice, potem żołnierz. | runda 2: pierwsza postać z zewnątrz |
 | 4–6 · kulminacja | Młody bloatsprite wlatuje przez dziurę w dachu, zwabiony zapasami jedzenia Ricka. Gdy żołnierz padnie albo zostanie odpędzony, kolonia się wycofuje. | runda 3–4: druga postać |
 
@@ -137,7 +141,7 @@ Wrota stoją otworem, tak jak zostawił je protokół. Za nimi, w żółtym świ
 :::
 
 ::: side secret Przejęzyczenie
-„Nie wszyscy, którzy złamali nasz pokój, zniknęli” — Winter Rye mówi o 24 uśpionych. Rick mógł to słyszeć w stołówce.
+„Nie wszyscy, którzy złamali nasz pokój, zniknęli” — Winter Rye mówi o 24 uśpionych. **Rick słyszał to przy kolacji** — może rozpoznać zdanie.
 :::
 
 ::: side secret Pytanie o plan
@@ -148,7 +152,7 @@ Na posiedzeniu Kręgu:
 
 - **Lily Pad:** uprzejma, zmęczona, chce wiedzieć, kto ich przysłał i czego chcą. Dziękuje za uratowanie Ricka.
 - **Winter Rye:** głośno przeciw obcym. „Protokół to nie wyrok, tylko wymówka. Zamknijmy drzwi.” W złości przejęzycza się: „Nie wszyscy, którzy złamali nasz pokój, zniknęli. Nie zapraszajmy reszty z zewnątrz.” Potem milknie.
-- **Frozen Seed:** pyta obcych wprost, czego chcą od Skarbca. Pamięta odpowiedź.
+- **Frozen Seed:** pyta obcych wprost, czego chcą od Skarbca. Pamięta odpowiedź. Rick zna ją tylko z widzenia — kopertę z nasionami dostał przez Willow Bark.
 - **Runner Bean:** podsłuchuje pod drzwiami, potem łazi za obcymi.
 
 ::: side player Broń przy Wrotach

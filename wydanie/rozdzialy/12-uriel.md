@@ -409,8 +409,9 @@ Slave to najcięższa opcja: gracz na chwilę traci kontrolę nad postacią. Pri
 Zagrane skrótowo: wejście, odmowa, wyjście — miała to być tylko próba zasad Uriela (robota bez wiedzy, co ma zrobić; atak na niewinnych), nie walka. Los osady **nierozstrzygnięty i bez pośpiechu**: spalona, splądrowana, wyrżnięta — albo Szpon ten jeden raz przeczytał kontrakt „w granicach umowy”: kamień na kamieniu, ale kucyki nietknięte, straciły tylko stare budy. Szyj słowem, gdy gracze tam trafią, albo nie wracaj wcale.
 :::
 
-::: side todo Katana
-Stawka dawała „broń nazwaną za darmo”, a Uriel nie wziął cechy Named Weapon. Czy katana jest bronią nazwaną (5 pkt ulepszeń), czy zwykłą Kataną (4d8+STR, ×2)?
+::: side player Katana → Named Weapon
+MG zrobi z katany broń nazwaną w przeskoku między ucieczką a stodołą: Uriel leczy rany, zarabia na przeżycie i obkupuje się w to, czego nie zabrał z Igły.
+→ one-shot: „Z czym przychodzą”
 :::
 
 ::: side player Zagrane · walka

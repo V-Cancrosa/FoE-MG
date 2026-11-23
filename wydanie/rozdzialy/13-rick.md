@@ -3,7 +3,7 @@ tytul: Sesja 0: Rick Scrapper
 kicker: Sesja zero · 2 z 3 · przeszłość
 marginesy: tak
 stopka: Sesja 0: Rick Scrapper
-podtytul: Gracz: Tymek (Tymianox) · piątek 20.11 · Sesja jeden na jeden dla gracza ze Stajni: od materiałów szkoleniowych przez ostatni wieczór w Ogrodach po wyjście tunelem do stodoły.
+podtytul: Gracz: Tymek (Tymianox) · zagrane w piątek 20.11 (3 h 54 min) · Sesja jeden na jeden dla gracza ze Stajni: od materiałów szkoleniowych przez ostatni wieczór w Ogrodach po wyjście tunelem do stodoły.
 ---
 ::: side fig
 {{img: 03-postacie/Rick Scrapper/Rick Scrapper.png | Rick Scrapper — wzór wyglądu (napis na grafice nie wiąże)}}
@@ -21,12 +21,36 @@ Kucyk ziemski ze Stajni 97, z drużyny technicznej, która utrzymuje Ogrody w dz
 Czy jego przodkowie budowali Stajnię — głębsze lore na później, jeśli Tymek wróci do kampanii. Na sesji zero nie potwierdzaj ani nie zaprzeczaj; najwyżej rodzinna opowieść przy kolacji.
 :::
 
-| Gotowe od gracza | Ustalamy na sesji |
+## Stan po sesji zero (20.11)
+
+To, co zagrane, jest kanonem. Sceny niezagrane (niżej oznaczone) nie wydarzyły się — nie zakładaj ich w one-shocie.
+
+| | |
 |---|---|
-| imię: **Rick Scrapper**; rasa: kucyk ziemski; ze Stajni | rodzina (moment „Kolacja”), przydział w aktach (skok 3) |
-| znaczek: klucz i śruba z błyskawicą | jak go dostał (skok 3) |
-| wygląd: według grafiki (szara sierść, niebiesko-błękitna grzywa, zielone oczy) | kombinezon Ogrodów: zielony z naszywką liścia, nie niebieski Stable-Tec |
+| **Rasa** | kucyk ziemski, +1 STR i +1 INT; **Strong Back**; +5 Repair i (prawdopodobnie) Science — Survival cofnięty przez Stable Dweller |
+| **Atrybuty** | silny (trzy krzesła zamiast dwóch), przeciętna percepcja, niższa charyzma; MG rozważał niską Zwinność |
+| **Wady i cechy** | Stable Dweller; **Good Natured** pewne; reszta według karty |
+| **Znaczek** | klucz i śruba z błyskawicą — naprawił zepsute urządzenie technika (przerwane kable), które jednorożec **Seidz** spisał na straty |
+| **Przydział** | poziomy techniczne. Samotnik i majsterkowicz (jury-rigging) |
+| **Rodzina** | mama i tata, bez rodzeństwa. Ojciec dał mu szczepkę rodzinnej roślinki (od pradziadka): „Nie masz tu przyjaciół, może tam kogoś znajdziesz” |
+| **Sadzonki** | własna: **tymianek**. Po lekcji podlał też sadzonkę **Pebble'a** i przejął nad nią opiekę |
+| **Odpowiedzi do akt** | na „czy zdarza ci się być bardzo złym?” — „**Nie**” |
+| **Misja (od Lily Pad)** | „szpica”: wyjść, odnaleźć potomków tych, którzy zostali na zewnątrz, nawiązać przyjazne relacje, współpraca |
+| **Wyposażenie** | kombinezon Ogrodów, **PipBuck 3000**, klucz 10/13, taśma, młotek, elektronika, długi pręt, racje, mikstura lecznicza; **jabłko z kolacji schowane** na powierzchnię; szczepka od ojca; koperta od Frozen Seed (przyniosła ją **Willow Bark przy Wrotach**) |
 {: .plain}
+
+::: side todo Z karty
+Drugi bonus rasowy +5 (Science?) i pełna lista wad i cech — potwierdzić na karcie w Foundry.
+:::
+
+::: side player W systemie
+Jumpsuit, Utility (Stable) · Pipbuck 3000 · Wrench · Duct Tape · Hammer · Scrap Electronics · Lead Pipe (długi pręt — improwizowana broń, 3d8+STR) · Healing Potion · Fresh Apple · Fresh Seeds (koperta).
+:::
+
+::: side secret Niezagrane
+**Ogrody nocą** z Frozen Seed i **lustro rano** — pominięte. Rick nie rozmawiał z Frozen Seed osobiście. **Watcher nie przyszedł.**
+→ wraca: one-shot, scena 5 (Frozen Seed to dla Ricka prawie obca)
+:::
 
 ## Stajnia Ogrodów
 
@@ -65,6 +89,10 @@ Na sesję potrzebujesz realnie czterech miejsc: stołówki, Ogrodów nocą, biur
 {{img: 04-mapy/stajnia_97_poziom_1_atrium.svg | Atrium — schemat | half}}
 
 ## BN-y w Stajni
+
+::: side player Seidz
+Jednorożec od „większej technologii”; spisał na straty urządzenie, które Rick naprawił (znaczek). Technik Ricka nie przepada za nim.
+:::
 
 ::: side fig
 {{img: 01-swiat/grafiki/LilyPad-SQ.png | Nadzorczyni Lily Pad}}
@@ -126,7 +154,7 @@ Kuc ziemski ze Stajni: **musi** wziąć Strong Back (nie High Ho Silver); +5 do 
 7. **Ogrody nocą (krok 4, moment 2).** Frozen Seed przy Skarbcu.
 8. **Biuro Nadzorczyni (krok 4, moment 3).** Postać pyta „dlaczego ja?”, Lily Pad odpowiada z akt. Rano lustro w kwaterze: moment 4. Tu zamykasz arkusz.
 9. **Wrota i tunel.** Magazyn wyposażenia, otwarcie, droga w górę.
-10. **Stodoła (krok 5: cechy).** Watcher, trzy pytania, odlot. Coś rusza się pod podłogą.
+10. **Stodoła (krok 5: cechy).** Watcher, trzy pytania, odlot. Coś rusza się pod podłogą. *(Zagrane bez Watchera.)*
 
 Sesja jest długa. Jeśli trzeba skrócić, sceny 1–3 zrób szybko na materiałach, a czas zostaw na 5–7 i stodołę.
 
@@ -138,6 +166,10 @@ Sesja jest długa. Jeśli trzeba skrócić, sceny 1–3 zrób szybko na materia�
 
 ::: side todo
 Uśpiony to źrebak (Pebble) czy jego starszy brat? I czy łączyć to z opcją „uśpiony z rodziny gracza” (tylko za zgodą Tymka).
+:::
+
+::: side player Zagrane · szkoła
+Sadzonka Ricka: **tymianek**. Po lekcji **podlał sadzonkę Pebble'a** i przejął nad nią opiekę. Słyszał: „ochrona przyszła po niego po kolacji, odszedł na spoczynek”. Szare strony wspomniane.
 :::
 
 ### Szkoła — skok 1 (około 8 lat)
@@ -160,6 +192,10 @@ Uśpiony to źrebak (Pebble) czy jego starszy brat? I czy łączyć to z opcją 
 Notatki Willow Bark trafiają do Ochrony (nieświadoma współwina) czy prosto do Nadzorczyni?
 :::
 
+::: side player Zagrane · gabinet
+Na pytanie o złość: „**Nie**”. Szczęście: zakurzony cukierek od Willow Bark.
+:::
+
 ### Gabinet medyczny — skok 2 (około 14 lat)
 
 > Gabinet pachnie środkiem odkażającym i gorzką herbatą z kory wierzby, która zawsze paruje w kubku na biurku lekarki. Na ścianie wisi tablica do badania wzroku, ale zamiast liter są na niej owoce: jabłka, gruszki, coraz mniejsze truskawki. Na wadze stoi kolejka dwunastu nastolatków z twojego rocznika i każdy udaje, że wcale się nie denerwuje.
@@ -174,6 +210,10 @@ Notatki Willow Bark trafiają do Ochrony (nieświadoma współwina) czy prosto d
 
 ::: side player Rick · przydział
 Drużyna techniczna przy uprawach. Znaczek (klucz i śruba z błyskawicą) pasuje do Repair albo Science jako umiejętności wiodącej. Zapytaj: **jak go dostał** — przy jakiej maszynie, kto widział?
+:::
+
+::: side player Zagrane · znaczek
+Naprawa zepsutego urządzenia od technika (przerwane kable). Technik cieszył się, że utrze nosa jednorożcowi **Seidzowi**, który spisał je na straty. Przydział: poziomy techniczne.
 :::
 
 ### Biuro Komisji ds. Przydziałów — skok 3 (około 16 lat)
@@ -201,6 +241,10 @@ Rick pracuje przy technice — może **sam** widzieć, że liczniki pokazują wi
 >
 > Atrium zamiera. Ktoś upuszcza skrzynkę i pomidory toczą się po posadzce, ale nikt się nie schyla. Po kilku sekundach odzywa się drugi głos, żywy i znajomy. To Lily Pad, trochę zbyt spokojna: „Mieszkańcy, nie ma powodu do paniki. Krąg zbiera się teraz. Wszystko wam wyjaśnimy.”
 
+::: side player Zagrane · koperta
+Przyniósł ją **Runner Bean** — z zazdrością.
+:::
+
 ### Koperta (godzinę później)
 
 > Ktoś puka do drzwi kwatery. W progu stoi Runner Bean z szarą kopertą w kopycie. Nie patrzy ci w oczy. „Komisja kazała mi to roznieść. Ty… dostałaś.” Po chwili dodaje, ciszej: „Ja nie.”
@@ -208,6 +252,10 @@ Rick pracuje przy technice — może **sam** widzieć, że liczniki pokazują wi
 > W środku jest jedna kartka na tym samym papierze co wszystkie twoje dotychczasowe przydziały. Ten sam stempel Komisji, ten sam podpis. Na górze: *Przydział: Misja Rozpoznawcza.* Niżej: *Stawić się przy Wrotach jutro o 6:00. Wyposażenie zostanie wydane na miejscu.* I na samym dole, drukiem, który znasz od dziecka: *Każdy przydział jest równie ważny!*
 
 **Notka MG.** Nagranie to przedwojenna automatyka Stable-Tec; Lily Pad mówi „zbyt spokojnie”, bo wie, co przekroczyło próg. Nazwa oficjalna: Protokół Przepełnienia; „otwarcie” to słowo potoczne. Reakcja gracza na Runner Beana przyda się, jeśli ten później wymknie się sam przez wrota.
+
+::: side player Zagrane · rodzina
+Mama i tata, bez rodzeństwa. Ojciec przygotował **szczepkę rodzinnej roślinki** (od pradziadka): „Nie masz tu przyjaciół, może tam kogoś znajdziesz”.
+:::
 
 ### Kwatery (poziom 2)
 
@@ -246,6 +294,10 @@ Opcjonalny ślad sekretu: w przeludnionym skrzydle jedna kwatera stoi pusta, z t
 Jeśli rodzina Ricka opowiada przy stole o „dziadku, który stawiał te ściany” — zostaw jako rodzinną legendę.
 :::
 
+::: side player Zagrane · kolacja
+**Jabłko schowane** na powierzchnię. Percepcja (sukces): słyszał inżyniera z technikiem („na szóstce żre prąd albo przyrządy kłamią”), Runner Beana z matką o „prawdziwym niebie”, starsze klacze o „spoczynku Thornów” i **Winter Rye**: „Nie wszyscy, co złamali nasz spokój, zniknęli”.
+:::
+
 ### Stołówka — ostatnia kolacja
 
 > Stołówka jest za mała, odkąd sięgasz pamięcią. Posiłki wydaje się na trzy zmiany, a ty zawsze jadasz na drugiej. Długie stoły z blachy, ławy wytarte do połysku przez kolejne pokolenia, na ścianie przedwojenny mural: słoneczne pole, uśmiechnięte kucyki z koszami jabłek i niebo tak niebieskie, że aż sztuczne. Farba łuszczy się w miejscu, gdzie ktoś przez lata opierał się plecami.
@@ -267,6 +319,10 @@ Jeśli rodzina Ricka opowiada przy stole o „dziadku, który stawiał te ścian
 
 ::: side secret Ściana Pamięci
 Nie ma na niej uśpionych. Nie podsuwaj tego sam.
+:::
+
+::: side secret Niezagrane
+Scena pominięta. Rick **nie spotkał Frozen Seed**; kopertę z nasionami dostał przy Wrotach od Willow Bark. Ściany Pamięci nie widział.
 :::
 
 ### Ogrody nocą
@@ -295,6 +351,10 @@ REJESTR 341 · PRÓG 330. Bez 24 uśpionych protokół by nie ruszył. Nigdzie n
 
 ::: side todo
 Liczby na terminalu czy sam „STATUS: OTWARCIE AKTYWNE”?
+:::
+
+::: side player Zagrane · biuro
+Rick widział terminal: **REJESTR 341 · PRÓG 330 · STATUS: OTWARCIE AKTYWNE**. Jest „szpicą”; misja: wyjść, odnaleźć potomków tych, którzy zostali na zewnątrz, przyjazne relacje, współpraca. Lustro rano — pominięte.
 :::
 
 ### Biuro Nadzorczyni — wieczór
@@ -367,6 +427,10 @@ Wrota zostaną otwarte — protokół blokuje zamknięcie.
 → wraca: one-shot, sesja 2 (szturm u Wrót)
 :::
 
+::: side player Zagrane · Wrota
+PipBuck 3000, kombinezon Ogrodów, „Kanał trzeci, melduj co godzinę”. Przy Wrotach już byli: **Willow Bark z kopertą od Frozen Seed**, **Clover z Pea i Pod**, niespokojny młody ogier (Nettle?).
+:::
+
 ### Wrota
 
 > Syrena wyje trzy razy. Żółte światła ostrzegawcze zaczynają się obracać i rzucają na ściany pasy koloru, których nikt tu nie widział od dwustu lat. Coś w ścianie syczy, jakby Stajnia wypuszczała powietrze, które trzymała w płucach od zawsze.
@@ -380,6 +444,10 @@ Wrota zostaną otwarte — protokół blokuje zamknięcie.
 ::: side hint
 Dziury w ziemi = mrówki.
 → wraca: one-shot, sesja 1, scena 2 (walka w stodole)
+:::
+
+::: side player Zagrane · tunel
+Okrągłe dziury wielkości kopyta, tło radiacyjne; **woda podbija licznik** (zanotowane).
 :::
 
 ### Tunel
@@ -398,9 +466,8 @@ Dziury w ziemi = mrówki.
 
 **Notka MG.** Zapamiętaj właz. W walce kucyk ze Stajni może go zatrzasnąć i przytrzymać.
 
-::: side later Watcher
-Spritebot schodzi przez dziurę w dachu i zadaje trzy pytania. Handout do wręczenia po sesji: „Wiadomość od Obserwatora” (dodatek H).
-→ one-shot zaczyna się dokładnie tutaj
+::: side later Watcher · niezagrany
+Spritebot i trzy pytania **nie wydarzyły się**. Watcher może wpaść później jako deus ex machina — wpada i odlatuje. Handout „Wiadomość od Obserwatora” (dodatek H) czeka na ten moment.
 :::
 
 ### Stodoła
@@ -411,12 +478,21 @@ Spritebot schodzi przez dziurę w dachu i zadaje trzy pytania. Handout do wręcz
 >
 > A potem podnosisz wzrok. Dach ma dziurę wielkości połowy stodoły, a za nią jest niebo. Nie jest niebieskie, jak w twoich podręcznikach. Jest szare, ciężkie, niskie, jak brudny sufit, który ktoś rozpiął nad całym światem. Nigdzie nie widać słońca. Przez dziurę wpada wiatr i porusza siano pod twoimi kopytami.
 
-**Notka MG.** Szare niebo zgadza się z lore. Daj graczowi zareagować, zanim cokolwiek się wydarzy. Potem przez dziurę w dachu schodzi spritebot Watchera.
+**Notka MG.** Szare niebo zgadza się z lore. Daj graczowi zareagować, zanim cokolwiek się wydarzy.
 
 ::: side todo
-Imiona rodziny Ricka — ustala Tymek na sesji. W materiałach kreacji zamienić „Nadzorcę” na Nadzorczynię albo Krąg.
+W materiałach kreacji zamienić „Nadzorcę” na Nadzorczynię albo Krąg.
 :::
 
 ## Koniec sesji
 
-Rick stoi w stodole pod szarym niebem z zamkniętym w ołówku arkuszem. Spritebot Watchera odleciał. Siano szeleści. **One-shot, scena 2, zaczyna się od tego zdania.**
+**Zagrane:** Rick krąży wokół włazu i patrzy na szare niebo. Walki nie było.
+
+**Scena po napisach:** radio w PipBucku — piosenka Sweetie Belle, potem DJ Pon-3 wita mieszkańców Stajni 97 i ostrzega łowców niewolników, że to „nowi” (Kantar też to słyszy). Na koniec piosenka o Wanderer.
+
+**One-shot, scena 2, zaczyna się od:** „Muzyka w PipBucku cichnie. Siano szeleści.”
+
+::: side player Obietnica
+MG obiecał Rickowi na one-shocie dłuższą chwilę w walce — to jego pierwsza.
+→ wraca: one-shot, sesja 1, scena 2
+:::

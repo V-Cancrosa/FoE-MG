@@ -19,7 +19,7 @@ Rick wychodzi tunelem na zwiad i trafia do zrujnowanej stodoły, gdzie wpada w w
 
 | Sesja | Co się dzieje | Koniec |
 |---|---|---|
-| Sesje zero (1 na 1) | Uriel, Rick, Rusty — każda kończy się przy stodole na Isolated Farmstead | Rick w stodole po rozmowie z Watcherem; Uriel i Rusty w drodze |
+| Sesje zero (1 na 1) | Uriel, Rick, Rusty — każda kończy się przy stodole na Isolated Farmstead | Rick krąży wokół włazu pod szarym niebem, w PipBucku radio; Uriel i Rusty w drodze |
 | Sesja 1: Stodoła i Krąg | walka w stodole w fazach, pierwsze spotkanie drużyny, zwiadowcy gangu, powrót tunelem, Krąg żąda złożenia broni | cliffhanger: alarm, gang u Wrót, zanim Krąg zdecyduje |
 | Sesja 2: Obrona i warunek | pertraktacje z Tally Mark, szturm na zegarze, odwrót gangu, skutki, warunek Kręgu | otwarte zakończenie: część mieszkańców musi wyjść |
 | Sesja 3 (opcja) | bufor, gdy 1–2 się przeciągną, albo epilog: pierwszy dzień eskorty | most do kampanii |
@@ -41,6 +41,17 @@ Szerszy Akt 1 (eskorta, intryga, ultimatum) i Akt 2 gramy tylko, jeśli gracze c
 - **Wróg bez dylematu.** Łowcy to jasny przeciwnik w pierwszej walce. Dylematy dają Krąg i mieszkańcy, nie gang.
 - **Sekret zostaje pogrzebany.** Kapsuły pojawiają się tylko jako ślady, które nic jeszcze nie znaczą (notki „Sekret MG” na marginesie).
 - **Konflikty między postaciami** rozgrywamy rozmową i wyborami, nie walką gracz kontra gracz.
+
+## Z czym przychodzą
+
+Zasada: każdy zaczyna z wyposażeniem, jakie powinien mieć ktoś taki jak on.
+
+| Postać | Kim jest | Wyposażenie na start |
+|---|---|---|
+| Uriel | jednorożec, najemnik Żelaznego Szponu | **katana jako Named Weapon** — dopracowana w przeskoku między ucieczką a stodołą, gdy leczy rany i zarabia na przeżycie; wtedy też obkupuje się w to, czego nie zabrał z Igły (Organization: Mercenary: pancerz, nóż bojowy; torby, mikstura). Bez rewolweru — został u Gunthera. |
+| Rick | kucyk ziemski prosto ze Stajni | Stable Dweller: PipBuck 3000, kombinezon Ogrodów; z magazynu klucz 10/13, taśma, młotek, elektronika, długi pręt, racje, mikstura; jabłko, szczepka, koperta z nasionami. |
+| Rusty | kucyk ziemski, wędrowiec pustkowi | sprzęt z zeszytu w ramach 300 kapsli (duster, hełm z maską, torby gońca, manierka, mikstura, gwiazda); broń ustalona na sesji 24.11. |
+{: .plain}
 
 ## Jak czytać tę część
 
