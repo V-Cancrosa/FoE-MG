@@ -9,7 +9,7 @@ Odgrywane tworzenie postaci, jeden na jeden. Każda sesja to przeszłość jedne
 
 | Gracz | Postać | Termin | Rama sesji |
 |---|---|---|---|
-| zychu | **Uriel** — jednorożec wychowany przez Szpon Iron Claw | śr 18.11 | Księga Długu |
+| zychu | **Uriel** — jednorożec wychowany przez Żelazny Szpon | zagrane śr 18.11 | Księga Długu |
 | Tymek (Tymianox) | **Rick Scrapper** — kucyk ziemski, technik ze Stajni 97 | pt 20.11 | skoki w czasie przez życie w Ogrodach |
 | Erwin (Nikodem) | **Rusty Spur** — samozwańczy szeryf, kucyk ziemny | wt 24.11 | Noc w Cinder Ford |
 {: .plain}

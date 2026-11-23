@@ -19,7 +19,7 @@ Każde z was usłyszało to gdzie indziej. Każde dostało inny powód, żeby tu
 :::
 
 ::: side player Skąd przychodzą
-**Rick** tego nie słyszy — jest już w stodole. **Uriel**: ogłoszenie o stworach z tablicy zleceń. **Rusty**: bar w Cinder Ford, wieści Magpie, Knot.
+**Rick** tego nie słyszy — jest już w stodole. **Uriel**: ogłoszenie o radkaraluchach i mrówkach w starej stodole, a równocześnie radio o otwarciu Stajni; wydał ostatnie kapsle na opatrunek. **Rusty**: bar w Cinder Ford, wieści Magpie, Knot.
 :::
 
 ## Scena 2. Walka w stodole
@@ -54,6 +54,10 @@ Skala: 1 kratka = 5 stóp. Mapa ok. 22 × 28 kratek, stodoła 12 × 18. Rick wyc
 Kolonię sprowokował tunel Stajni — da się ją odstraszyć bez wybijania. Rick, technik, może zauważyć, że tunel przebił ich korytarze.
 :::
 
+::: side player Uriel · Scavenger
+Wóz w stodole, plakat, zardzewiałe narzędzia — Uriel musi podnieść wszystko, co ma jakąkolwiek wartość. Dobry moment na krótką scenę po walce.
+:::
+
 ### Przeciwnicy i ich role
 
 - **Radroache:** wielkości kota, lśniący brązowy pancerz, długie drgające czułki. Wolne i słabe, ale groźne dla zaskoczonego, nieuzbrojonego kucyka. Terytorialne. Start pacyfisty.
@@ -84,7 +88,7 @@ Coś szeleści w sianie. Coś, co ma więcej nóg niż cokolwiek, co widziałeś
 **Notka MG.**
 
 - **Potrzask bez bezradności.** Rick nie może kilka rund tylko rzucać na obronę. Daj mu konkretne opcje: zatrzasnąć i przytrzymać właz, wspiąć się na strych, odciągnąć uwagę, rzucić jedzenie bloatsprite'owi.
-- **Wejście każdego obcego to jego moment.** Jedno zdanie opisu, pierwsza akcja z bonusem zaskoczenia albo dobrą pozycją. Uriel: odepchnięcie telekinezą (Aard) albo miecz. Rusty: zasada 5 — „jak nie wiem, to nie strzelam”: na kogo celuje w półmroku?
+- **Wejście każdego obcego to jego moment.** Jedno zdanie opisu, pierwsza akcja z bonusem zaskoczenia albo dobrą pozycją. Uriel: **Podmuch** (Aard) albo rzut telekinezą (Explosives) — **miecza nie ma**, został u Gunthera. Rusty: zasada 5 — „jak nie wiem, to nie strzelam”: na kogo celuje w półmroku?
 - **Wyjście bez zabijania.** Pacyfista może przekonać resztę, żeby odpędzić mrówki zamiast je wybić. Zapamiętaj, kto co zrobił.
 - **Kopiec przy wylocie tunelu** to zaczepka na później: mrówki mogą kiedyś pójść tunelem do Stajni.
 - **Ściąga tempa:** jeśli walka przekracza 6 rund, kolonia się wycofuje, a bloatsprite odlatuje z łupem.
@@ -98,7 +102,7 @@ Rick widzi obcych pierwszy raz w życiu i konfrontuje ich z tym, czego uczyły m
 **Notka MG.**
 
 - Daj scenie oddychać: kto opatruje, kto pierwszy się przedstawia, kto trzyma broń w pogotowiu.
-- Uriel — jednorożec w barwach Szponu, z krótkim rogiem — i Rusty z gwiazdą „Z upoważnienia Korony” to dla Ricka żywe rozdziały podręcznika. Niech gracz sam zdecyduje, czy wierzy materiałom.
+- Uriel — jednorożec w barwach Szponu, z blizną (Scarred) — i Rusty z gwiazdą „Z upoważnienia Korony” to dla Ricka żywe rozdziały podręcznika. Niech gracz sam zdecyduje, czy wierzy materiałom.
 - Uriel może chcieć zapłaty za „zlecenie na stwory” — od kogo? Rusty może zapytać Ricka o prawo Stajni. Rick wie, że ma meldować się na kanale trzecim co godzinę — i że ma za chwilę meldunek.
 :::
 
@@ -148,7 +152,7 @@ Na posiedzeniu Kręgu:
 - **Runner Bean:** podsłuchuje pod drzwiami, potem łazi za obcymi.
 
 ::: side player Broń przy Wrotach
-**Rusty**: „W Stajni uszanuję” — sprawdź, czy dotrzyma. Zapyta o kodeks: Frozen Seed trzyma archiwum (art. 14, wersja B). **Uriel**: oddaje miecz wydarty Guntherowi kucykowi z podkładką? **Rick**: zna tych z Ochrony po imieniu.
+**Rusty**: „W Stajni uszanuję” — sprawdź, czy dotrzyma. Zapyta o kodeks: Frozen Seed trzyma archiwum (art. 14, wersja B). **Uriel**: oddaje rewolwer kucykowi z podkładką? A Scavenger podnosi w Stajni wszystko, co ma wartość — kto to zauważy? **Rick**: zna tych z Ochrony po imieniu.
 :::
 
 ::: note

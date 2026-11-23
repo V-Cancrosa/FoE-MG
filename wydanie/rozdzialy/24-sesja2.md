@@ -90,7 +90,7 @@ W rundzie 2 inżynier mamrocze, że „szóstka znowu żre prąd”. **Rick** pr
 :::
 
 ::: side player Zasady graczy w szturmie
-**Rusty** — „nawet zakładnika”: łowca zasłania się osadnikiem. **Uriel** — „celem nie jest źrebak”: Pea i Pod, Clover nie nadąża.
+**Rusty** — „nawet zakładnika”: łowca zasłania się osadnikiem. **Uriel** — „celem nie jest źrebak”: Pea i Pod, Clover nie nadąża. Do obrony ma rewolwer, Podmuch i rzut telekinezą; szafka może kryć coś ostrego.
 :::
 
 #### Rytm rund

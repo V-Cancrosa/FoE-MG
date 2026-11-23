@@ -17,7 +17,7 @@ Wszystko poniżej to kierunek. Gracze prowadzą tę historię razem z tobą.
 - **Akt 1 w pełnej wersji:** sabotaż w cieniu (tajne rozkazy frakcji), eskalacja (atak albo zatrucie wody, za które każda frakcja obwinia inną), ultimatum na granicy wartości postaci. Zerwanie z frakcjami wynika z wyborów graczy.
 - **Akt 2:** nowa „organizacja” w postaci ogrodu-osady drużyny i budzący się uśpieni.
 - **Osadnicy** mają realną wartość — leczą, budują, karmią — i się zmieniają, żeby uniknąć syndromu misji eskortowej.
-- **Wątki postaci:** Gunther, który „czeka” (Uriel); znak trzech kresek i koła, zaginieni z Cichych Brodów, art. 14 (Rusty); przodkowie Ricka i to, co buczy na poziomie 6.
+- **Wątki postaci:** Gunther ze swoim mieczem i „Pies zawsze wraca” (Uriel); Mudwater do przepisania; znak trzech kresek i koła, zaginieni z Cichych Brodów, art. 14 (Rusty); przodkowie Ricka i to, co buczy na poziomie 6.
 
 ::: side todo
 Miejsce nowej osady; punkt na osi czasu Horizons; przysięga Steel Rangers i ścieżka zebr — tylko jeśli ktoś je wybierze.

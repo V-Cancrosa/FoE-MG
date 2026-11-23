@@ -2,11 +2,35 @@
 tytul: Sesja 0: Uriel
 kicker: Sesja zero · 1 z 3 · przeszłość
 marginesy: tak
-podtytul: Gracz: zychu · środa 18.11 · Księga Długu: Gunther czyta swoją księgę rachunkową, a każdy wpis otwiera retrospekcję i jeden krok tworzenia postaci. Wiedźmin jest posypką, rdzeniem jest Fallout: kapsle, dług i kontrakt.
+podtytul: Gracz: zychu · zagrane w środę 18.11 (3 h 22 min) · Księga Długu: Gunther czyta swoją księgę rachunkową, a każdy wpis otwiera retrospekcję i jeden krok tworzenia postaci. Wiedźmin jest posypką, rdzeniem jest Fallout: kapsle, dług i kontrakt.
 stopka: Sesja 0: Uriel
 ---
 ::: side fig
 {{img: 03-postacie/Uriel/Uriel Portret.png | Uriel}}
+:::
+
+## Stan po sesji zero (18.11)
+
+To, co zagrane, jest kanonem. Wątki niezagrane wiszą i mogą wrócić, o ile żaden most nie został spalony.
+
+| | |
+|---|---|
+| **Rasa** | jednorożec, +1 INT; pełne Magic +10 (Stubby Little Horn odpadło) |
+| **S.P.E.C.I.A.L.** | S 7 · P 6 · E 4 · C 3 · I 8 · A 4 · L 4 (Inteligencja na pierwszym miejscu: magia i miecz w telekinezie; Charyzma celowo niska) |
+| **Wiodące (+15)** | Survival (zaginieni z Mudwater), Melee (drzewne wilki), Explosives (rzucanie telekinezą) |
+| **Premia rasowa (+3)** | Lockpicking, Small Guns, Science |
+| **Magia** | Telekinesis + zaklęcie ze znaczka **„Podmuch”** (Telekinetic Force / Aard); Magic ranga 30 |
+| **Wady** | Scavenger, Scarred (−10 do rzutów CHA, +15 Speechcraft przy zastraszaniu), Code of Honor |
+| **Cechy** | Omnivore (+3 Survival), Organization: Mercenary — Żelazny Szpon (2 pkt) |
+| **Nie wziął** | Slave ani Prideful („tak po prostu jest”), Stubby Little Horn, Enemy, Named Weapon |
+| **Broń** | rewolwer (odzyskany od Gunthera); **miecz utracony** |
+| **Rany** | 2 rany przedniej lewej nogi po drzewnych wilkach; opatrzony w osadzie (zapłacił wszystkim, co miał) |
+| **Księga** | „Pozycja 112: strata. Nie spisano ze stanu. Miecz utracony, rewolwer odzyskany, Gunther bez ran.” |
+{: .plain}
+
+::: side player Do one-shota
+Uriel przychodzi **bez miecza**, z rewolwerem, „Podmuchem” i telekinezą; zostaje mu rzucanie (Explosives). Scavenger: zbiera wszystko, co ma wartość — także w pacyfistycznej Stajni.
+→ wraca: one-shot, sesja 1 (stodoła, Krąg)
 :::
 
 ## Zasady prowadzenia
@@ -52,7 +76,7 @@ Pytania zadawaj z perspektywy postaci: „Co Uriel pamięta z…?”, „Jak to 
 ## Obsada i miejsca
 
 ::: side todo
-Brannok, Kestrel i **dwa pozostałe gniazda** Iron Claw — nazwać przed punktem 5.
+Brannok, Kestrel i **dwa pozostałe gniazda** Żelazny Szpon — w grze padły Brannok i Kestrel; dwa gniazda wciąż bez nazw.
 :::
 
 ::: side later
@@ -63,8 +87,8 @@ Gunther liczy w księdze jak **Tally Mark** liczy „towar”. Zychu może to ro
 | Kto / co | Opis |
 |---|---|
 | Gunther | Gryf, właściciel Uriela. Metalowa proteza jednego szponu (nigdy nie wyjaśnia skąd). Pisze księgę jak księgowy. |
-| Iron Claw | Szpon Gunthera, wymierający: z 14 gniazd zajęte 5. |
-| Brannok, Kestrel | Gryfy z Iron Claw. Dwa pozostałe gniazda: do nazwania przed punktem 5. |
+| Żelazny Szpon (Iron Claw) | Szpon Gunthera, wymierający: z 14 gniazd zajęte 5. Nazwa w grze: Żelazny Szpon. |
+| Brannok, Kestrel | Gryfy z Żelaznego Szponu (użyte w grze). Dwa pozostałe gniazda bez nazw. |
 | Igła Pogodowa | Przedwojenna wieża pegazów (jak Space Needle). Talerz z gniazdami, trzon ze schodami, psiarnia na dolnym pomoście: przeszklona sala z boksami, większy kąt Uriela w rogu, drzwi na schody zamykane na noc. |
 | Rusty Gate | Osada targowa: negocjacje (Charyzma), handlarka talizmanami (Stubby Little Horn), zlecenie za rewolwer. |
 | Mudwater | Osada: najpierw zlecenie „zaginieni” (punkt 3), potem „porządki” za zaległy haracz (punkt 5). |
@@ -86,7 +110,7 @@ Gunther liczy w księdze jak **Tally Mark** liczy „towar”. Zychu może to ro
 *Cel:* rasa i ton relacji z Guntherem od pierwszych minut.
 
 ::: side secret Pochodzenie Uriela
-**Prawda:** matka jednorożec, formalny ojciec pegaz z EVC uciekający od Enklawy. Iron Claw wynajęto do ucieczki; zapłata to Prawo Niespodzianki (poz. 112). Ciąże się nie udawały, Gunther zabrał ich do zebrzej szamanki. Uriel **wyklął się z jaja** z jej mikstury — „odbiór przy wykluciu” to dosłowna prawda.
+**Prawda:** matka jednorożec, formalny ojciec pegaz z EVC uciekający od Enklawy. Żelazny Szpon wynajęto do ucieczki; zapłata to Prawo Niespodzianki (poz. 112). Ciąże się nie udawały, Gunther zabrał ich do zebrzej szamanki. Uriel **wyklął się z jaja** z jej mikstury — „odbiór przy wykluciu” to dosłowna prawda.
 **Wersja Uriela** (Księga Szponu): klacz poroniła, szamanka „zrobiła dziecko” z krwi albo sierści matki. Nie prostuj.
 :::
 
@@ -127,7 +151,7 @@ Wyżywienie, rok 1. Mięso, 1 miska dziennie. Zjada. Zielenina: co się znajdzie
 Rasa: jednorożec. Premia rasowa +1 do Percepcji, Inteligencji albo Szczęścia: źrebię, które obserwuje, uczy się albo po prostu przeżywa. Mięso w misce to zalążek cechy Omnivore, rozliczanej w punkcie 5.
 
 ::: ledger Wpis zamykający
-Uwagi: Nie płacze. [Patrzy / Uczy się / Przeżywa].
+Uwagi: Nie płacze. Uczy się.
 :::
 
 
@@ -141,6 +165,10 @@ Pary dobrane tematycznie. Charyzma osobno, bo to jedyna cecha sprawdzana przy ob
 - **Kartka z bieżącą sumą.** Po czterech scenach Gunther przewraca stronę: „Sprawdzam rachunek”. Ostatnia szansa, żeby coś przesunąć.
 - **Co z czego wynika:** miecz w pysku to Siła, w telekinezie Inteligencja; rewolwer to Zwinność; magia to Inteligencja; skradanie to Zwinność; tropienie to Wytrzymałość.
 - **Progi reakcji Gunthera:** niski 1–3, średni 4–6, wysoki 7+.
+
+::: side player Zagrane · S.P.E.C.I.A.L.
+**S/E:** nosił, ile się da naraz → „Weźmiesz też skrzynię Brannoka” i „Szybciej niż wczoraj. Wolniej, niż powinieneś”. **A/L:** belka — złapany późno, szrama na skrzydle Gunthera. **P/I:** wysoko — jedyne „Dobrze” i trzy kupki korzeni (Gunther schował trzecią), bez gorączki.
+:::
 
 ### Siła i Wytrzymałość: trzon
 
@@ -175,7 +203,7 @@ Między masztami antenowymi wiszą liny, belki i przepaście. Tor zbudowano dla 
 | Wysoka | Gunther patrzy dłużej niż zwykle: „Ostatni odcinek pokonałeś szybciej niż Kestrel. Nie mów mu”. | Uriel sam łapie się liny metr pod belką; Gunther już był w powietrzu, zawraca. „Miałeś szczęście. Nie licz na nie”. Tej nocy w misce jest więcej mięsa. |
 
 ::: ledger Wpis zamykający
-Upadek, 1 szt. [Złapany późno; szrama, skrzydło G. / Złapany / Złapał się sam].
+Upadek, 1 szt. Złapany późno; szrama, skrzydło G.
 :::
 
 ### Percepcja i Inteligencja: trop i trucizny
@@ -195,10 +223,14 @@ Gunther wyrzuca cię z Igły o świcie z jednym zadaniem: znaleźć zwierzę, kt
 | Wysoka | Wraca przed czasem i mówi, ile ich było, a nie ile śladów widział. Chwila ciszy. „Dobrze”. Jedyne „dobrze” w całej sesji. | Rozdziela korzenie na trzy kupki: jadalne, trujące i przydatne. „Ta trzecia kupka. Nikt cię tego nie uczył”. Gunther chowa ją do własnej torby. |
 
 ::: ledger Wpis zamykający
-Kosztowało: 1 szczur[, 2 dni gorączki].
+Kosztowało: 1 szczur.
 :::
 
 Przy Inteligencji powiedz wprost: to atrybut magii i miecza w telekinezie. Najważniejsza decyzja w tej puli.
+
+::: side player Zagrane · Charyzma
+Niska. Uriel: „Należę do Szponu, więc nie na sprzedaż”. Gunther: „Nie odzywaj się, jak nie wiesz, co powiedzieć. A podobno taki mądry”. Rusty Gate na minusie — „rachunek psa”.
+:::
 
 ### Charyzma: przy stole
 
@@ -217,7 +249,7 @@ Pierwszy raz Gunther zabiera cię na negocjacje. Kucyki po drugiej stronie stoł
 | Wysoka | Mówi do kucyków jak do swoich i kontrakt idzie lepiej. „Następnym razem gadasz z kucykami ty. Ja nie mam do nich cierpliwości”. Pierwsza robota, którą dostaje dlatego, że jest kucykiem. |
 
 ::: ledger Wpis zamykający
-Rusty Gate: [− kapsli, rachunek psa / bez zmian / + kapsli].
+Rusty Gate: − kapsli, rachunek psa.
 :::
 
 ## 3. „Pierwsze zlecenia”: umiejętności i znaczek
@@ -263,6 +295,10 @@ Siedmiu rabusiów w ruinach stacji benzynowej. Gryfy uderzą z góry o świcie. 
 | Small Guns: wartownik | „Jeden strzał, jeden rabuś. Kapsle za amunicję idą z twojego rachunku”. |
 | Explosives: zbrojownia | „Głośno. Ale skutecznie”. |
 
+::: side player Zagrane · umiejętności
+Zaginieni → **Survival**. Wilki → **Melee**. Trzecia: **Explosives** zamiast Small Guns (rzucanie telekinezą). Noc w psiarni: +3 do Lockpicking, Small Guns, Science.
+:::
+
 ### Zlecenie 3: potwory (walka do wygrania i znaczek)
 
 ::: ledger Wpis otwierający
@@ -274,6 +310,7 @@ Wilki z drewna i mchu podchodzą nocą pod zagrody. Farmer płaci za trzy łby. 
 :::
 
 - **Walka:** dwa drzewne wilki, Uriel sam. Lekcja mechaniki: inicjatywa, SATS, trafienie, obrażenia, rany. Ma ją wygrać, choć nie bez kosztów. Gunther interweniuje tylko, jeśli Uriel padnie.
+- **Zagrane:** walka wygrana, **2 rany przedniej lewej nogi**. Znaczek zgodnie z planem: fala siły w obronie źrebięcia, a trzeciego wilka dobił mieczem ciśniętym telekinezą.
 - **Moment znaczka:** w trzeciej rundzie trzeci wilk wypada z krzaków na źrebię farmera, które wymknęło się z domu. Uriel nie zdąży dobiec i odruchowo, z całej siły, odpycha wilka telekinezą. Wilk rozbija się o płot.
 
 | Trzecia umiejętność | Gunther |
@@ -291,7 +328,7 @@ Rano na twoim boku jest znak: trójkąt w wirach wiatru. Gunther ogląda go jak 
 :::
 
 ::: ledger Wpis zamykający
-Crabgrass: wykonane. [Straty: — / rany psa: __]. Uwagi: znak na boku.
+Crabgrass: wykonane. Rany psa: 2 (przednia lewa noga). Uwagi: znak na boku.
 :::
 
 ::: side later
@@ -314,6 +351,10 @@ Melee, Small Guns i Magic jako trzy umiejętności wiodące dają mocną postać
 :::
 
 ## 4. „Koszty szkolenia”: przeszkody
+
+::: side player Zagrane · przeszkody
+Stubby Little Horn **odpadło**, Slave ani Prideful — nie („tak po prostu jest”). Wziął: **Scavenger**, **Scarred**, **Code of Honor**. Scena ze spichlerzem połączona z ucieczką w punkcie 5.
+:::
 
 Każda przeszkoda daje +1 punkt tworzenia, wydawany w punkcie 5. Tutaj dwie, najwyżej trzy: w punkcie 5 dochodzi Enemy.
 
@@ -364,6 +405,14 @@ Slave to najcięższa opcja: gracz na chwilę traci kontrolę nad postacią. Pri
 
 ## 5. „Dług niespłacony”: cechy, ekwipunek, walka
 
+::: side todo Mudwater — do przepisania
+Zagrane skrótowo; MG chce przepisać tę część. Co stało się z Mudwater po odejściu Uriela — wciąż otwarte.
+:::
+
+::: side player Zagrane · walka
+Katana, potem rewolwer i ucieczka. **Miecz utracony, rewolwer odzyskany, Gunther bez ran.** Na odchodne: „Jeszcze wrócisz. Pies zawsze wraca”.
+:::
+
 Mudwater to ta sama osada, w której Uriel znalazł zaginionych w punkcie 3.
 
 ::: ledger Wpis otwierający
@@ -408,12 +457,12 @@ Gunther odlatuje. Jedno zdanie, z góry, zanim zniknie: „Pies zawsze wraca”.
 
 ::: ledger Wpis zamykający (czytany po walce)
 Pozycja 112: strata. Nie spisano ze stanu.
-Miecz: [odzyskany / utracony]. Rewolwer: [odzyskany / utracony].
-Gunther: [bez strat / rana, ___].
+Miecz: utracony. Rewolwer: odzyskany.
+Gunther: bez strat.
 :::
 
 ::: side later
-„Pies zawsze wraca”. Gunther (Enemy) wróci w kampanii; rana ze stawki ma być widoczna. Kiedy i jak — zależy od zycha.
+„Jeszcze wrócisz. Pies zawsze wraca”. Gunther nie jest Enemy w mechanice — wraca tylko fabularnie, jeśli zechcesz. Bez ran: Uriel nic mu nie zabrał poza rewolwerem. Miecz Uriela jest teraz u Gunthera.
 :::
 
 #### Dezerter czy strata
@@ -422,11 +471,11 @@ Uriel nazywa siebie dezerterem, bo przejął etos Szponu: to słowo z kodeksu, w
 
 #### Cechy i ekwipunek
 
-Do wydania: punkty z przeszkód (punkt 4), punkt z Enemy i ewentualne resztki z atrybutów.
+Do wydania: punkty z przeszkód (punkt 4) i ewentualne resztki z atrybutów. **Zagrane:** Omnivore i Organization: Mercenary (Żelazny Szpon, 2 pkt); bez Enemy i bez Named Weapon.
 
 | Cecha / przeszkoda | Uwagi |
 |---|---|
-| Enemy (Iron Claw) | +1 punkt. Gunther nie ściga, tylko czeka; podręcznik wymaga, by wróg wracał w fabule. |
+| Enemy (Żelazny Szpon) | +1 punkt. Gunther nie ściga, tylko czeka; podręcznik wymaga, by wróg wracał w fabule. |
 | Organization: Mercenary | Wiedza i sprzęt najemnika: pancerz bojowy, nóż bojowy, 1–2 bronie. Bez szefa: Uriel odszedł. |
 | Named Weapon | Bez Mercenary tylko raz; z Mercenary do trzech. Miecz za darmo (stawka), rewolwer za 1 punkt. |
 | Omnivore | Mięso w misce z punktu 1. Może jeść mięso, +3 do Survival. |
@@ -441,6 +490,10 @@ Bez wpisu w księdze. Pierwszy raz od dziecka nikt nie rozlicza Uriela.
 
 1. **Pytanie do zycha:** co Uriel robi w pierwszej minucie samotności? Nie podpowiadaj. Ta odpowiedź powie o postaci więcej niż cała karta.
 2. **Przeskok:** tablica zleceń w osadzie, kilka tygodni później. Ogłoszenie o stworach w starej stodole przy farmie. Uriel bierze je jako pierwsze zlecenie na własny rachunek i płynnie przechodzi do jednostrzału (scena 1, „Sygnał”). Ogłoszenie o stworach w stodole to jego powód, żeby tam być.
+
+::: side player Zagrane · pierwsza minuta
+„Łatam się, jestem ranny”. Osada, zapłacił wszystkim, co miał, za opatrunek; drobne roboty; ogłoszenie o radkaraluchach i mrówkach w starej stodole — i równocześnie radio o otwarciu Stajni 97.
+:::
 
 ## Ryzyka całej sesji
 

@@ -234,6 +234,15 @@ def md(text: str) -> str:
     h = conv.convert(text)
     h = h.replace("<blockquote>", '<blockquote class="box read"><p class="box-label">Do przeczytania</p>')
     h = h.replace("<p>→", '<p class="ref">→')
+    # „{: .plain}” pod tabelą trafia do niej jako wiersz — usuń wiersz i nadaj tabeli klasę
+    def plain(m):
+        t = m.group(0)
+        if "{: .plain}" not in t:
+            return t
+        t = re.sub(r"<tr>\s*<td>\{: \.plain\}</td>(?:\s*<td>\s*</td>)*\s*</tr>\s*", "", t)
+        return t.replace("<table>", '<table class="plain">', 1)
+    h = re.sub(r"<table>.*?</table>", plain, h, flags=re.S)
+    h = h.replace("<p>{: .plain}</p>", "")
     return h
 
 

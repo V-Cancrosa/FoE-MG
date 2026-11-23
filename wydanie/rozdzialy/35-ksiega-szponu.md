@@ -92,7 +92,7 @@ kto ma kopyta, nie zrozumie.
 
 ## V. Twój Szpon i Igła
 
-**Szpon.** Twój Szpon to [Placeholder: nazwa Szponu — Iron Claw]. Mały, starej daty i wymierający. Młode gryfy wolą duże kompanie, które płacą lepiej i giną rzadziej. Kiedy uciekałeś, z czternastu gniazd zajęte było pięć. Dlatego twój właściciel wziął kucykowe źrebię. Brakowało rąk do walki, a skoro nie było gryfów, zrobił sobie kogoś innego.
+**Szpon.** Twój Szpon to [Placeholder: nazwa Szponu — w grze: Żelazny Szpon]. Mały, starej daty i wymierający. Młode gryfy wolą duże kompanie, które płacą lepiej i giną rzadziej. Kiedy uciekałeś, z czternastu gniazd zajęte było pięć. Dlatego twój właściciel wziął kucykowe źrebię. Brakowało rąk do walki, a skoro nie było gryfów, zrobił sobie kogoś innego.
 
 **Igła Pogodowa.** Gniazdo Szponu to przedwojenna wieża pogodowa na odludziu, kilka dni lotu od Hoofington. Gryfy, którym pegazy zabrały Aldornę, mieszkają w budynku pegazów. Każdy gryf w Igle rozumie tę ironię.
 
