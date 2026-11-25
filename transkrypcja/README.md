@@ -43,8 +43,11 @@ Z kartą NVIDIA 3 godziny sesji liczą się kilkanaście–kilkadziesiąt minut.
    - *Bot Discord — każdy gracz osobno* — tryb bota.
 2. **● Start / ■ Stop.** Paski pokazują, kto mówi. Przed sesją sprawdź, czy drgają przy każdym.
    Plik zapisuje się na bieżąco — awaria komputera nie kasuje nagrania.
-3. **Transkrybuj ostatnią sesję.** Pasek postępu i log. Model *auto* = `large-v3` na karcie NVIDIA, `medium` na procesorze;
-   `large-v3-turbo` jest kilka razy szybszy i prawie tak samo dobry.
+3. **Transkrybuj ostatnią sesję.** Lista modeli ma opisy; *Automatycznie* = `large-v3` na karcie NVIDIA, `medium` na procesorze;
+   *Szybki i dobry* (`large-v3-turbo`) jest kilka razy szybszy, z odrobiną więcej pomyłek.
+   Za pierwszym razem pasek pokazuje pobieranie modelu (GB), potem postęp. Zakładka **Transkrypcja na żywo**
+   pokazuje rozpoznany tekst na bieżąco (ścieżka po ścieżce; w pliku wynikowym wypowiedzi są przeplecione po czasie).
+   Przycisk zmienia się w **■ Przerwij transkrypcję**.
 4. **Otwórz transkrypcję / Otwórz folder nagrań.**
 
 Graj na **słuchawkach** — z głośnikami mikrofon zbiera graczy drugi raz.
