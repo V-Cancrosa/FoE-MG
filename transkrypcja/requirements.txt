@@ -1,0 +1,6 @@
+faster-whisper>=1.1
+av<19             # PyAV 19 psuje decode_audio w faster-whisper 1.2.1
+numpy
+soundfile
+PyAudioWPatch; sys_platform == "win32"
+sounddevice; sys_platform != "win32"

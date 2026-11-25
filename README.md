@@ -47,6 +47,10 @@ content/
 > ⚠️ Strona i repozytorium są publiczne. Ostrzeżenie w dziale „Dla MG” tylko odstrasza —
 > nie chroni przed kimś, kto naprawdę chce zajrzeć.
 
+## Transkrypcja sesji
+
+`transkrypcja/` — program na komputer MG: nagrywa mikrofon i Discorda, robi polską transkrypcję lokalnie (faster-whisper). Instrukcja w `transkrypcja/README.md`.
+
 ## Podgląd lokalnie
 
 ```bash

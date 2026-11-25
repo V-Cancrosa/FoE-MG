@@ -1,0 +1,38 @@
+# Nazwy własne kampanii — whisper dostaje je jako podpowiedź, żeby pisał je poprawnie.
+# Jedna nazwa w linii. Linie z # są pomijane. Trzymaj listę krótką (do ~60 słów), dłuższa nic nie daje.
+Stajnia 97
+Stable-Tec
+PipBuck
+Ciche Brody
+Cinder Ford
+Kantar
+Żelazny Szpon
+Iron Claw
+Uriel
+Rick Scrapper
+Rusty Spur
+Gunther
+Frozen Seed
+Mudwater
+Hayward
+Sweet Briar
+Magpie
+Tinder
+Slag
+Knot
+Burr
+Old Anvil
+Old Penny
+Daisy
+Big Iron
+kucyk
+jednorożec
+pegaz
+pegazica
+gryf
+zebra
+ghul
+pustkowia
+kapsle
+S.P.E.C.I.A.L.
+Foundry
