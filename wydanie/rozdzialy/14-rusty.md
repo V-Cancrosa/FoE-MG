@@ -35,7 +35,7 @@ Sesja poszła wg planu poniżej, z kilkoma zmianami, które od teraz są kanonem
 → dotyczy: szturm Kantaru, przesłuchanie Burra
 :::
 
-**Retrospekcje.** Old Anvil i kanistry; zebranie (Far Sight, Sheaf mierzył czas trasy, Daisy, Sprocket przy pompie, **Skip to źrebak Daisy, czyli młodszy brat Rusty'ego**, Old Penny).
+**Retrospekcje.** Old Anvil i kanistry; zebranie (Far Sight, Sheaf mierzył czas trasy, Daisy, Sprocket przy pompie, **Skip to źrebak Daisy, czyli brat Rusty'ego**, Old Penny).
 **Znaczek.** Pompa na chwilę dała krystaliczną wodę; matka chora, leki w szpitalu w Hoofington. Oddał manierkę źrebakowi, zaniósł go do Cichych Brodów i **poszedł drugi raz** po leki. Daisy wyzdrowiała.
 ::: side later Daisy i Skip
 Zabrani, nie martwi. Najprostsza nić: Kantar, jak Sweet Briar. Ale sekret o znaku (trzy kreski i koło ≠ Kantar) wciąż stoi — mogła ich zabrać banda, a Kantar tylko odkupić. Kierunek, nie wyrok.
