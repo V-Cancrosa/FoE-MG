@@ -20,10 +20,18 @@ Dwa tryby nagrywania:
 
 ## Instalacja (raz)
 
-1. **Python 3.12** z [python.org](https://www.python.org/downloads/) — w instalatorze zaznacz **„Add python.exe to PATH”**.
-2. *(tylko dla trybu bota)* **Node.js LTS** z [nodejs.org](https://nodejs.org/).
-3. Pobierz repozytorium (Code → Download ZIP) i w folderze `transkrypcja` uruchom **`instaluj.bat`**.
-   Zapyta o kartę NVIDIA — odpowiedz **Enter** (tak). Na końcu zrobi na pulpicie skrót **„Sesja”**.
+1. *(tylko dla trybu bota)* **Node.js LTS** z [nodejs.org](https://nodejs.org/) — albo przyciskiem w instalatorze.
+2. Pobierz repozytorium (Code → Download ZIP) i w folderze `transkrypcja` uruchom **`instaluj.bat`**.
+   Znajdzie **Pythona 3.12** (3.13 i 3.11 też przejdą), a jeśli go nie ma, zainstaluje go sam:
+   przez `py install 3.12` (nowy *Python install manager*) albo przez winget.
+   Potem otworzy się **okno instalatora** z listą kroków. Kliknij **Instaluj**; kartę NVIDIA wykrywa sam.
+   Na końcu zrobi na pulpicie skrót **„Sesja”** i da przycisk **Uruchom Sesję**.
+
+Nie trzeba niczego przestawiać w *Aliasach wykonywania aplikacji* ani zaznaczać „Add to PATH”.
+Najnowszy Python (3.14+) nie nadaje się: `onnxruntime` i `ctranslate2`, z których korzysta faster-whisper,
+nie mają jeszcze dla niego paczek (błąd *ResolutionImpossible … onnxruntime*). Instalator weźmie 3.12 obok niego, nic nie psując.
+Jeśli coś się nie uda, okno pokaże, który krok padł; cały przebieg jest w `transkrypcja\instalacja.log` — ten plik można wysłać na czat.
+Instalator można uruchamiać ponownie: dokończy, naprawi albo przebuduje `.venv`, jeśli powstało na złym Pythonie.
 
 Przy pierwszej transkrypcji pobierze się model mowy (`large-v3`, ok. 3 GB). Potem działa bez internetu.
 Z kartą NVIDIA 3 godziny sesji liczą się kilkanaście–kilkadziesiąt minut.
@@ -128,5 +136,6 @@ Linux/macOS: działa minimalnie (sounddevice; Linux potrzebuje `libportaudio2`, 
 - **Bot nie widzi serwera** — nie został zaproszony (krok 4).
 - **„Nie wiem, który kanał nagrać”** — wejdź na kanał głosowy i wpisz swoją nazwę w „MG na Discordzie”, albo użyj `/nagrywaj`.
 - **Pusta ścieżka gracza w trybie bota** — problem z odszyfrowaniem (log okna pokazuje `[voice] … decrypt`). Zgłoś log; nagrywaj lokalnie.
-- **CUDA nie działa, liczy na procesorze** — uruchom `instaluj.bat` jeszcze raz (odpowiedz tak na kartę NVIDIA), zaktualizuj sterownik.
+- **CUDA nie działa, liczy na procesorze** — uruchom `instaluj.bat` jeszcze raz (zaznacz kartę NVIDIA), zaktualizuj sterownik.
+  Krok *Sprawdzenie* w instalatorze mówi wprost, czy karta jest widoczna.
 - **Powtarzające się zdania w ciszy** — typowa wpadka whispera; VAD mocno to ogranicza. Zgłoś fragment.
