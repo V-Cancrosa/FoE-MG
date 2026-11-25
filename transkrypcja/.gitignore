@@ -3,3 +3,4 @@ nagrania/
 __pycache__/
 bot/node_modules/
 bot/token.txt
+instalacja.log
