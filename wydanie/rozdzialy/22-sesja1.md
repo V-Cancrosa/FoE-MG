@@ -111,7 +111,7 @@ Rick widzi obcych pierwszy raz w życiu i konfrontuje ich z tym, czego uczyły m
 :::
 
 ::: side secret Burr to Sheaf
-Złapany zwiadowca to dawny sąsiad Rusty'ego z Cichych Brodów. Rusty najpierw zobaczy **serce dzwonka** na rzemieniu, potem **łan pszenicy** spod zdrapanej ochry (rzut na Spostrzegawczość: ten dźwięk zna). Zasada 1 kontra zasada 3 — jego scena. Od sesji zero wiadomo więcej: z Cichych Brodów zniknęli też **Daisy i Skip**, matka i brat Rusty'ego. Burr może wiedzieć, gdzie są — to jego karta przetargowa.
+Złapany zwiadowca to dawny sąsiad Rusty'ego z Cichych Brodów. Rusty najpierw zobaczy **serce dzwonka** na rzemieniu, potem **łan pszenicy** spod zdrapanej ochry (rzut na Spostrzegawczość: ten dźwięk zna). Zasada 1 kontra zasada 3 — jego scena. Od sesji zero wiadomo więcej: z Cichych Brodów zniknęła też **matka Rusty'ego** oraz źrebak **Skip** z matką. Rusty wierzy, że osadę spalił Kantar — Burr wie, że Kantar przyszedł dopiero po bandzie z trzema kreskami i kołem. Gdzie są zabrani i kto naprawdę spalił Brody — to jego karty przetargowe.
 :::
 
 ## Scena 4. Zegar: zwiadowcy gangu

@@ -18,8 +18,7 @@ To, co zagrane, jest kanonem. Wątki niezagrane wiszą i mogą wrócić, o ile �
 | **Rasa** | kucyk ziemny, +1 END i +1 INT; +5 Survival, +5 Unarmed; atut **High Ho Silver, Away!** (+5 stóp ruchu), nie Strong Back |
 | **S.P.E.C.I.A.L.** | S 5 · P 5 · E 6 · C 4 · I 5 · A 8 · L 4 (Zwinność na pierwszym miejscu: szybki goniec, szybka ręka) |
 | **Pochodne** | ruch 25 stóp, DT bazowe 1; z pancerzem DT 7 na tułów i nogi, 9 na głowę |
-| **Wady** | Code of Honor (zasady z zeszytu), Scarred (−10 do rzutów CHA, plus do zastraszania), Hallucinations (kierunek do ustalenia), Colorblind |
-| **Cechy** | Sterner Stuff, Poison Resistance, Disease Resistance, Named Weapon („Big Iron”). Mental Resistance odrzucone na rzecz obu odporności |
+| **Wady i cechy** | **Do potwierdzenia z karty w Foundry** — na sesji padało więcej, niż trafiło do karty. Pewne: Scarred (−10 do rzutów CHA, plus do zastraszania), Named Weapon („Big Iron”), oraz −10 do inicjatywy z cech (Quick Witted). Wymieniane: Code of Honor, Hallucinations, Colorblind, Sterner Stuff, Poison Resistance, Disease Resistance; Mental Resistance odrzucone |
 | **Broń** | **.357 Magnum Revolver ojca jako Named Weapon „Big Iron”**: 5 pkt ulepszeń (więcej kości i wyższa kość), 4 paczki naboi po 6, jedna w bębenku |
 | **Wyposażenie** | Armored Duster, Filtration Helmet bez filtrów, juki gońca, manierka, Healing Potion ×1, gwiazda szeryfa, dzwonek bez serca |
 | **Kapsle** | **39**; do tego 250 kapsli zaliczki od Haywarda, których nie wyda |
@@ -28,25 +27,29 @@ To, co zagrane, jest kanonem. Wątki niezagrane wiszą i mogą wrócić, o ile �
 
 ### Co się wydarzyło
 
-Sesja poszła wg planu poniżej, z kilkoma zmianami, które od teraz są kanonem: Skip okazał się bratem, z popiołów zniknęła matka z dzieckiem, a rewolwer ojca stał się Big Ironem.
+Sesja poszła wg planu poniżej, z kilkoma zmianami, które od teraz są kanonem: z popiołów zniknęła matka Rusty'ego, a także Skip z matką, a rewolwer ojca stał się Big Ironem. Rusty jest przekonany, że Ciche Brody spalił Kantar.
 
 ::: side secret Granice gracza
 **Bez:** kastracji i niszczenia genitaliów; długich, dogłębnych opisów krwi (np. podcinanie żył). Krótka wzmianka jest OK. Dotyczy istot żywych, potwory to osobna kategoria.
 → dotyczy: szturm Kantaru, przesłuchanie Burra
 :::
 
-**Retrospekcje.** Old Anvil i kanistry; zebranie (Far Sight, Sheaf mierzył czas trasy, Daisy, Sprocket przy pompie, **Skip to źrebak Daisy, czyli brat Rusty'ego**, Old Penny).
-**Znaczek.** Pompa na chwilę dała krystaliczną wodę; matka chora, leki w szpitalu w Hoofington. Oddał manierkę źrebakowi, zaniósł go do Cichych Brodów i **poszedł drugi raz** po leki. Daisy wyzdrowiała.
-::: side later Daisy i Skip
-Zabrani, nie martwi. Najprostsza nić: Kantar, jak Sweet Briar. Ale sekret o znaku (trzy kreski i koło ≠ Kantar) wciąż stoi — mogła ich zabrać banda, a Kantar tylko odkupić. Kierunek, nie wyrok.
+**Retrospekcje.** Old Anvil i kanistry; zebranie (Far Sight, Sheaf mierzył czas trasy, Daisy, Sprocket przy pompie, Skip, źrebak innej klaczy z osady — **nie brat**, Old Penny).
+**Znaczek.** Pompa na chwilę dała krystaliczną wodę; matka chora, leki w szpitalu w Hoofington. Oddał manierkę źrebakowi, zaniósł go do Cichych Brodów i **poszedł drugi raz** po leki. Matka wyzdrowiała.
+::: side secret Co Rusty wie, a co jest prawdą
+**Rusty wierzy, że Ciche Brody spalił Kantar.** Nie wie o bandzie z trzema kreskami i kołem; Kantar przyszedł później jak sęp po niewolników. Nie prostuj tego — niech prawda wyjdzie od Burra albo w kampanii.
+:::
+
+::: side later Matka, Skip i jego matka
+Zabrani, nie martwi — najpewniej przez Kantar, który zgarnął ocalałych. Kierunek, nie wyrok.
 → wraca: Burr (sesja 1, scena 4), kampania
 :::
 
-**Popioły (wersja A).** Ojciec przy bramie z pustą komorą, Old Penny spalona, wartowniczka przy studni, mechanik z kijem przy pompie. **Brak Sheafa, Daisy i Skipa** („nie ma matki z dzieckiem”).
+**Popioły (wersja A).** Ojciec przy bramie z pustą komorą, Old Penny spalona, wartowniczka przy studni, mechanik z kijem przy pompie. **Nie ma matki Rusty'ego, Sheafa ani Skipa z matką** („nie ma matki z dzieckiem”).
 **Z ruin** zabrał pistolet ojca, manierkę, kapsle i dzwonek.
 **Gwiazda** z ruin komisariatu, z dziennika: „Z upoważnienia Korony”, punkt 14 „W przypadku braku sędziego” urwany, ślady zębów. Przypięta na lewym barku.
 ::: side player Do one-shota
-Rusty przychodzi z **Big Ironem**, gwiazdą na lewym barku i 250 kapslami Haywarda, których nie ruszy. W Kręgu odda broń? „W Stajni uszanuję” — sprawdzimy. Na Burra (Sheafa) patrzy oczami kogoś, komu zabrano matkę i brata.
+Rusty przychodzi z **Big Ironem**, gwiazdą na lewym barku i 250 kapslami Haywarda, których nie ruszy. W Kręgu odda broń? „W Stajni uszanuję” — sprawdzimy. Na Burra (Sheafa) patrzy oczami kogoś, komu Kantar — jak wierzy — spalił dom i zabrał matkę.
 :::
 
 **Bar.** Wygrana bójka ze Slagiem; Magpie wskazała Kantar przy farmie na wschodzie; radio Stajni 97; Hayward: „Przyprowadź ją”; Rusty wziął 250 kapsli.
@@ -55,7 +58,7 @@ Rusty przychodzi z **Big Ironem**, gwiazdą na lewym barku i 250 kapslami Haywar
 ## Plan sesji (przed 24.11)
 
 ::: side todo Do ustalenia
-- **Hallucinations:** kierunek (np. żar i słońce pustkowi, głosy z Cichych Brodów?).
+- **Wady i cechy:** ostateczny zestaw z karty; jeśli zostały Hallucinations — kierunek (żar i słońce pustkowi?).
 - **Inicjatywa** w karcie — sprawdzić, skąd wynika wyliczenie.
 - Umiejętności wiodące i premia małej osady — spisać z karty w Foundry.
 :::
@@ -262,7 +265,7 @@ Dym widzisz rano, w połowie drogi powrotnej. Biegniesz z torbami pełnymi naboi
 :::
 
 ::: side player Zagrane: wersja A
-Old Anvil przy bramie z pustą komorą. Brakuje **Daisy i Skipa** (brata) oraz Sheafa. Old Penny spalona.
+Old Anvil przy bramie z pustą komorą. Brakuje **matki Rusty'ego**, Sheafa oraz **Skipa z matką**. Old Penny spalona. Rusty przypisuje wszystko Kantarowi.
 :::
 
 **Ojciec przy bramie** (jeśli wybierasz wersję A): Old Anvil leży z bronią w kopytach. Komora pusta. Nie mów tego wprost. Wystarczy „pusta”, a gracz sam połączy to z pełnymi torbami na swoim grzbiecie.
