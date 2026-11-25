@@ -462,6 +462,7 @@ class Okno:
         self.podglad.configure(state="disabled")
         self.zakladki.select(self.r_pod)
         self.tr_plik = (1, 1)
+        self.tr_wynik = None
         threading.Thread(target=self._czytaj_transkr, args=(self.transkr,), daemon=True).start()
 
     def _czytaj_transkr(self, p):
@@ -505,8 +506,21 @@ class Okno:
                                      + (f", zostało ok. {d['zostalo']}" if d.get("zostalo") else ""))
         if "gotowe" in d:
             self.pb["value"] = 1.0
-            self.ostatnia_transkrypcja = Path(d["gotowe"])
+            self.ostatnia_transkrypcja = self.tr_wynik = Path(d["gotowe"])
             self.l_tr.configure(text=f"Gotowe: {self.ostatnia_transkrypcja}")
+
+    def powiadom_koniec(self, plik: Path):
+        """Długa transkrypcja kończy się, gdy nikt nie patrzy: dźwięk, mruganie na pasku zadań, pytanie."""
+        self.root.bell()
+        if WINDOWS:
+            try:
+                import ctypes
+                hwnd = ctypes.windll.user32.GetParent(self.root.winfo_id())
+                ctypes.windll.user32.FlashWindow(hwnd, True)
+            except Exception:
+                pass
+        if messagebox.askyesno("Transkrypcja gotowa", f"Gotowe:\n{plik}\n\nOtworzyć?"):
+            otworz(plik)
 
     def otworz_transkrypcje(self):
         p = getattr(self, "ostatnia_transkrypcja", None)
@@ -567,6 +581,8 @@ class Okno:
                     self.b_tr.configure(text="Transkrybuj ostatnią sesję")
                     if d != 0:
                         self.log(f"Transkrypcja przerwana (kod {d}).")
+                    elif self.tr_wynik:
+                        self.powiadom_koniec(self.tr_wynik)
         except queue.Empty:
             pass
         if self.nagrywa():
