@@ -23,6 +23,7 @@ TU = Path(__file__).resolve().parent
 AUDIO = (".flac", ".wav", ".mp3", ".m4a", ".ogg", ".opus", ".mp4", ".mkv", ".webm")
 SKLEJ_PRZERWA = 2.5   # s: kolejne wypowiedzi tej samej osoby bliżej niż tyle łączymy w jedną linię
 SKLEJ_MAX = 40.0      # s: ale jedna linia nie dłuższa niż tyle
+JSON_POSTEP = False   # True: postęp jako linie „@@{json}” dla okna Sesja.pyw
 
 
 @dataclass
@@ -63,7 +64,8 @@ def zapisz(katalog: Path, linie: list[Wypowiedz], meta: dict, nazwa: str = "tran
     if start:
         naglowek.append(f"Początek nagrania: {start.replace('T', ' ')}  ")
     naglowek += [f"Model: {meta.get('model', '?')} · ścieżki: {', '.join(meta.get('mowcy', []))}", "",
-                 "Czas [gg:mm:ss] liczony od początku nagrania. „Discord” to wszyscy gracze razem.", ""]
+                 "Czas [gg:mm:ss] liczony od początku nagrania."
+                 + ("" if meta.get("tryb") == "bot" else " „Discord” to wszyscy gracze razem."), ""]
     md = naglowek + [f"**[{hms(w.start)}] {w.mowca}:** {w.tekst}  " for w in linie]
     txt = [f"[{hms(w.start)}] {w.mowca}: {w.tekst}" for w in linie]
     (katalog / f"{nazwa}.md").write_text("\n".join(md) + "\n", encoding="utf-8")
@@ -71,6 +73,25 @@ def zapisz(katalog: Path, linie: list[Wypowiedz], meta: dict, nazwa: str = "tran
     # surowe segmenty — przydają się, gdyby trzeba było scalić inaczej
     (katalog / f"{nazwa}.json").write_text(json.dumps(
         [w.__dict__ for w in linie], ensure_ascii=False, indent=1), encoding="utf-8")
+
+
+def cfg() -> dict:
+    p = TU / "ustawienia.json"
+    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
+
+
+def etykieta(sciezka: dict, postacie: dict) -> str:
+    """Nazwa mówcy: mapowanie z ustawień (nick → postać) po nazwie na serwerze albo loginie."""
+    mapa = {k.lower(): v for k, v in (postacie or {}).items()}
+    for klucz in (sciezka.get("etykieta", ""), sciezka.get("uzytkownik", ""), sciezka.get("id", "")):
+        if klucz and klucz.lower() in mapa:
+            return mapa[klucz.lower()]
+    return sciezka.get("etykieta") or sciezka.get("plik", "?")
+
+
+def postep(**kw):
+    if JSON_POSTEP:
+        print("@@" + json.dumps(kw, ensure_ascii=False), flush=True)
 
 
 def slownik() -> str:
@@ -133,29 +154,31 @@ def transkrybuj_plik(model, plik: Path, mowca: str, prompt: str, przesuniecie: f
         ile = s.end / dlugosc
         uplynelo = time.time() - t_start
         zostalo = uplynelo / ile - uplynelo if ile > 0.01 else 0
-        print(f"\r  {mowca}: {ile:5.1%}  [{hms(s.end)} / {hms(dlugosc)}]  zostało ok. {hms(zostalo)}   ",
-              end="", flush=True)
-    print()
+        if JSON_POSTEP:
+            postep(mowca=mowca, ile=round(ile, 4), zostalo=hms(zostalo))
+        else:
+            print(f"\r  {mowca}: {ile:5.1%}  [{hms(s.end)} / {hms(dlugosc)}]  zostało ok. {hms(zostalo)}   ",
+                  end="", flush=True)
+    if not JSON_POSTEP:
+        print()
     return wynik
 
 
 def ostatnia_sesja() -> Path:
-    cfg = TU / "ustawienia.json"
-    folder = Path(json.loads(cfg.read_text(encoding="utf-8")).get("folder_nagran") or TU / "nagrania") \
-        if cfg.exists() else TU / "nagrania"
+    folder = Path(cfg().get("folder_nagran") or TU / "nagrania")
     sesje = sorted(p for p in folder.glob("*") if (p / "sesja.json").exists())
     if not sesje:
         sys.exit(f"Brak nagrań w {folder}. Najpierw nagrywaj.bat.")
     return sesje[-1]
 
 
-def pliki_sesji(katalog: Path, meta: dict) -> list[tuple[Path, str]]:
+def pliki_sesji(katalog: Path, meta: dict, postacie: dict | None = None) -> list[tuple[Path, str]]:
     out = []
     for s in meta.get("sciezki", []):
         for ext in (".flac", ".wav"):
             p = katalog / (s["plik"] + ext)
             if p.exists():
-                out.append((p, s["etykieta"]))
+                out.append((p, etykieta(s, postacie or {})))
                 break
     return out
 
@@ -167,7 +190,13 @@ def main():
     ap.add_argument("--mowca", action="append", default=[], help="etykieta dla kolejnego --plik")
     ap.add_argument("--model", default="auto", help="auto / tiny / base / small / medium / large-v3 / large-v3-turbo")
     ap.add_argument("--urzadzenie", default="auto", choices=["auto", "cuda", "cpu"])
+    ap.add_argument("--postep-json", action="store_true", help=argparse.SUPPRESS)
     a = ap.parse_args()
+    global JSON_POSTEP
+    JSON_POSTEP = a.postep_json
+    ust = cfg()
+    if a.model == "auto" and ust.get("model"):
+        a.model = ust["model"]
 
     if a.plik:
         pliki = [(Path(p), a.mowca[i] if i < len(a.mowca) else Path(p).stem) for i, p in enumerate(a.plik)]
@@ -177,7 +206,7 @@ def main():
     else:
         katalog = Path(a.katalog) if a.katalog else ostatnia_sesja()
         meta = json.loads((katalog / "sesja.json").read_text(encoding="utf-8"))
-        pliki = pliki_sesji(katalog, meta)
+        pliki = pliki_sesji(katalog, meta, ust.get("postacie"))
         nazwa_wyniku = "transkrypcja"
     if not pliki:
         sys.exit(f"Nie znalazłem plików audio w {katalog}.")
@@ -186,13 +215,15 @@ def main():
     model, nazwa_modelu, dev = zaladuj_model(a.model, a.urzadzenie)
     prompt = slownik()
     wszystko: list[Wypowiedz] = []
-    for plik, mowca in pliki:
-        print(f"→ {plik.name} ({mowca})")
+    for i, (plik, mowca) in enumerate(pliki):
+        print(f"→ {plik.name} ({mowca})", flush=True)
+        postep(plik_nr=i + 1, plikow=len(pliki), mowca=mowca, ile=0)
         wszystko += transkrybuj_plik(model, plik, mowca, prompt)
     meta.update(model=f"{nazwa_modelu} ({dev})", mowcy=[m for _, m in pliki])
     linie = scal(wszystko)
     zapisz(katalog, linie, meta, nazwa_wyniku)
     print(f"\nGotowe: {katalog / (nazwa_wyniku + '.md')}  ({len(linie)} wypowiedzi)")
+    postep(gotowe=str(katalog / (nazwa_wyniku + ".md")))
 
 
 if __name__ == "__main__":

@@ -49,7 +49,7 @@ content/
 
 ## Transkrypcja sesji
 
-`transkrypcja/` — program na komputer MG: nagrywa mikrofon i Discorda, robi polską transkrypcję lokalnie (faster-whisper). Instrukcja w `transkrypcja/README.md`.
+`transkrypcja/` — program na komputer MG (okno „Sesja”): nagrywa mikrofon i Discorda (lokalnie albo botem, każdego gracza osobno) i robi polską transkrypcję lokalnie (faster-whisper). Instrukcja w `transkrypcja/README.md`.
 
 ## Podgląd lokalnie
 

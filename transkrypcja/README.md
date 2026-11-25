@@ -1,109 +1,132 @@
 # Transkrypcja sesji
 
-Program na Twój komputer: nagrywa sesję (Twój mikrofon i dźwięk z Discorda jako dwie osobne ścieżki),
-a potem robi z tego tekst po polsku, lokalnie, bez wysyłania czegokolwiek do internetu.
-Wynik wygląda tak:
+Program na Twój komputer z Windows: nagrywa sesję i robi z niej tekst po polsku, lokalnie (faster-whisper),
+bez wysyłania nagrań do internetu. Wszystko obsługuje jedno okno **Sesja**.
 
 ```
 [00:41:12] MG: Widzisz, jak przy skrzydle bramy leży twój ojciec. Komora jest pusta.
-[00:41:20] Discord: Szukam matki.
+[00:41:20] Rusty (Erwin): Szukam matki.
 ```
 
-„MG” to Ty (mikrofon), „Discord” to wszyscy gracze razem.
+Dwa tryby nagrywania:
 
-> **Zgoda graczy.** Zanim nagrasz, powiedz graczom, że sesja jest nagrywana i po co.
-> Nagrania i transkrypcje trzymaj u siebie. Nie wrzucaj audio do repozytorium (folder `nagrania/` jest wykluczony).
+| Tryb | Co nagrywa | Etykiety w tekście | Potrzebuje |
+|---|---|---|---|
+| **Lokalny** | Twój mikrofon + wszystko, co słychać z Discorda | „MG” i „Discord” (gracze razem) | nic więcej |
+| **Bot Discord** | każdą osobę na kanale głosowym osobno (jak Craig) | nazwa z serwera albo postać, np. „Uriel (zychu)” | Node.js i własny bot (10 minut, niżej) |
+
+> **Zgoda graczy.** Powiedz graczom, że sesja jest nagrywana i po co. Bot jest widoczny na kanale
+> i ogłasza start nagrania. Nagrania trzymaj u siebie — folder `nagrania/` jest poza gitem.
 
 ## Instalacja (raz)
 
-1. Zainstaluj **Python 3.12** z [python.org](https://www.python.org/downloads/).
-   W instalatorze zaznacz **„Add python.exe to PATH”**.
-2. Pobierz repozytorium (Code → Download ZIP albo `git clone`) i otwórz folder `transkrypcja`.
-3. Uruchom **`instaluj.bat`**. Na końcu zapyta o kartę NVIDIA:
-   - **t** — jeśli masz kartę NVIDIA (GeForce GTX 10xx lub nowszą). Transkrypcja 3 godzin zajmie wtedy kilkanaście–kilkadziesiąt minut.
-   - **Enter** — liczenie na procesorze. Działa, ale 3 godziny sesji to kilka godzin liczenia (zostaw na noc).
+1. **Python 3.12** z [python.org](https://www.python.org/downloads/) — w instalatorze zaznacz **„Add python.exe to PATH”**.
+2. *(tylko dla trybu bota)* **Node.js LTS** z [nodejs.org](https://nodejs.org/).
+3. Pobierz repozytorium (Code → Download ZIP) i w folderze `transkrypcja` uruchom **`instaluj.bat`**.
+   Zapyta o kartę NVIDIA — odpowiedz **Enter** (tak). Na końcu zrobi na pulpicie skrót **„Sesja”**.
 
-Przy pierwszej transkrypcji program pobierze model mowy (ok. 3 GB dla `large-v3`). Potem działa bez internetu.
+Przy pierwszej transkrypcji pobierze się model mowy (`large-v3`, ok. 3 GB). Potem działa bez internetu.
+Z kartą NVIDIA 3 godziny sesji liczą się kilkanaście–kilkadziesiąt minut.
 
-## Nagrywanie
+## Okno „Sesja”
 
-1. **Graj na słuchawkach.** Z głośnikami mikrofon zbiera też głosy graczy i wszystko będzie w transkrypcji dwa razy.
-2. Uruchom **`nagrywaj.bat`**. Zobaczysz dwa paski poziomu: `MG [###.......]  Discord [##........]`.
-   Powiedz coś i poproś kogoś na Discordzie, żeby się odezwał — oba paski powinny drgnąć.
-3. Koniec sesji: **Ctrl+C** w okienku. Program zamknie pliki i skompresuje je do FLAC.
-   Jeśli komputer się wyłączy albo zamkniesz okno krzyżykiem — nagranie i tak zostaje (zapis idzie na bieżąco).
+1. **Źródła.** Wybierz swój mikrofon i skąd brać graczy:
+   - *Wszystko ze słuchawek* — tryb lokalny (najprościej),
+   - *Bot Discord — każdy gracz osobno* — tryb bota.
+2. **● Start / ■ Stop.** Paski pokazują, kto mówi. Przed sesją sprawdź, czy drgają przy każdym.
+   Plik zapisuje się na bieżąco — awaria komputera nie kasuje nagrania.
+3. **Transkrybuj ostatnią sesję.** Pasek postępu i log. Model *auto* = `large-v3` na karcie NVIDIA, `medium` na procesorze;
+   `large-v3-turbo` jest kilka razy szybszy i prawie tak samo dobry.
+4. **Otwórz transkrypcję / Otwórz folder nagrań.**
 
-Pliki lądują w `transkrypcja\nagrania\2026-11-24_1913\`: `mikrofon.flac`, `discord.flac`, `sesja.json`.
-Nazwę możesz dopisać: `nagrywaj.bat --nazwa "Sesja 1"`.
+Graj na **słuchawkach** — z głośnikami mikrofon zbiera graczy drugi raz.
 
-## Transkrypcja
+**Słownik.** `slownik.txt` zawiera nazwy z kampanii (Stajnia 97, Ciche Brody, Kantar…). Whisper dostaje je jako
+podpowiedź w każdym fragmencie nagrania. Dopisuj nowe imiona po jednym w linii (do ~60).
 
-Uruchom **`transkrybuj.bat`** — weźmie ostatnią nagraną sesję. W jej folderze powstaną:
+**Gdzie są pliki:** `transkrypcja\nagrania\2026-11-27_1900\` (tryb bota: `…_bot\`):
+ścieżki `.flac`, `sesja.json`, a po transkrypcji `transkrypcja.md`, `.txt`, `.json`.
 
-- `transkrypcja.md` — do czytania i do przekazania Claude'owi,
-- `transkrypcja.txt` — to samo, czysty tekst,
-- `transkrypcja.json` — surowe kawałki z czasami.
+**Jak dać transkrypcję Claude'owi:** wrzuć `transkrypcja.md` do repozytorium do `content/05-dla-mg/sesje zero/`
+(Add file → Upload files) albo wklej tekst w czat.
 
-Inne możliwości:
+## Tryb bota: założenie bota (raz)
+
+1. Wejdź na [discord.com/developers/applications](https://discord.com/developers/applications) → **New Application**, nazwij np. „Nagrywacz”.
+2. **Bot** → **Reset Token** → skopiuj token. W oknie Sesja wklej go w pole **Token** → **Zapisz token**.
+   Token trafia do `bot/token.txt`, który jest poza gitem. **Nigdy nie wrzucaj go do repozytorium ani na czat.**
+   Jeśli wycieknie — znowu „Reset Token”.
+3. Na tej samej stronie: **Public Bot — wyłącz** (tylko Ty go zaprosisz). **Privileged Gateway Intents — zostaw wyłączone**,
+   bot ich nie potrzebuje (używa tylko Guilds i Guild Voice States).
+4. **OAuth2 → URL Generator:** zakresy **bot** i **applications.commands**; uprawnienia **View Channels**, **Connect**, **Send Messages**.
+   Otwórz wygenerowany link i wybierz swój serwer.
+   (Albo gotowy link: `https://discord.com/oauth2/authorize?client_id=ID_APLIKACJI&scope=bot%20applications.commands&permissions=1051648`,
+   ID aplikacji jest w *General Information*.)
+5. W oknie Sesja: Gracze → **Bot Discord**, w polu **MG na Discordzie** wpisz swoją nazwę użytkownika, **Uruchom bota**.
+   Status zmieni się na zielony z nazwą serwera.
+
+**Na sesji:** wejdź na kanał głosowy i kliknij **● Start** (bot dołączy do Twojego kanału) — albo wpisz na Discordzie `/nagrywaj`.
+Koniec: **■ Stop** albo `/stop`. Okno musi być otwarte, bo to ono uruchamia bota.
+
+**Postacie.** W polu *Postacie* wpisz, jak nazywać ludzi w tekście — po lewej nick z serwera albo login:
 
 ```
-transkrybuj.bat nagrania\2026-11-24_1913          ← konkretna sesja
-transkrybuj.bat --model small                     ← szybciej, gorzej (tiny / base / small / medium / large-v3 / large-v3-turbo)
-transkrybuj.bat --plik "C:\nagranie.mp4" --mowca "Stół"   ← dowolny plik audio lub wideo
+Vulpes = MG
+zychu = Uriel (zychu)
+Tymianox = Rick (Tymek)
+Erwin = Rusty (Erwin)
 ```
 
-Domyślnie: `large-v3` na karcie NVIDIA, `medium` na procesorze. `large-v3-turbo` na karcie jest kilka razy szybszy i prawie tak samo dobry.
+**Czy lokalny mikrofon jest jeszcze potrzebny?** Nie — bot nagrywa też Ciebie, bo jesteś na kanale.
+Opcja *Nagrywaj też mój mikrofon lokalnie (zapas)* zapisuje kopię do podfolderu `zapas\`, której transkrypcja nie używa.
+Przyda się, gdyby ścieżka bota była pusta: `.venv\Scripts\python transkrybuj.py --plik nagrania\…\zapas\mikrofon.flac --mowca MG`.
 
-**Słownik.** W `slownik.txt` są nazwy z kampanii (Stajnia 97, Ciche Brody, Kantar, Uriel…). Whisper dostaje je jako podpowiedź
-i pisze je poprawnie. Dopisuj nowe imiona po jednym w linii; trzymaj listę krótką (do ~60 słów).
+## Dlaczego bot jest w Node.js, a nie w Pythonie (stan na 25.11.2026)
 
-## Jak dać transkrypcję Claude'owi
+Od 1 marca 2026 Discord wymaga szyfrowania end-to-end rozmów głosowych (DAVE) także od botów
+([blog Discorda](https://discord.com/blog/bringing-dave-to-all-discord-platforms)). Bot musi więc umieć **odszyfrować** odbierany dźwięk.
 
-Najprościej: wrzuć `transkrypcja.md` do repozytorium do `content/05-dla-mg/sesje zero/` (Add file → Upload files)
-i napisz, że jest. Możesz też po prostu wkleić tekst w czat.
+- **py-cord** (najnowszy 2.8.1): DAVE obsługuje tylko przy *wysyłaniu*; dokumentacja ostrzega, że nagrywanie może nie działać
+  ([docs 2.8.1](https://docs.pycord.dev/en/v2.8.1/api/voice.html)). Odbiór z DAVE jest w otwartym PR
+  ([#3159](https://github.com/Pycord-Development/pycord/pull/3159)), nie w wydaniu; do tego davey 0.2 psuje 2.8.1
+  ([zgłoszenie](https://github.com/felix920506/jellychord/issues/86)).
+- **discord.py + discord-ext-voice-recv**: odbiór z DAVE tylko w nakładających się PR-ach i forkach
+  ([przegląd w forku](https://github.com/Florian-85/discord-ext-voice-recv/issues/7)), bez wydania.
+- **@discordjs/voice 0.19.2** (wydane 17.03.2026): opublikowany kod odbioru odszyfrowuje DAVE (`daveSession.decrypt` w `parsePacket`,
+  biblioteka [@snazzah/davey](https://www.npmjs.com/package/@snazzah/davey)), a poprawka gubionego dźwięku
+  ([#11419](https://github.com/discordjs/discord.js/issues/11419), [PR #11449](https://github.com/discordjs/discord.js/pull/11449))
+  jest w tym wydaniu. To jedyna gotowa, wydana biblioteka z odbiorem DAVE — dlatego bot to mały proces Node uruchamiany z okna.
 
-## Ustawienia urządzeń (`ustawienia.json`)
+Zastrzeżenia: Discord nie dokumentuje odbioru dźwięku, więc biblioteka nie gwarantuje stabilności
+([dokumentacja](https://discord.js.org/docs/packages/voice/main)). Wersje są przypięte (`@discordjs/voice 0.19.2`, `@snazzah/davey <0.2`);
+nie aktualizuj ich bez próby. Zgłaszano, że pierwsze sekundy po wejściu bota mogą się nie odszyfrować — **włącz nagrywanie
+minutę przed startem sesji**. Jeśli bot zawiedzie, tryb lokalny działa zawsze.
 
-Domyślnie (puste pola) program bierze **domyślny mikrofon** Windowsa i nagrywa **wszystko, co gra na domyślnych słuchawkach** —
-czyli Discorda. Listę urządzeń pokaże `nagrywaj.bat --lista`. Wpisz fragment nazwy:
+## Tryb lokalny: muzyka z Foundry
 
-```json
-{ "mikrofon": "Blue Yeti", "discord": "", "folder_nagran": "D:\\Sesje" }
+W trybie lokalnym ścieżka „Discord” to wszystko, co gra na słuchawkach, także muzyka z Foundry. Whisper zwykle ją pomija.
+Jeśli przeszkadza, oddziel Discorda darmowym **VB-Audio Virtual Cable**: Discord → Głos i wideo → wyjście **CABLE Input**;
+Windows → Dźwięk → Nagrywanie → **CABLE Output** → Właściwości → Nasłuchiwanie → „Nasłuchuj tego urządzenia” na słuchawki;
+w oknie Sesja jako graczy wybierz **Wejście: CABLE Output**.
+
+## Bez okna (konsola)
+
+```
+.venv\Scripts\python nagrywaj.py --lista
+.venv\Scripts\python nagrywaj.py --nazwa "Sesja 1"
+.venv\Scripts\python transkrybuj.py [katalog] [--model large-v3-turbo]
+.venv\Scripts\python transkrybuj.py --plik "C:\nagranie.mp4" --mowca "Stół"
+cd bot && node nagrywacz.mjs        (bot sam; sterowanie /nagrywaj i /stop)
 ```
 
-### Muzyka z Foundry w ścieżce Discorda
-
-Jeśli Foundry gra muzykę na tych samych słuchawkach, trafi ona do ścieżki „Discord”. Zwykle to nie problem —
-whisper pomija muzykę bez słów (VAD). Jeśli przeszkadza, oddziel Discorda wirtualnym kablem:
-
-1. Zainstaluj darmowy **VB-Audio Virtual Cable** (vb-audio.com/Cable).
-2. Discord → Ustawienia → Głos i wideo → **Urządzenie wyjściowe: CABLE Input**.
-3. Windows → Panel dźwięku → Nagrywanie → **CABLE Output** → Właściwości → Nasłuchiwanie →
-   zaznacz **„Nasłuchuj tego urządzenia”** i wybierz swoje słuchawki (żebyś dalej słyszał graczy).
-4. W `ustawienia.json`: `"discord": "wejscie:CABLE Output"`.
-
-Teraz ścieżka „Discord” to wyłącznie gracze.
-
-**Dlaczego tak, a nie „nagraj tylko proces Discord.exe”?** Windows 10 (2004+) potrafi to w teorii (process loopback),
-ale z Pythona wymaga to ręcznego wywoływania COM i bywa kruche. Loopback słuchawek (PyAudioWPatch, WASAPI)
-działa od ręki, a kabel wirtualny daje czystą ścieżkę bez pisania sterowników.
-
-## Czego to nie robi
-
-- **Nie rozróżnia graczy między sobą** — w ścieżce Discorda wszyscy są „Discord”. Jest to do zrobienia później:
-  albo rozpoznawanie głosów (pyannote, wymaga konta Hugging Face i karty NVIDIA), albo bot nagrywający
-  każdego gracza osobno (jak Craig). Claude zwykle rozpozna postacie z kontekstu.
-- Nie robi transkrypcji na żywo — liczy po sesji.
-
-## Linux / macOS
-
-Działa minimalnie: `pip install -r requirements.txt` (Linux potrzebuje też `libportaudio2`), potem
-`python nagrywaj.py --lista`, a w `ustawienia.json` jako `"discord"` wpisz nazwę urządzenia „monitor” wyjścia (PulseAudio/PipeWire).
-Na macOS do dźwięku Discorda potrzebny jest BlackHole.
+Linux/macOS: działa minimalnie (sounddevice; Linux potrzebuje `libportaudio2`, Discord przez urządzenie „monitor”).
 
 ## Rozwiązywanie problemów
 
-- **Pasek „Discord” stoi** — Discord gra na innym wyjściu niż domyślne. Wpisz jego nazwę w `"discord"` (z `--lista`).
-- **„Nie znalazłem Pythona”** — zainstaluj ponownie z zaznaczonym „Add python.exe to PATH”.
-- **Transkrypcja pisze o CUDA i przechodzi na procesor** — uruchom `instaluj.bat` jeszcze raz i odpowiedz **t**; zaktualizuj sterownik NVIDIA.
-- **Powtarzające się zdania / „Dziękuję za obejrzenie”** — whisper czasem zmyśla w ciszy. VAD ogranicza to mocno; jeśli się zdarza, zgłoś mi fragment.
+- **Pasek „Discord” stoi (tryb lokalny)** — Discord gra na innym wyjściu; wybierz je z listy *Wyjście: …*.
+- **Bot: „Brak tokenu”** — wklej token i kliknij Zapisz token.
+- **Bot nie widzi serwera** — nie został zaproszony (krok 4).
+- **„Nie wiem, który kanał nagrać”** — wejdź na kanał głosowy i wpisz swoją nazwę w „MG na Discordzie”, albo użyj `/nagrywaj`.
+- **Pusta ścieżka gracza w trybie bota** — problem z odszyfrowaniem (log okna pokazuje `[voice] … decrypt`). Zgłoś log; nagrywaj lokalnie.
+- **CUDA nie działa, liczy na procesorze** — uruchom `instaluj.bat` jeszcze raz (odpowiedz tak na kartę NVIDIA), zaktualizuj sterownik.
+- **Powtarzające się zdania w ciszy** — typowa wpadka whispera; VAD mocno to ogranicza. Zgłoś fragment.

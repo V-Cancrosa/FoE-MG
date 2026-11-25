@@ -1,0 +1,16 @@
+{
+  "name": "foe-nagrywacz",
+  "private": true,
+  "type": "module",
+  "description": "Bot Discord nagrywający każdego gracza osobno (do transkrypcji sesji)",
+  "main": "nagrywacz.mjs",
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "discord.js": "^14.28.1",
+    "@discordjs/voice": "0.19.2",
+    "@snazzah/davey": ">=0.1.9 <0.2.0",
+    "libsodium-wrappers": "^0.7.15",
+    "opusscript": "^0.1.1"
+  },
+  "scripts": { "start": "node nagrywacz.mjs" }
+}

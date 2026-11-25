@@ -139,6 +139,12 @@ class Windows:
         dom_out = self.pa.get_device_info_by_index(self.wasapi["defaultOutputDevice"])["name"]
         print(f"\nDomyślny mikrofon: {dom_in}\nDomyślne wyjście: {dom_out}")
 
+    def nazwy(self) -> tuple[list[str], list[str]]:
+        """(wejścia, wyjścia) — do list wyboru w oknie."""
+        we = [d["name"] for d in self.urzadzenia() if d["maxInputChannels"] > 0 and not d.get("isLoopbackDevice")]
+        wy = [d["name"] for d in self.urzadzenia() if d["maxOutputChannels"] > 0 and not d.get("isLoopbackDevice")]
+        return we, wy
+
     def mikrofon(self, wzorzec: str):
         if not wzorzec:
             return self.pa.get_device_info_by_index(self.wasapi["defaultInputDevice"])
@@ -202,6 +208,10 @@ class Inne:
                 return d
         sys.exit(f"Nie znalazłem urządzenia „{wzorzec}”. Sprawdź: --lista")
 
+    def nazwy(self) -> tuple[list[str], list[str]]:
+        we = [d["name"] for d in self.sd.query_devices() if d["max_input_channels"] > 0]
+        return we, []
+
     def mikrofon(self, w):
         return self._znajdz(w)
 
@@ -232,7 +242,7 @@ def pasek(p: float) -> str:
     return "#" * n + "." * (10 - n)
 
 
-def kompresuj(katalog: Path):
+def kompresuj(katalog: Path, log=print):
     try:
         import soundfile as sf
     except ImportError:
@@ -246,75 +256,110 @@ def kompresuj(katalog: Path):
                     out.write(blok)
             if sf.info(flac).frames == info.frames:
                 wav.unlink()
-                print(f"  {wav.name} → {flac.name}")
+                log(f"  {wav.name} → {flac.name}")
         except Exception as e:  # WAV zostaje, nic nie ginie
-            print(f"  (nie skompresowano {wav.name}: {e})")
+            log(f"  (nie skompresowano {wav.name}: {e})")
+
+
+def zapisz_ustawienia(cfg: dict):
+    (TU / "ustawienia.json").write_text(json.dumps(cfg, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def folder_nagran(cfg: dict) -> Path:
+    return Path(cfg.get("folder_nagran") or TU / "nagrania")
+
+
+def nowy_katalog(cfg: dict, dopisek: str = "") -> Path:
+    stamp = dt.datetime.now().strftime("%Y-%m-%d_%H%M")
+    k = folder_nagran(cfg) / (stamp + (f"_{dopisek}" if dopisek else ""))
+    k.mkdir(parents=True, exist_ok=True)
+    return k
+
+
+def system_audio():
+    return Windows() if WINDOWS else Inne()
+
+
+class Nagrywanie:
+    """Mikrofon (+ opcjonalnie loopback Discorda) do katalogu. Używane przez okno i przez konsolę."""
+
+    def __init__(self, sys_audio, mikrofon: str = "", discord: str | None = ""):
+        self.sa = sys_audio
+        self.zrodla = [("MG", "mikrofon", sys_audio.mikrofon(mikrofon))]
+        if discord is not None:
+            self.zrodla.append(("Discord", "discord", sys_audio.discord(discord)))
+        self.sciezki: list[Sciezka] = []
+        self.strumienie = []
+        self.katalog: Path | None = None
+        self.t0 = 0.0
+
+    def start(self, katalog: Path, nazwa: str = ""):
+        self.katalog, self.t0 = katalog, time.time()
+        for etykieta, plik, d in self.zrodla:
+            rate, kan = self.sa.parametry(d)
+            self.sciezki.append(Sciezka(etykieta, katalog / f"{plik}.wav", rate, kan, self.t0))
+        for (_, _, d), s in zip(self.zrodla, self.sciezki):
+            self.strumienie.append(self.sa.otworz(d, s))
+        self.meta = {"start": dt.datetime.fromtimestamp(self.t0).isoformat(timespec="seconds"), "nazwa": nazwa,
+                     "tryb": "lokalny",
+                     "sciezki": [{"etykieta": s.etykieta, "plik": s.wav.sciezka.stem, "rate": s.rate} for s in self.sciezki]}
+        self._zapisz_meta()
+
+    def _zapisz_meta(self):
+        (self.katalog / "sesja.json").write_text(json.dumps(self.meta, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    def stop(self, kompresja: bool = True, log=print):
+        for st in self.strumienie:
+            try:
+                st.stop_stream() if WINDOWS else st.stop()
+                st.close()
+            except Exception:
+                pass
+        for s in self.sciezki:
+            s.zamknij()
+        self.meta["koniec"] = dt.datetime.now().isoformat(timespec="seconds")
+        self._zapisz_meta()
+        if kompresja:
+            log("Kompresuję do FLAC (mniej miejsca na dysku)…")
+            kompresuj(self.katalog, log)
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Nagrywanie sesji: mikrofon + Discord")
+    ap = argparse.ArgumentParser(description="Nagrywanie sesji: mikrofon + Discord (konsola; zwykle używaj okna Sesja.pyw)")
     ap.add_argument("--lista", action="store_true", help="pokaż urządzenia audio")
     ap.add_argument("--nazwa", default="", help="dopisek do nazwy katalogu sesji")
     ap.add_argument("--bez-discorda", action="store_true", help="nagraj tylko mikrofon")
     ap.add_argument("--bez-kompresji", action="store_true", help="zostaw WAV zamiast FLAC")
     a = ap.parse_args()
 
-    sys_audio = Windows() if WINDOWS else Inne()
+    sa = system_audio()
     if a.lista:
-        sys_audio.lista()
+        sa.lista()
         return
-
     cfg = ustawienia()
-    stamp = dt.datetime.now().strftime("%Y-%m-%d_%H%M")
-    nazwa = stamp + (f"_{a.nazwa}" if a.nazwa else "")
-    katalog = Path(cfg.get("folder_nagran") or TU / "nagrania") / nazwa
-    katalog.mkdir(parents=True, exist_ok=True)
-
-    zrodla = [("MG", "mikrofon", sys_audio.mikrofon(cfg.get("mikrofon", "")))]
-    if not a.bez_discorda:
-        zrodla.append(("Discord", "discord", sys_audio.discord(cfg.get("discord", ""))))
-
-    t0 = time.time()
-    sciezki, strumienie = [], []
-    for etykieta, plik, d in zrodla:
-        rate, kan = sys_audio.parametry(d)
-        s = Sciezka(etykieta, katalog / f"{plik}.wav", rate, kan, t0)
-        sciezki.append(s)
-        print(f"● {etykieta:8} ← {d['name']}  ({rate} Hz)")
-    for (_, _, d), s in zip(zrodla, sciezki):
-        strumienie.append(sys_audio.otworz(d, s))
-
-    meta = {"start": dt.datetime.fromtimestamp(t0).isoformat(timespec="seconds"), "nazwa": a.nazwa,
-            "sciezki": [{"etykieta": s.etykieta, "plik": s.wav.sciezka.stem, "rate": s.rate} for s in sciezki]}
-    (katalog / "sesja.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
-
+    discord = cfg.get("discord", "")
+    if a.bez_discorda or discord == "bot":
+        discord = None
+    n = Nagrywanie(sa, cfg.get("mikrofon", ""), discord)
+    katalog = nowy_katalog(cfg, a.nazwa)
+    n.start(katalog, a.nazwa)
+    for (et, _, d) in n.zrodla:
+        print(f"● {et:8} ← {d['name']}")
     print(f"\nNagrywam do: {katalog}\nZatrzymanie: Ctrl+C (albo zamknij okno — nagranie i tak zostanie).\n")
     try:
         while True:
             time.sleep(0.5)
-            czas = str(dt.timedelta(seconds=int(time.time() - t0)))
-            poz = "  ".join(f"{s.etykieta} [{pasek(s.poziom)}]" for s in sciezki)
+            czas = str(dt.timedelta(seconds=int(time.time() - n.t0)))
+            poz = "  ".join(f"{s.etykieta} [{pasek(s.poziom)}]" for s in n.sciezki)
             print(f"\r{czas}  {poz}   ", end="", flush=True)
-            for s in sciezki:
+            for s in n.sciezki:
                 s.poziom *= 0.8
     except KeyboardInterrupt:
         pass
     print("\n\nZatrzymuję…")
-    for st in strumienie:
-        try:
-            st.stop_stream() if WINDOWS else st.stop()
-            st.close()
-        except Exception:
-            pass
-    for s in sciezki:
-        s.zamknij()
-    sys_audio.koniec()
-    meta["koniec"] = dt.datetime.now().isoformat(timespec="seconds")
-    (katalog / "sesja.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
-    if not a.bez_kompresji:
-        print("Kompresuję do FLAC (mniej miejsca na dysku)…")
-        kompresuj(katalog)
-    print(f"\nGotowe. Teraz: transkrybuj.bat  (albo: python transkrybuj.py \"{katalog}\")")
+    n.stop(not a.bez_kompresji)
+    sa.koniec()
+    print(f"\nGotowe. Teraz transkrypcja: python transkrybuj.py \"{katalog}\"")
 
 
 if __name__ == "__main__":
