@@ -29,7 +29,7 @@ To, co zagrane, jest kanonem. Sceny niezagrane (niżej oznaczone) nie wydarzyły
 |---|---|
 | **Rasa** | kucyk ziemski, +1 STR i +1 INT; **Strong Back**; +5 Repair i Science |
 | **Atrybuty** | silny (trzy krzesła zamiast dwóch), przeciętna percepcja, niższa charyzma; MG rozważał niską Zwinność |
-| **Wady i cechy** | wady: Scavenger, Good Natured, Studious · cechy: Brave, Foal at Heart, Specialization (**Sneak**), Clear Conscience · **Stable Dweller za darmo** (decyzja MG) · perk Strong Back |
+| **Wady i cechy** | wady: Scavenger, Good Natured, Studious · cechy: Brave, Foal at Heart, Specialization (**Sneak** — poza listą podręcznika, do decyzji MG), Clear Conscience · **Stable Dweller za darmo** (decyzja MG) · perk Strong Back |
 | **Atrybuty (karta)** | S 7 · P 5 · E 5 · C 3 · I 6 · A 4 · L 7 · tagi: Repair, Science, Sneak |
 | **Znaczek** | klucz i śruba z błyskawicą — naprawił zepsute urządzenie technika (przerwane kable), które jednorożec **Seidz** spisał na straty |
 | **Przydział** | poziomy techniczne. Samotnik i majsterkowicz (jury-rigging) |

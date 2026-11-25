@@ -67,7 +67,7 @@ Bez rewolweru — został u Gunthera. Explosives: granaty i rzucanie przedmiotam
 | prezenty z sesji zero | Fresh Apple (jabłko z kolacji), Fresh Seeds (koperta od Frozen Seed przez Willow Bark), szczepka rodzinnej roślinki | fabularne |
 | kieszeń | **0 kapsli**; garść przedwojennych **bitów** | na pustkowiach ciekawostka; kolekcjoner albo stary ghul coś za nie da, handlarz pozna świeżaka |
 
-Specialization: **Sneak** (+15 w oknie rzutu). Good Natured: −10 do walki — w swojej chwili walki niech błyszczy siłą (S 7) i techniką, nie prętem.
+Specialization: **Sneak** (+15 w oknie rzutu) — poza listą podręcznika (Survival, Mercantile, Speechcraft, Magic, Medicine, Repair, Science). Od v0.74.2 karta działa po staremu, dopóki nie otworzysz kreatora; wtedy wybierz umiejętność z listy albo ręcznie ustaw cel efektu „Skill rolls” na Sneak. Good Natured: −10 do walki — w swojej chwili walki niech błyszczy siłą (S 7) i techniką, nie prętem.
 
 #### Rusty Spur — wędrowiec pustkowi
 
