@@ -71,19 +71,20 @@ Specialization: **Sneak** (+15 w oknie rzutu). Good Natured: −10 do walki — 
 
 #### Rusty Spur — wędrowiec pustkowi
 
-| Przedmiot | Kapsle |
-|---|---|
-| Armored Duster (DT 6, +5 Small Guns) | 70 |
-| Filtration Helmet (DT 9, maska; zużyte filtry — zasada domowa) | 8 |
-| Saddlebags/Backpack (torby gońca) | 25 |
-| Canteen | 3 |
-| Healing Potion | 25 |
-| Sheriff's Badge (gwiazda) | 2 |
-| **.357 Magnum Revolver** (4d8, ×2, 6 naboi) | 110 |
-| 24 naboje .357 | 48 |
-| **Razem z 300** | **291 → zostaje 9** |
+Ustalone na sesji zero 24.11 (bez liczenia 300 kapsli: sprzęt z historii, broń jako Named Weapon).
 
-Fabularne: dzwonek bez serca, zeszyt „Spisane Prawo”, list gończy Knota. Na sesji dochodzą już tylko drobiazgi. Gdyby Erwin wolał inną broń: .32 Hunting Rifle (150) albo Single Shotgun (175), z mniejszym zapasem amunicji.
+| Przedmiot | Uwagi |
+|---|---|
+| Armored Duster | DT 6 tułów i nogi, +5 Small Guns |
+| Filtration Helmet | DT 9 głowa; zasada domowa: +20 do rzutów przeciw trującym i zakaźnym chmurom, ale **brak filtrów** |
+| Saddlebags/Backpack (juki gońca), Canteen | |
+| Healing Potion ×1 | działa lepiej, gdy poda ją ktoś, kto zna Rusty'ego |
+| Sheriff's Badge (gwiazda) | na lewym barku |
+| **.357 Magnum Revolver — Named Weapon „Big Iron”** | rewolwer ojca, 5 pkt ulepszeń; SATS nieaktywny bez sprzętu |
+| 4 paczki naboi .357 po 6 | jedna w bębenku |
+| **39 kapsli** | + 250 kapsli od Haywarda, „nietykalne” |
+
+Fabularne: dzwonek bez serca, zeszyt „Spisane Prawo”, list gończy Knota. Na sesji dochodzą już tylko drobiazgi. Filtry do hełmu to dobra nagroda w Stajni (Rick jest technikiem).
 
 ## Jak czytać tę część
 
@@ -95,4 +96,4 @@ Każda scena ma cel, tekst do przeczytania (tam, gdzie jest gotowy) i notki MG. 
 |---|---|---|
 | Rick | rozkaz zwiadu, meldunek co godzinę na kanale trzecim | stodoła (pierwszy świat), tunel (łamie rozkaz), Krąg (rodzina, Lily Pad), szturm (technik przy stanowisku kontroli, światła) |
 | Uriel | ogłoszenie o radkaraluchach i mrówkach w stodole — pierwsze zlecenie na własny rachunek; jednocześnie radio o Stajni | stodoła (zapłata? Scavenger: wóz i rupiecie), Krąg (złożenie katany; kieszonkowanie w Stajni), szturm (kodeks: „celem nie jest źrebak” — Pea i Pod) |
-| Rusty | Knot jedzie z Kantarem w to samo miejsce; Stajnia ma spisane prawo (art. 14) | zwiadowca Burr (sąsiad Sheaf, serce dzwonka), Krąg („w Stajni uszanuję”), szturm (zakładnik), Knot żywy czy martwy |
+| Rusty | Knot jedzie z Kantarem w to samo miejsce; Stajnia ma spisane prawo (art. 14); 250 kapsli Haywarda za Sweet Briar | zwiadowca Burr (sąsiad Sheaf, serce dzwonka; może wiedzieć, gdzie Daisy i Skip), Krąg („w Stajni uszanuję”, oddanie Big Irona), szturm (zakładnik), Knot żywy czy martwy |

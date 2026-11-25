@@ -2,12 +2,64 @@
 tytul: Sesja 0: Rusty Spur
 kicker: Sesja zero · 3 z 3 · przeszłość
 marginesy: tak
-podtytul: Gracz: Erwin (Nikodem) · wtorek 24.11 · Noc w Cinder Ford · kucyk ziemny · wersja 2, z odpowiedziami z zeszytu.
+podtytul: Gracz: Erwin (Nikodem) · zagrane we wtorek 24.11 (ok. 2 h 50 min) · Noc w Cinder Ford · kucyk ziemny · wersja 2, z odpowiedziami z zeszytu i stanem po sesji.
 stopka: Sesja 0: Rusty Spur
 ---
 ::: side fig
 {{img: 03-postacie/Rusty Spur/Rusty Spur.png | Rusty Spur}}
 :::
+
+## Stan po sesji zero (24.11)
+
+To, co zagrane, jest kanonem. Wątki niezagrane wiszą i mogą wrócić, o ile żaden most nie został spalony.
+
+| | |
+|---|---|
+| **Rasa** | kucyk ziemny, +1 END i +1 INT; +5 Survival, +5 Unarmed; atut **High Ho Silver, Away!** (+5 stóp ruchu), nie Strong Back |
+| **S.P.E.C.I.A.L.** | S 5 · P 5 · E 6 · C 4 · I 5 · A 8 · L 4 (Zwinność na pierwszym miejscu: szybki goniec, szybka ręka) |
+| **Pochodne** | ruch 25 stóp, DT bazowe 1; z pancerzem DT 7 na tułów i nogi, 9 na głowę |
+| **Wady** | Code of Honor (zasady z zeszytu), Scarred (−10 do rzutów CHA, plus do zastraszania), Hallucinations (kierunek do ustalenia), Colorblind |
+| **Cechy** | Sterner Stuff, Poison Resistance, Disease Resistance, Named Weapon („Big Iron”). Mental Resistance odrzucone na rzecz obu odporności |
+| **Broń** | **.357 Magnum Revolver ojca jako Named Weapon „Big Iron”**: 5 pkt ulepszeń (więcej kości i wyższa kość), 4 paczki naboi po 6, jedna w bębenku |
+| **Wyposażenie** | Armored Duster, Filtration Helmet bez filtrów, juki gońca, manierka, Healing Potion ×1, gwiazda szeryfa, dzwonek bez serca |
+| **Kapsle** | **39**; do tego 250 kapsli zaliczki od Haywarda, których nie wyda |
+| **Zegar** | włączony na sesjach: jedzenie i picie z ekwipunku, inaczej rosną kary |
+{: .plain}
+
+### Co się wydarzyło
+
+Sesja poszła wg planu poniżej, z kilkoma zmianami, które od teraz są kanonem: Skip okazał się bratem, z popiołów zniknęła matka z dzieckiem, a rewolwer ojca stał się Big Ironem.
+
+::: side secret Granice gracza
+**Bez:** kastracji i niszczenia genitaliów; długich, dogłębnych opisów krwi (np. podcinanie żył). Krótka wzmianka jest OK. Dotyczy istot żywych, potwory to osobna kategoria.
+→ dotyczy: szturm Kantaru, przesłuchanie Burra
+:::
+
+**Retrospekcje.** Old Anvil i kanistry; zebranie (Far Sight, Sheaf mierzył czas trasy, Daisy, Sprocket przy pompie, **Skip to źrebak Daisy, czyli młodszy brat Rusty'ego**, Old Penny).
+**Znaczek.** Pompa na chwilę dała krystaliczną wodę; matka chora, leki w szpitalu w Hoofington. Oddał manierkę źrebakowi, zaniósł go do Cichych Brodów i **poszedł drugi raz** po leki. Daisy wyzdrowiała.
+::: side later Daisy i Skip
+Zabrani, nie martwi. Najprostsza nić: Kantar, jak Sweet Briar. Ale sekret o znaku (trzy kreski i koło ≠ Kantar) wciąż stoi — mogła ich zabrać banda, a Kantar tylko odkupić. Kierunek, nie wyrok.
+→ wraca: Burr (sesja 1, scena 4), kampania
+:::
+
+**Popioły (wersja A).** Ojciec przy bramie z pustą komorą, Old Penny spalona, wartowniczka przy studni, mechanik z kijem przy pompie. **Brak Sheafa, Daisy i Skipa** („nie ma matki z dzieckiem”).
+**Z ruin** zabrał pistolet ojca, manierkę, kapsle i dzwonek.
+**Gwiazda** z ruin komisariatu, z dziennika: „Z upoważnienia Korony”, punkt 14 „W przypadku braku sędziego” urwany, ślady zębów. Przypięta na lewym barku.
+::: side player Do one-shota
+Rusty przychodzi z **Big Ironem**, gwiazdą na lewym barku i 250 kapslami Haywarda, których nie ruszy. W Kręgu odda broń? „W Stajni uszanuję” — sprawdzimy. Na Burra (Sheafa) patrzy oczami kogoś, komu zabrano matkę i brata.
+:::
+
+**Bar.** Wygrana bójka ze Slagiem; Magpie wskazała Kantar przy farmie na wschodzie; radio Stajni 97; Hayward: „Przyprowadź ją”; Rusty wziął 250 kapsli.
+**Koniec.** Trzeci dzień, martwe drzewa i pochylona stodoła.
+
+## Plan sesji (przed 24.11)
+
+::: side todo Do ustalenia
+- **Hallucinations:** kierunek (np. żar i słońce pustkowi, głosy z Cichych Brodów?).
+- **Inicjatywa** w karcie — sprawdzić, skąd wynika wyliczenie.
+- Umiejętności wiodące i premia małej osady — spisać z karty w Foundry.
+:::
+
 
 - **Rama.** Teraźniejszość, jedna noc w barze „Mokre Kopyto” w Cinder Ford, osadzie przy brodzie w dole tej samej rzeki, nad którą leżały Ciche Brody. Rusty czeka na informatorkę z wieściami o Knocie. Za ścianą leży pobity Hayward, mąż porwanej Sweet Briar.
 - **Retrospekcje.** Każdy krok tworzenia postaci otwiera wspomnienie z Cichych Brodów: dźwiganie wody z ojcem, zebranie, manierka na rozstajach, noc przy karawanie, popioły.
@@ -47,8 +99,8 @@ Odpowiedzi Nikodema z zeszytu „Spisane Prawo” (pełny zeszyt w dodatkach).
 | Znaczek | Manierka na skrzyżowaniu dróg. Jako dziesięciolatek oddał wodę przeznaczoną na leki dla matki źrebakowi umierającemu z pragnienia na rozstajach. |
 | Wyposażenie | Łatany płaszcz przeciwpyłowy (jeszcze z czasów gońca), hełm z maską kupiony od karawany ze zużytymi filtrami, bandaże na oparzeniach od grzebania w popiołach, dzwonek przy siodle, gwiazda, torby gońca, manierka, zeszyt, list gończy, mikstura lecznicza. |
 
-::: side todo Przed 24.11
-**Broń** — w zeszycie jej nie ma. Propozycja: **.357 Magnum Revolver** + 24 naboje (mieści się w 300 kapslach). Potwierdź z Nikodemem.
+::: side player Rozstrzygnięte na sesji
+**Broń:** .357 Magnum Revolver ojca, z ruin Cichych Brodów, jako Named Weapon **„Big Iron”**.
 :::
 
 ::: side todo
@@ -117,7 +169,7 @@ Ciche Brody, wiele lat temu. Old Anvil zapina ci na grzbiecie dwa kanistry, po j
 
 Kucyk ziemny (s. 24–25). +1 do dwóch z: WYT, INT, SIŁ. Darmowa cecha za 1 pkt (albo −1 do kosztu droższej). Darmowy atut Strong Back (s. 134) albo High Ho Silver, Away! (s. 128). +5 rang do dwóch z: Nauka, Naprawa, Walka bez broni, Ciężka broń, Przetrwanie; −10 Otwieranie zamków (min. 5). +1 punkt umiejętności na poziom.
 
-Do gońca pasuje Strong Back i to wynika wprost z tej sceny. High Ho Silver to szybkość. Też pasuje do gońca, ale mniej do kogoś, kto nosi wodę.
+Do gońca pasuje Strong Back i to wynika wprost z tej sceny. High Ho Silver to szybkość. **Na sesji Erwin wziął High Ho Silver** i +1 do END oraz INT.
 
 ## Krok 2. Atrybuty: głosy sąsiadów
 
@@ -209,9 +261,8 @@ Obóz karawany na trakcie. Ogień, braminy, kupiec liczy naboje po jednym, jakby
 Dym widzisz rano, w połowie drogi powrotnej. Biegniesz z torbami pełnymi naboi, które obijają ci się o boki. Brama stoi otworem. Na drewnie ktoś wydrapał znak: trzy kreski i koło. Studnia jest zasypana. Dzwonek nad bramą wisi krzywo i nie ma w nim serca.
 :::
 
-::: side todo Rodzice — wybierz przed sesją
-**A)** Old Anvil przy bramie z pustą komorą; **Daisy nie ma** wśród ciał — zabrał ją Kantar (Sweet Briar to lustro). Mocne, ale zemsta może przejąć one-shot.
-**B)** oboje martwi, brakuje tylko Sheafa i kilku innych — bezpieczniej.
+::: side player Zagrane: wersja A
+Old Anvil przy bramie z pustą komorą. Brakuje **Daisy i Skipa** (brata) oraz Sheafa. Old Penny spalona.
 :::
 
 **Ojciec przy bramie** (jeśli wybierasz wersję A): Old Anvil leży z bronią w kopytach. Komora pusta. Nie mów tego wprost. Wystarczy „pusta”, a gracz sam połączy to z pełnymi torbami na swoim grzbiecie.
@@ -283,7 +334,7 @@ Cechy: najwyżej dwie na start, jedna za 1 pkt jest darmowa dla ziemnego.
 | Manierka | Canteen (s. 218): 4 jednostki wody, czyli zapas na dzień | Ta ze znaczka? Zapytaj. |
 | Mikstura lecznicza | Healing Potion (s. 179–180) | Jedna. |
 | Dzwonek, gwiazda, zeszyt, list | przedmioty fabularne | Bez wagi mechanicznej. |
-| Broń | **.357 Magnum Revolver**: 4d8, ×2, mag. 6, 110 kapsli + 24 naboje (48) | Propozycja; alternatywy: .32 Hunting Rifle (150), Single Shotgun (175). Całość z zeszytu + rewolwer = 291 z 300 kapsli. |
+| Broń | **.357 Magnum Revolver**: 4d8, ×2, mag. 6 | **Zagrane:** rewolwer ojca jako Named Weapon „Big Iron” (5 pkt ulepszeń), 4 paczki naboi za darmo. Start z 39 kapslami. |
 
 ::: side later
 Nowe filtry do maski — dobra nagroda w Stajni (Rick jest technikiem!).

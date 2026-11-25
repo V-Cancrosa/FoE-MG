@@ -92,7 +92,7 @@ Coś szeleści w sianie. Coś, co ma więcej nóg niż cokolwiek, co widziałeś
 **Notka MG.**
 
 - **Potrzask bez bezradności.** Rick nie może kilka rund tylko rzucać na obronę. Daj mu konkretne opcje: zatrzasnąć i przytrzymać właz, wspiąć się na strych, odciągnąć uwagę, rzucić jedzenie bloatsprite'owi.
-- **Wejście każdego obcego to jego moment.** Jedno zdanie opisu, pierwsza akcja z bonusem zaskoczenia albo dobrą pozycją. Uriel: **Podmuch** (Aard), katana w telekinezie albo rzut telekinezą (Explosives) — **rewolweru nie ma**, został u Gunthera. Rusty: zasada 5 — „jak nie wiem, to nie strzelam”: na kogo celuje w półmroku?
+- **Wejście każdego obcego to jego moment.** Jedno zdanie opisu, pierwsza akcja z bonusem zaskoczenia albo dobrą pozycją. Uriel: **Podmuch** (Aard), katana w telekinezie albo rzut telekinezą (Explosives) — **rewolweru nie ma**, został u Gunthera. Rusty: **Big Iron** (rewolwer ojca, Named Weapon) i Zwinność 8; zasada 5 — „jak nie wiem, to nie strzelam”: na kogo celuje w półmroku?
 - **Wyjście bez zabijania.** Pacyfista może przekonać resztę, żeby odpędzić mrówki zamiast je wybić. Zapamiętaj, kto co zrobił.
 - **Kopiec przy wylocie tunelu** to zaczepka na później: mrówki mogą kiedyś pójść tunelem do Stajni.
 - **Ściąga tempa:** jeśli walka przekracza 6 rund, kolonia się wycofuje, a bloatsprite odlatuje z łupem.
@@ -111,7 +111,7 @@ Rick widzi obcych pierwszy raz w życiu i konfrontuje ich z tym, czego uczyły m
 :::
 
 ::: side secret Burr to Sheaf
-Złapany zwiadowca to dawny sąsiad Rusty'ego z Cichych Brodów. Rusty najpierw zobaczy **serce dzwonka** na rzemieniu, potem **łan pszenicy** spod zdrapanej ochry (rzut na Spostrzegawczość: ten dźwięk zna). Zasada 1 kontra zasada 3 — jego scena.
+Złapany zwiadowca to dawny sąsiad Rusty'ego z Cichych Brodów. Rusty najpierw zobaczy **serce dzwonka** na rzemieniu, potem **łan pszenicy** spod zdrapanej ochry (rzut na Spostrzegawczość: ten dźwięk zna). Zasada 1 kontra zasada 3 — jego scena. Od sesji zero wiadomo więcej: z Cichych Brodów zniknęli też **Daisy i Skip**, matka i brat Rusty'ego. Burr może wiedzieć, gdzie są — to jego karta przetargowa.
 :::
 
 ## Scena 4. Zegar: zwiadowcy gangu
