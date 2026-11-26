@@ -86,6 +86,10 @@ def ustaw_motyw(root: tk.Tk) -> dict:
     try:
         import sv_ttk
         sv_ttk.set_theme(nazwa, root)
+        # sv-ttk koloruje tło w zdarzeniu <<ThemeChanged>>, które na Windows potrafi nie dojść
+        # przed zbudowaniem okna (szare tła etykiet) — wywołaj to wprost
+        root.tk.call("configure_colors")
+        root.configure(background=MOTYW[nazwa]["tlo"] if nazwa == "light" else "#1c1c1c")
     except Exception:
         nazwa = "light"
         try:
@@ -109,7 +113,9 @@ class Okno:
         self.root = root
         self.kol = kolory or MOTYW["light"]
         root.title("Sesja — nagrywanie i transkrypcja")
-        root.minsize(680, 760)
+        root.minsize(640, 560)
+        wys = min(860, root.winfo_screenheight() - 120)  # zmieść się nad paskiem zadań
+        root.geometry(f"720x{wys}+{max(0, (root.winfo_screenwidth() - 720) // 2)}+20")
         self.cfg = N.ustawienia()
         self.q: queue.Queue = queue.Queue()
         self.nagr: N.Nagrywanie | None = None      # lokalne nagrywanie
@@ -133,7 +139,7 @@ class Okno:
 
     # ------------------------------------------------------------ układ
     def zbuduj(self):
-        pad = {"padx": 8, "pady": 4}
+        pad = {"padx": 8, "pady": 3}
         f = ttk.LabelFrame(self.root, text="Źródła")
         f.pack(fill="x", **pad)
         ttk.Label(f, text="Mój mikrofon:").grid(row=0, column=0, sticky="w", **pad)
@@ -169,7 +175,7 @@ class Okno:
         self.b_bot = ttk.Button(self.f_bot, text="Uruchom bota", command=self.przelacz_bota)
         self.b_bot.grid(row=1, column=2, **pad)
         ttk.Label(self.f_bot, text="Postacie\n(nick = postać):").grid(row=2, column=0, sticky="nw", **pad)
-        self.t_post = tk.Text(self.f_bot, height=4, width=40, font=("Consolas", 10), relief="flat",
+        self.t_post = tk.Text(self.f_bot, height=3, width=40, font=("Consolas", 10), relief="flat",
                               bg=self.kol["pole"], fg=self.kol["tekst"], insertbackground=self.kol["tekst"],
                               highlightthickness=1, highlightbackground=self.kol["ramka"])
         self.t_post.grid(row=2, column=1, columnspan=2, sticky="we", **pad)
@@ -191,7 +197,7 @@ class Okno:
         self.l_czas = ttk.Label(f, text="00:00:00", font=("Consolas", 16))
         self.l_czas.grid(row=0, column=1, sticky="w", **pad)
         ttk.Button(f, text="Otwórz folder nagrań", command=self.otworz_folder).grid(row=0, column=2, **pad)
-        self.c_poz = tk.Canvas(f, height=60, background=self.kol["pole"], highlightthickness=0)
+        self.c_poz = tk.Canvas(f, height=28, background=self.kol["pole"], highlightthickness=0)
         self.c_poz.grid(row=1, column=0, columnspan=3, sticky="we", **pad)
         f.columnconfigure(1, weight=1)
 
@@ -242,7 +248,7 @@ class Okno:
     def pole_tekstowe(self, **kw):
         """Pole tekstu z przewijaniem w stylu motywu (ScrolledText ma stary pasek tk)."""
         ramka = ttk.Frame(self.zakladki)
-        tekst = tk.Text(ramka, height=10, **kw)
+        tekst = tk.Text(ramka, height=5, **kw)
         pasek = ttk.Scrollbar(ramka, orient="vertical", command=tekst.yview)
         tekst.configure(yscrollcommand=pasek.set)
         pasek.pack(side="right", fill="y")
@@ -569,7 +575,7 @@ class Okno:
         c.delete("all")
         w = max(c.winfo_width(), 200)
         h = 16
-        c.configure(height=max(60, len(poz) * (h + 4) + 8))
+        c.configure(height=max(28, len(poz) * (h + 4) + 8))
         for i, (n, v) in enumerate(poz.items()):
             y = 4 + i * (h + 4)
             c.create_text(8, y + h / 2, text=n[:22], anchor="w", font=("Segoe UI", 9), fill=self.kol["tekst"])
