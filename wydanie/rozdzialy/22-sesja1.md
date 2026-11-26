@@ -92,7 +92,7 @@ Coś szeleści w sianie. Coś, co ma więcej nóg niż cokolwiek, co widziałeś
 **Notka MG.**
 
 - **Potrzask bez bezradności.** Rick nie może kilka rund tylko rzucać na obronę. Daj mu konkretne opcje: zatrzasnąć i przytrzymać właz, wspiąć się na strych, odciągnąć uwagę, rzucić bloatsprite'owi jabłko — i je stracić.
-- **Wejście każdego obcego to jego moment.** Jedno zdanie opisu, pierwsza akcja z bonusem zaskoczenia albo dobrą pozycją. Uriel: **Podmuch** (Aard), katana w telekinezie albo rzut telekinezą (Explosives) — jego dawny rewolwer został u Gunthera; ma prosty **.357** kupiony za pierwsze kapsle. Uriel ma też rewolwer .357, nóż i **dwa granaty** — granat w stodole pełnej siana to pożar (zapowiedz to). Rusty: **Big Iron** (rewolwer ojca, Named Weapon) i Zwinność 8; zasada 5 — „jak nie wiem, to nie strzelam”: na kogo celuje w półmroku?
+- **Wejście każdego obcego to jego moment.** Jedno zdanie opisu, pierwsza akcja z bonusem zaskoczenia albo dobrą pozycją. Uriel: **Podmuch** (Aard), katana w telekinezie albo rzut telekinezą (Explosives) — jego dawny rewolwer został u Gunthera; ma prosty **.357** kupiony za pierwsze kapsle. Uriel ma też rewolwer .357, nóż, **dwa granaty** i lekki barding najemnika (DT 8) — granat w stodole pełnej siana to pożar (zapowiedz to). Rusty: **Big Iron** (rewolwer ojca, Named Weapon) i Zwinność 8; zasada 5 — „jak nie wiem, to nie strzelam”: na kogo celuje w półmroku?
 - **Wyjście bez zabijania.** Pacyfista może przekonać resztę, żeby odpędzić mrówki zamiast je wybić. Zapamiętaj, kto co zrobił.
 - **Kopiec przy wylocie tunelu** to zaczepka na później: mrówki mogą kiedyś pójść tunelem do Stajni.
 - **Ściąga tempa:** jeśli walka przekracza 6 rund, kolonia się wycofuje, a bloatsprite odlatuje z łupem.
@@ -108,6 +108,7 @@ Rick widzi obcych pierwszy raz w życiu i konfrontuje ich z tym, czego uczyły m
 - Daj scenie oddychać: kto opatruje, kto pierwszy się przedstawia, kto trzyma broń w pogotowiu.
 - Uriel — jednorożec w barwach Szponu, z blizną (Scarred) — i Rusty z gwiazdą „Z upoważnienia Korony” to dla Ricka żywe rozdziały podręcznika. Niech gracz sam zdecyduje, czy wierzy materiałom.
 - Zapłata Uriela za „zlecenie na stwory” jest u Obserwatora — kapsle są prawdziwe. Głos z radia: Rick słyszał w PipBucku DJ Pon-3, Uriel — kogoś, kto mówił przez jego sprite-bota.
+- **Uriel nosi ten sam typ bardingu co łowcy Kantaru** (Mercenary/Slaver). Gdy zwiadowcy się pokażą, ktoś — Rick, Ochrona przy Wrotach — może ich skojarzyć. Bez ochry i kantara, ale krój ten sam.
 - Rick ma od Lily Pad misję „szpicy”: nawiązać przyjazne relacje z tymi z zewnątrz. Uriel i Rusty to właśnie oni — i tym argumentem może bronić ich przed Kręgiem.
 - Rusty może zapytać Ricka o prawo Stajni. Rick wie, że ma meldować się na kanale trzecim co godzinę — i że ma za chwilę meldunek.
 :::

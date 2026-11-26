@@ -24,7 +24,7 @@ To, co zagrane, jest kanonem. Wątki niezagrane wiszą i mogą wrócić, o ile �
 | **Cechy** | Omnivore (+3 Survival), Organization: Mercenary — Żelazny Szpon (2 pkt) |
 | **Nie wziął** | Slave ani Prideful („tak po prostu jest”), Stubby Little Horn, Enemy. Named Weapon nie jako osobną cechę — dostaje go z Organization: Mercenary |
 | **Broń** | **katana** wydarta Guntherowi (stawka) → Named Weapon w przeskoku; **rewolwer został u Gunthera** |
-| **Wyposażenie startowe** | Mercenary: Equestrian Combat Barding, Combat Knife; **.357 Magnum Revolver** kupiony za pierwsze kapsle po ucieczce (tak na karcie); z 300 kapsli: amunicja, 2 granaty, torby, 2 mikstury, hełm Talonów — szczegóły w one-shocie, „Z czym przychodzą” |
+| **Wyposażenie startowe** | Mercenary: **Mercenary/Slaver Barding** (DT 8; Combat Barding z DT 22 był zbyt mocny), Combat Knife; **.357 Magnum Revolver** kupiony za pierwsze kapsle po ucieczce (tak na karcie); z 300 kapsli: amunicja, 2 granaty, torby, 2 mikstury, hełm Talonów — szczegóły w one-shocie, „Z czym przychodzą” |
 | **Rany** | 2 rany przedniej lewej nogi po drzewnych wilkach; opatrzony w osadzie (zapłacił wszystkim, co miał) |
 | **Księga** | „Pozycja 112: strata. Nie spisano ze stanu. Miecz utracony. Rewolwer odzyskany. Gunther bez ran.” (tak zagrane; z perspektywy Gunthera) |
 {: .plain}

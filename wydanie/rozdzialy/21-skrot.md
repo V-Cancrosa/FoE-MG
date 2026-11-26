@@ -51,7 +51,7 @@ Zasada: każdy zaczyna z wyposażeniem, jakie powinien mieć ktoś taki jak on. 
 | Skąd | Przedmiot | Parametry |
 |---|---|---|
 | stawka z Gunthera | **Katana — Named Weapon** (dopracowana w przeskoku przed stodołą) | 4d8+STR, ×2, SATS 20 + 5 pkt ulepszeń |
-| Organization: Mercenary | **Equestrian Combat Barding** | DT 22, tułów, waga 25 |
+| Organization: Mercenary | **Mercenary/Slaver Barding** (decyzja MG zamiast Equestrian Combat Barding z DT 22) | DT 8, tułów i 4 nogi, +2 Melee, +2 Small Guns, waga 10 |
 | Organization: Mercenary | **Combat Knife** | 3d6+STR, ×3, SATS 15 |
 | pierwsze kapsle po ucieczce | **.357 Magnum Revolver** (zwykły, nie nazwany; tak na karcie) | 4d8, ×2; mag. 6 |
 | 300 kapsli (zarobione po opatrunku) | 30 naboi .357 (60), **Frag Grenade ×2** (80), Saddlebags/Backpack (25), Healing Potion ×2 (50), Talon Combat Helmet (40) | razem 255, zostaje **45** (propozycja — wyda w sesji 0,5) |
