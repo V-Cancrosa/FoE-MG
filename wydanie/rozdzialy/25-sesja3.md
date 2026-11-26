@@ -17,7 +17,7 @@ Wszystko poniżej to kierunek. Gracze prowadzą tę historię razem z tobą.
 - **Akt 1 w pełnej wersji:** sabotaż w cieniu (tajne rozkazy frakcji), eskalacja (atak albo zatrucie wody, za które każda frakcja obwinia inną), ultimatum na granicy wartości postaci. Zerwanie z frakcjami wynika z wyborów graczy.
 - **Akt 2:** nowa „organizacja” w postaci ogrodu-osady drużyny i budzący się uśpieni.
 - **Osadnicy** mają realną wartość — leczą, budują, karmią — i się zmieniają, żeby uniknąć syndromu misji eskortowej.
-- **Wątki postaci:** Gunther z rewolwerem Uriela i „Pies zawsze wraca” (Uriel); los Mudwater, jeśli kiedyś się przyda; znak trzech kresek i koła, zaginieni z Cichych Brodów, art. 14 (Rusty); przodkowie Ricka i to, co buczy na poziomie 6.
+- **Wątki postaci:** Gunther z rewolwerem Uriela i „Pies zawsze wraca” (Uriel); los Mudwater, jeśli kiedyś się przyda; znak trzech kresek i koła, matka Rusty'ego, Skip i jego matka sprzedani dalej (Burr wie komu), art. 14 (Rusty); przodkowie Ricka i to, co buczy na poziomie 6.
 
 ::: side todo
 Miejsce nowej osady; punkt na osi czasu Horizons; przysięga Steel Rangers i ścieżka zebr — tylko jeśli ktoś je wybierze.
@@ -36,7 +36,7 @@ Miejsce nowej osady; punkt na osi czasu Horizons; przysięga Steel Rangers i śc
 
 ## Lista przed pierwszą sesją
 
-- Statystyki z bestiariusza: radroach, mrówka robotnica i żołnierz, bloatsprite (młody, bez trucizny), Slaver Grunt ×7, Slaver Lieutenant; drzewne wilki (s. 490) na sesję zero Uriela; Gunther (gryf-weteran).
+- Statystyki z bestiariusza: radroach, mrówka robotnica i żołnierz, bloatsprite (młody, bez trucizny), Slaver Grunt ×10 (+1 rezerwowy strzelec), Slaver Lieutenant; drzewne wilki (s. 490) na sesję zero Uriela; Gunther (gryf-weteran).
 - Mapa stodoły w Foundry: siatka, ściany, drzwi, światło, region strychu.
 - Mapa poziomu 0 (Wrota) — jest, do ustawienia w Foundry.
 - Tokeny: 3 grupy mieszkańców, wóz z klatkami.

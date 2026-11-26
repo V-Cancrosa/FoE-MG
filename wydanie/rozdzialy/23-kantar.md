@@ -37,7 +37,7 @@ Tally Mark liczy w księdze jak Gunther. „Sztuka”, „należność” — te
 ## Łowcy z imieniem
 
 - **Burr** (rzep), zwiadowca do złapania w sesji 1. Pod zdrapaną farbą widać łan pszenicy: był kiedyś rolnikiem w osadzie. Daje graczom powód, żeby z nim porozmawiać, a nie tylko go przesłuchać. Jeśli zostanie złapany, nie wraca w sesji 2.
-- **Knot** (węzeł), prowodyr oprychów i jedyny szeregowy, który nie zamalował znaczka: węzeł sieci. Wysoki ziemny, ciężka budowa. Dumny z tego, co robi. To on sięga po koktajl Mołotowa i dostaje za to od Tally Mark. Poszukiwany listem gończym z Cinder Ford: porwanie Sweet Briar i pobicie Haywarda — **250 kapsli żywy, 100 martwy**.
+- **Knot** (węzeł), prowodyr oprychów i jedyny szeregowy, który nie zamalował znaczka: węzeł sieci. Wysoki ziemny, ciężka budowa. Dumny z tego, co robi. To on sięga po koktajl Mołotowa i dostaje za to od Tally Mark. Poszukiwany listem gończym z Cinder Ford: porwanie Sweet Briar i pobicie Haywarda — **250 kapsli żywy, 100 martwy**. Hayward zapłacił Rusty'emu 250 kapsli **z góry**, za przyprowadzenie Sweet Briar (sesja zero).
 
 ::: side secret Rusty · nie pomyl gangów
 **Burr = Sheaf** z Cichych Brodów, nosi serce dzwonka. Ciche Brody wymordowała **inna banda** (trzy kreski i koło); Kantar przyszedł jak sęp i zabrał ocalałych. Rusty nie wie, że to dwa gangi.
@@ -45,17 +45,18 @@ Tally Mark liczy w księdze jak Gunther. „Sztuka”, „należność” — te
 
 ## Skład na 3 postacie 1. poziomu
 
-Oprychów jest tylu, ilu graczy: każda postać może związać jednego, więc porwania biorą się z wyborów graczy (bieg do szafki, odbijanie jeńca, osłanianie kogoś), a nie z przewagi liczebnej gangu.
+Skład wzmocniony po sesjach zero (Big Iron, katana jako broń nazwana, granaty Uriela). Oprychów jest o jednego więcej niż graczy: każda postać może związać jednego, a czwarty sprawdza, kogo drużyna zostawi bez osłony; więc porwania biorą się z wyborów graczy (bieg do szafki, odbijanie jeńca, osłanianie kogoś), a nie z przewagi liczebnej gangu.
 
 | Kto | Ilu | Uzbrojenie i rola | Archetyp |
 |---|---|---|---|
 | Zwiadowcy | 2 (w tym Burr) | Lekka broń, lornetka. W sesji 1 obserwują farmę; w sesji 2 pilnują punktu zbiórki jeńców w tunelu. Złapani w sesji 1 nie wracają. | Slaver Grunt |
-| Oprychy | 3 (w tym Knot) | Pałka i sieć. Sieć łapie mieszkańca albo krępuje postać gracza. Walczą, żeby obezwładnić. | Slaver Grunt |
-| Strzelcy | 2 | Prawdziwa broń palna wymierzona w postacie graczy. Osłaniają, przyszpilają, nie strzelają do mieszkańców. | Slaver Grunt |
+| Oprychy | **4** (w tym Knot) | Pałka i sieć. Sieć łapie mieszkańca albo krępuje postać gracza. Walczą, żeby obezwładnić. | Slaver Grunt |
+| Strzelcy | **3** | Prawdziwa broń palna wymierzona w postacie graczy. Osłaniają, przyszpilają, nie strzelają do mieszkańców. | Slaver Grunt |
 | Tally Mark | 1 | Pistolet; dowodzi, negocjuje. | Slaver Lieutenant |
-| Wóz z klatkami | — | W stodole, przy włazie do tunelu. | — |
+| Strażnik wozu | 1 | W stodole przy wozie; pilnuje klatek, w tym **Sweet Briar**. Ucieka z wozem, jeśli gang się wycofuje. | Slaver Grunt |
+| Wóz z klatkami | — | W stodole, przy włazie do tunelu. W klatce **Sweet Briar**. | — |
 
-**Przy Wrotach w sesji 2:** 3 oprychów i 2 strzelców w szturmie, 2 zwiadowców przy jeńcach (minus złapani w sesji 1) i Tally Mark. Złapanie zwiadowcy w sesji 1 realnie ułatwia odbicie jeńców w sesji 2. (Przy 4 graczach: 4 oprychów.)
+**Przy Wrotach w sesji 2:** 4 oprychów i 3 strzelców w szturmie, 2 zwiadowców przy jeńcach (minus złapani w sesji 1), Tally Mark; w stodole strażnik wozu. Złapanie zwiadowcy w sesji 1 realnie ułatwia odbicie jeńców w sesji 2. Jeśli i tak idzie za łatwo: +1 strzelec na strychu stodoły. (Przy 4 graczach: 5 oprychów.)
 
 Pancerz łowców: barding Mercenary/Slaver z listy bardingów (s. 159). Opisy archetypów łowców są w bestiariuszu, ok. s. 550–553.
 
@@ -70,6 +71,6 @@ Zleceniodawca gangu — po decyzjach graczy, nie frakcja żadnej postaci.
 
 - **Zleceniodawca:** wybierasz po decyzjach graczy. Na start nie może to być frakcja żadnej postaci — zerwanie z frakcją ma wynikać z wyboru gracza, nie z dekretu MG.
 
-::: side todo Gdzie jest Sweet Briar
-Przed sesją 2: **1)** w klatce przy punkcie zbiórki (do odbicia; +1 BN pilnuje) albo **2)** sprzedana dalej, Knot zna kupca → kampania.
+::: side player Sweet Briar · ustalone
+W klatce na wozie w stodole; pilnuje jej strażnik wozu. Matka Rusty'ego, Skip i jego matka zostali **sprzedani dalej** — Burr wie komu.
 :::

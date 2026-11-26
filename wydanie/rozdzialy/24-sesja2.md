@@ -38,6 +38,11 @@ Znaczek-chwast to jedyny ślad eksperymentu w one-shocie. Willow Bark notuje o n
 - **Moss** (mech), ogrodniczka-weteranka: zna uprawy najlepiej, boi się otwartego nieba. Stara ziemska klacz, ciemnozielona, ziemia wbita w kopyta; patrzy w podłogę. *Znaczek:* kępka mchu na kamieniu w cieniu.
 - **Horsetail** (skrzyp), inżynier: zbuduje nawadnianie, nie zna pustkowi. Podkrążone oczy, smar na pysku, łaty na łokciach. *Znaczek:* pęd skrzypu oplatający koło zębate. Kolega Ricka z drużyny technicznej.
 - **Clover z Pea i Pod:** jednorożec, pastelowo-różowa; źrebaki w kombinezonach po starszych, bez znaczków. *Znaczek Clover:* koniczyna, każdy listek w innym odcieniu. Test wartości drużyny.
+
+::: side player Rick ich zna
+Clover z Pea i Pod, Nettle i Willow Bark stali przy Wrotach, kiedy Rick wychodził (sesja zero). Dla niego to nie twarze z tłumu.
+:::
+
 - **Nettle** (pokrzywa), zbuntowany młodzik: ciemniejsza sierść, obgryzione kopyta, oderwana naszywka liścia. Pierwszy pacyfista, który sięgnie po broń. *Znaczek:* liść pokrzywy.
 
 ## Ruch 1. Pertraktacje u Wrót
@@ -45,7 +50,7 @@ Znaczek-chwast to jedyny ślad eksperymentu w one-shocie. Willow Bark notuje o n
 Tally Mark proponuje odejść w zamian za obcych i kilku zdrowych mieszkańców. Krąg debatuje przy graczach — postacie słyszą, jak ich los jest przedmiotem głosowania. Winter Rye skłania się ku oddaniu obcych. Lily Pad odmawia.
 
 ::: side player
-**Uriel** słyszy rachunek z Igły: „sztuka”, „należność”. **Rusty** widzi Knota. **Rick** widzi, jak Krąg głosuje o obcych, którzy go uratowali.
+**Uriel** słyszy rachunek z Igły: „sztuka”, „należność”. **Rusty** widzi Knota — i Kantar, który, jak wierzy, spalił Ciche Brody. **Rick** widzi, jak Krąg głosuje o obcych, którzy go uratowali.
 :::
 
 ::: read Czytaj na głos
@@ -100,7 +105,7 @@ W rundzie 2 inżynier mamrocze, że „szóstka znowu żre prąd”. **Rick** pr
 | 1 | Strzelcy przyszpilają Wrota, oprychy wpadają. Gracze bez broni wybierają: biec do szafki czy osłaniać mieszkańców. |
 | 2–3 | Szczyt porwań. Większość decyzji graczy zapada tutaj. Nettle sięga do szafki. Światła mrugają. |
 | 4 | Tally Mark woła „zbieramy!”. Kto trzyma jeńca, wycofuje się, reszta osłania. |
-| 5–6 | Pościg w tunelu albo opatrywanie rannych. |
+| 5–6 | Pościg w tunelu albo opatrywanie rannych. Na końcu tunelu wóz w stodole: strażnik i **Sweet Briar** w klatce — jeśli drużyna zdąży, zanim wóz odjedzie. |
 
 **Cel MG:** 1–2 porwanych. Jeśli gracze grają świetnie, mogą uratować wszystkich — to też dobre zakończenie; hakiem zostaje kontrakt.
 
@@ -113,7 +118,7 @@ W rundzie 2 inżynier mamrocze, że „szóstka znowu żre prąd”. **Rick** pr
 
 ## Ruch 3. Odwrót
 
-Gang wycofuje się, gdy padnie Tally Mark albo 2 z 5 łowców ze szturmu (oprychy i strzelcy; zwiadowców przy jeńcach nie liczysz), i najpóźniej po wołaniu „zbieramy” w rundzie 4. Zabierają tych, których zdążyli wyciągnąć.
+Gang wycofuje się, gdy padnie Tally Mark albo 3 z 7 łowców ze szturmu (oprychy i strzelcy; zwiadowców przy jeńcach nie liczysz), i najpóźniej po wołaniu „zbieramy” w rundzie 4. Zabierają tych, których zdążyli wyciągnąć.
 
 ## Ruch 4. Ślad
 
@@ -138,11 +143,11 @@ Ranni, porwani i mieszkańcy, którzy pierwszy raz w życiu zobaczyli przemoc. W
 :::
 
 ::: side secret Majaczenie
-Ranny mieszkaniec: „Nie kompost… Spoczynek, jak syn Thornów?” — ślad do kapsuł, który nic jeszcze nie znaczy.
+Ranny mieszkaniec: „Nie kompost… Spoczynek, jak syn Thornów?” — ślad do kapsuł, który nic jeszcze nie znaczy. **Rick** słyszał przy ostatniej kolacji o „spoczynku Thornów” — rozpozna nazwisko.
 :::
 
 ::: side player Rusty i Knot
-Żywy czy martwy? 250 kapsli wraca do Haywarda (zasada 4). Gdy Knot się poddaje — Code of Honor.
+Rusty ma już **250 kapsli Haywarda** (zaliczka za Sweet Briar, „nie wydam”) — a Sweet Briar siedzi w klatce na wozie w stodole. Knot żywy to list gończy (250); martwy — to zasada 3 i zemsta za Brody, które Rusty przypisuje Kantarowi. Gdy Knot się poddaje — Code of Honor (jeśli został w karcie).
 :::
 
 ## Ruch 6. Warunek Kręgu

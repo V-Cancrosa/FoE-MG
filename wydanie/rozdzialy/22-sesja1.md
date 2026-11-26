@@ -19,7 +19,7 @@ Każde z was usłyszało to gdzie indziej. Każde dostało inny powód, żeby tu
 :::
 
 ::: side player Skąd przychodzą
-**Rick** jest już w stodole; w PipBucku słyszał DJ Pon-3, który ostrzegał łowców, że w Stajni są „nowi”. **Uriel**: ogłoszenie o radkaraluchach i mrówkach w starej stodole, a równocześnie radio o otwarciu Stajni; wydał ostatnie kapsle na opatrunek. **Rusty**: bar w Cinder Ford, wieści Magpie, Knot.
+**Rick** jest już w stodole; w PipBucku słyszał DJ Pon-3, który ostrzegał łowców, że w Stajni są „nowi”. **Uriel**: ogłoszenie o radkaraluchach i mrówkach w starej stodole; zleceniodawcą okazał się **Obserwator**, który przez sprite-bota z DJ Pon-3 powiedział mu, że pod stodołą są drzwi Stajni i że łowcy też słyszą sygnał (sesja 0,5). **Rusty**: bar w Cinder Ford, wieści Magpie, Knot.
 :::
 
 ## Scena 2. Walka w stodole
@@ -71,7 +71,7 @@ Obiecana dłuższa chwila w walce. Ma pod kopytem **długi pręt** (Lead Pipe, 3
 
 | Graczy | Radroache | Robotnice | Żołnierze | Bloatsprite |
 |---|---|---|---|---|
-| **3 (nasz skład)** | **2** | **2** | **1** | **1 (młody)** |
+| **3 (nasz skład)** | **4** (2 + 2 w rundzie 2) | **3** | **1** | **1 (młody)** |
 | 4 | 4 | 3 | 1 | 1 (młody) |
 
 Inicjatywa grupowa: radroache jedna grupa, mrówki druga, bloatsprite osobno. Postacie 1. poziomu — w razie wątpliwości licz w dół.
@@ -80,9 +80,9 @@ Inicjatywa grupowa: radroache jedna grupa, mrówki druga, bloatsprite osobno. Po
 
 | Rundy | Co się dzieje | Wejścia drużyny |
 |---|---|---|
-| 1–2 · pułapka | Muzyka w PipBucku cichnie. Siano szeleści. 2 radroache wychodzą z siana na samego Ricka. Właz się zacina — Rick nie ucieknie tunelem. Może walczyć, wspiąć się na strych, schować za wozem, odpalić SATS. | — |
+| 1–2 · pułapka | Muzyka w PipBucku cichnie. Siano szeleści. 2 radroache wychodzą z siana na samego Ricka; w rundzie 2 dwa kolejne. Właz się zacina — Rick nie ucieknie tunelem. Może walczyć, wspiąć się na strych, schować za wozem, odpalić SATS. | — |
 | 2–4 · mrówki | Hałas budzi kolonię pod zapadniętą podłogą: najpierw 2 robotnice, potem żołnierz. | runda 2: pierwsza postać z zewnątrz |
-| 4–6 · kulminacja | Młody bloatsprite wlatuje przez dziurę w dachu, zwabiony zapasami jedzenia Ricka. Gdy żołnierz padnie albo zostanie odpędzony, kolonia się wycofuje. | runda 3–4: druga postać |
+| 4–6 · kulminacja | Młody bloatsprite wlatuje przez dziurę w dachu, zwabiony **jabłkiem z kolacji**, które Rick schował na powierzchnię. Gdy żołnierz padnie albo zostanie odpędzony, kolonia się wycofuje. | runda 3–4: druga postać |
 
 ::: read Czytaj na głos
 Coś szeleści w sianie. Coś, co ma więcej nóg niż cokolwiek, co widziałeś w życiu. W Ogrodach nie było ani jednego owada — zapylały pegazy i pędzelki. To, co wyłazi spod zbutwiałego siana, ma rozmiar kota, lśniący brązowy pancerz i czułki, które drgają w twoją stronę.
@@ -91,8 +91,8 @@ Coś szeleści w sianie. Coś, co ma więcej nóg niż cokolwiek, co widziałeś
 ::: note
 **Notka MG.**
 
-- **Potrzask bez bezradności.** Rick nie może kilka rund tylko rzucać na obronę. Daj mu konkretne opcje: zatrzasnąć i przytrzymać właz, wspiąć się na strych, odciągnąć uwagę, rzucić jedzenie bloatsprite'owi.
-- **Wejście każdego obcego to jego moment.** Jedno zdanie opisu, pierwsza akcja z bonusem zaskoczenia albo dobrą pozycją. Uriel: **Podmuch** (Aard), katana w telekinezie albo rzut telekinezą (Explosives) — **rewolweru nie ma**, został u Gunthera. Rusty: **Big Iron** (rewolwer ojca, Named Weapon) i Zwinność 8; zasada 5 — „jak nie wiem, to nie strzelam”: na kogo celuje w półmroku?
+- **Potrzask bez bezradności.** Rick nie może kilka rund tylko rzucać na obronę. Daj mu konkretne opcje: zatrzasnąć i przytrzymać właz, wspiąć się na strych, odciągnąć uwagę, rzucić bloatsprite'owi jabłko — i je stracić.
+- **Wejście każdego obcego to jego moment.** Jedno zdanie opisu, pierwsza akcja z bonusem zaskoczenia albo dobrą pozycją. Uriel: **Podmuch** (Aard), katana w telekinezie albo rzut telekinezą (Explosives) — jego dawny rewolwer został u Gunthera; ma **9mm Pistol** z Mercenary. Uriel ma też 9mm, nóż, **dwa granaty** i lekki barding najemnika (DT 8) — granat w stodole pełnej siana to pożar (zapowiedz to). Rusty: **Big Iron** (rewolwer ojca, Named Weapon) i Zwinność 8; zasada 5 — „jak nie wiem, to nie strzelam”: na kogo celuje w półmroku?
 - **Wyjście bez zabijania.** Pacyfista może przekonać resztę, żeby odpędzić mrówki zamiast je wybić. Zapamiętaj, kto co zrobił.
 - **Kopiec przy wylocie tunelu** to zaczepka na później: mrówki mogą kiedyś pójść tunelem do Stajni.
 - **Ściąga tempa:** jeśli walka przekracza 6 rund, kolonia się wycofuje, a bloatsprite odlatuje z łupem.
@@ -107,11 +107,14 @@ Rick widzi obcych pierwszy raz w życiu i konfrontuje ich z tym, czego uczyły m
 
 - Daj scenie oddychać: kto opatruje, kto pierwszy się przedstawia, kto trzyma broń w pogotowiu.
 - Uriel — jednorożec w barwach Szponu, z blizną (Scarred) — i Rusty z gwiazdą „Z upoważnienia Korony” to dla Ricka żywe rozdziały podręcznika. Niech gracz sam zdecyduje, czy wierzy materiałom.
-- Uriel może chcieć zapłaty za „zlecenie na stwory” — od kogo? Rusty może zapytać Ricka o prawo Stajni. Rick wie, że ma meldować się na kanale trzecim co godzinę — i że ma za chwilę meldunek.
+- Zapłata Uriela za „zlecenie na stwory” jest u Obserwatora — kapsle są prawdziwe. Głos z radia: Rick słyszał w PipBucku DJ Pon-3, Uriel — kogoś, kto mówił przez jego sprite-bota.
+- **Uriel nosi ten sam typ bardingu co łowcy Kantaru** (Mercenary/Slaver). Gdy zwiadowcy się pokażą, ktoś — Rick, Ochrona przy Wrotach — może ich skojarzyć. Bez ochry i kantara, ale krój ten sam.
+- Rick ma od Lily Pad misję „szpicy”: nawiązać przyjazne relacje z tymi z zewnątrz. Uriel i Rusty to właśnie oni — i tym argumentem może bronić ich przed Kręgiem.
+- Rusty może zapytać Ricka o prawo Stajni. Rick wie, że ma meldować się na kanale trzecim co godzinę — i że ma za chwilę meldunek.
 :::
 
 ::: side secret Burr to Sheaf
-Złapany zwiadowca to dawny sąsiad Rusty'ego z Cichych Brodów. Rusty najpierw zobaczy **serce dzwonka** na rzemieniu, potem **łan pszenicy** spod zdrapanej ochry (rzut na Spostrzegawczość: ten dźwięk zna). Zasada 1 kontra zasada 3 — jego scena. Od sesji zero wiadomo więcej: z Cichych Brodów zniknęła też **matka Rusty'ego** oraz źrebak **Skip** z matką. Rusty wierzy, że osadę spalił Kantar — Burr wie, że Kantar przyszedł dopiero po bandzie z trzema kreskami i kołem. Gdzie są zabrani i kto naprawdę spalił Brody — to jego karty przetargowe.
+Złapany zwiadowca to dawny sąsiad Rusty'ego z Cichych Brodów. Rusty najpierw zobaczy **serce dzwonka** na rzemieniu, potem **łan pszenicy** spod zdrapanej ochry (rzut na Spostrzegawczość: ten dźwięk zna). Zasada 1 kontra zasada 3 — jego scena. Od sesji zero wiadomo więcej: z Cichych Brodów zniknęła też **matka Rusty'ego** oraz źrebak **Skip** z matką. Rusty wierzy, że osadę spalił Kantar — Burr wie, że Kantar przyszedł dopiero po bandzie z trzema kreskami i kołem. Matkę Rusty'ego, Skipa i jego matkę Kantar **sprzedał dalej** — Burr wie komu. To i prawda o tym, kto spalił Brody, to jego karty przetargowe.
 :::
 
 ## Scena 4. Zegar: zwiadowcy gangu
@@ -156,7 +159,7 @@ Na posiedzeniu Kręgu:
 - **Runner Bean:** podsłuchuje pod drzwiami, potem łazi za obcymi.
 
 ::: side player Broń przy Wrotach
-**Rusty**: „W Stajni uszanuję” — sprawdź, czy dotrzyma. Zapyta o kodeks: Frozen Seed trzyma archiwum (art. 14, wersja B). **Uriel**: oddaje katanę wydartą Guntherowi kucykowi z podkładką? A Scavenger podnosi w Stajni wszystko, co ma wartość — kto to zauważy? **Rick**: zna tych z Ochrony po imieniu.
+**Rusty**: „W Stajni uszanuję” — sprawdź, czy dotrzyma. Zapyta o kodeks: Frozen Seed trzyma archiwum (art. 14, wersja B). **Uriel**: oddaje kucykowi z podkładką katanę wydartą Guntherowi, a do tego pistolet, nóż i granaty? „Strażnik bramy” (sesja 0,5) stoi dosłownie przy drzwiach. A Scavenger podnosi w Stajni wszystko, co ma wartość — kto to zauważy? **Rick**: zna tych z Ochrony po imieniu. **Rusty** oddaje Big Irona — rewolwer ojca.
 :::
 
 ::: note
