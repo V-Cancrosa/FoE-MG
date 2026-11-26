@@ -22,15 +22,15 @@ To, co zagrane, jest kanonem. Wątki niezagrane wiszą i mogą wrócić, o ile �
 | **Magia** | Telekinesis + zaklęcie ze znaczka **„Podmuch”** (Telekinetic Force / Aard); Magic ranga 30 |
 | **Wady** | Scavenger, Scarred (−10 do rzutów CHA, +15 Speechcraft przy zastraszaniu), Code of Honor |
 | **Cechy** | Omnivore (+3 Survival), Organization: Mercenary — Żelazny Szpon (2 pkt) |
-| **Nie wziął** | Slave ani Prideful („tak po prostu jest”), Stubby Little Horn, Enemy, Named Weapon |
+| **Nie wziął** | Slave ani Prideful („tak po prostu jest”), Stubby Little Horn, Enemy. Named Weapon nie jako osobną cechę — dostaje go z Organization: Mercenary |
 | **Broń** | **katana** wydarta Guntherowi (stawka) → Named Weapon w przeskoku; **rewolwer został u Gunthera** |
-| **Wyposażenie startowe** | Mercenary: Equestrian Combat Barding, Combat Knife, pistolet 9mm/10mm; z 300 kapsli: amunicja, 2 granaty, torby, 2 mikstury, hełm Talonów — szczegóły w one-shocie, „Z czym przychodzą” |
+| **Wyposażenie startowe** | Mercenary: Equestrian Combat Barding, Combat Knife; **.357 Magnum Revolver** kupiony za pierwsze kapsle po ucieczce (tak na karcie); z 300 kapsli: amunicja, 2 granaty, torby, 2 mikstury, hełm Talonów — szczegóły w one-shocie, „Z czym przychodzą” |
 | **Rany** | 2 rany przedniej lewej nogi po drzewnych wilkach; opatrzony w osadzie (zapłacił wszystkim, co miał) |
-| **Księga** | „Pozycja 112: strata. Nie spisano ze stanu. Miecz: odzyskany. Rewolwer: utracony. Gunther: bez strat.” |
+| **Księga** | „Pozycja 112: strata. Nie spisano ze stanu. Miecz utracony. Rewolwer odzyskany. Gunther bez ran.” (tak zagrane; z perspektywy Gunthera) |
 {: .plain}
 
 ::: side player Do one-shota
-Uriel przychodzi z **kataną** (w telekinezie albo w pysku), „Podmuchem” i rzucaniem telekinezą (Explosives) — **bez rewolweru**, ten został u Gunthera. Scavenger: zbiera wszystko, co ma wartość — także w pacyfistycznej Stajni.
+Uriel przychodzi z **kataną** (w telekinezie albo w pysku), „Podmuchem” i rzucaniem telekinezą (Explosives) — dawny rewolwer został u Gunthera; ma prosty **.357** kupiony za pierwsze kapsle. Scavenger: zbiera wszystko, co ma wartość — także w pacyfistycznej Stajni.
 → wraca: one-shot, sesja 1 (stodoła, Krąg)
 :::
 
@@ -459,8 +459,8 @@ Gunther odlatuje. Jedno zdanie, z góry, zanim zniknie: „Pies zawsze wraca”.
 
 ::: ledger Wpis zamykający (czytany po walce)
 Pozycja 112: strata. Nie spisano ze stanu.
-Miecz: odzyskany. Rewolwer: utracony.
-Gunther: bez strat.
+Miecz utracony. Rewolwer odzyskany.
+Gunther bez ran.
 :::
 
 ::: side later
@@ -473,7 +473,7 @@ Uriel nazywa siebie dezerterem, bo przejął etos Szponu: to słowo z kodeksu, w
 
 #### Cechy i ekwipunek
 
-Do wydania: punkty z przeszkód (punkt 4) i ewentualne resztki z atrybutów. **Zagrane:** Omnivore i Organization: Mercenary (Żelazny Szpon, 2 pkt); bez Enemy i bez Named Weapon.
+Do wydania: punkty z przeszkód (punkt 4) i ewentualne resztki z atrybutów. **Zagrane:** Omnivore i Organization: Mercenary (Żelazny Szpon, 2 pkt); bez Enemy; Named Weapon przychodzi z Mercenary (katana, w sesji 0,5).
 
 | Cecha / przeszkoda | Uwagi |
 |---|---|
