@@ -5,17 +5,15 @@ tytul: Sesje zero
 stopka: Sesje zero
 id: czesc-sesje
 ---
-Odgrywane tworzenie postaci, jeden na jeden. Każda sesja to przeszłość jednej postaci i każda kończy się w drodze do tej samej stodoły na Isolated Farmstead.
+Trzy sesje jeden na jeden, w których gracze stworzyli postacie, odgrywając ich przeszłość. Wszystkie się odbyły. Ta część to streszczenia: co się wydarzyło, z czym postać przychodzi, co wie i czego nie wie, i które wątki wracają w jednostrzale. Każda sesja kończy się w drodze do tej samej stodoły na Isolated Farmstead.
 
-| Gracz | Postać | Termin | Rama sesji |
+| Gracz | Postać | Zagrane | Rama sesji |
 |---|---|---|---|
-| zychu | **Uriel** — jednorożec wychowany przez Żelazny Szpon | zagrane śr 18.11 | Księga Długu |
+| zychu | **Uriel** — jednorożec wychowany przez Żelazny Szpon | śr 18.11 | Księga Długu |
 | Tymek (Tymianox) | **Rick Scrapper** — kucyk ziemski, technik ze Stajni 97 | pt 20.11 | skoki w czasie przez życie w Ogrodach |
 | Erwin (Nikodem) | **Rusty Spur** — samozwańczy szeryf, kucyk ziemny | wt 24.11 | Noc w Cinder Ford |
 {: .plain}
 
-Rezerwa: 23.11 i 25.11.
+Do zagrania przed jednostrzałem: **sesja 0,5 Uriela** (Obserwator, ekwipunek, katana jako Named Weapon).
 
-**Pytania do każdego gracza:** jedno zdanie — dlaczego twoja postać zostaje z drużyną? Czego nie zrobiłaby nigdy, nawet na rozkaz? (Na tym zbudujesz ultimatum w kampanii.)
-
-**Granice przy stole:** łowcy niewolników to ciężki temat. Powiedz jednym zdaniem, czego się spodziewać, i zapytaj, czego gracz nie chce widzieć. Domyślnie niewola jest zagrożeniem, nie sceną — porwani znikają z kadru.
+Scenariusze prowadzenia tych sesji (sceny, teksty do czytania, warianty) są w poprzedniej wersji wydania: `starsze wersje/FoE_Jednostrzal_i_sesje_zero_MG (26.11.2026, sesje zero do prowadzenia).pdf`.
