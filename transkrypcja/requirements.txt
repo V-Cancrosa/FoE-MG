@@ -4,3 +4,4 @@ numpy
 soundfile
 PyAudioWPatch; sys_platform == "win32"
 sounddevice; sys_platform != "win32"
+sv-ttk>=2.6        # wygląd okna jak Windows 11 (jasny/ciemny)
