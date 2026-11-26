@@ -159,8 +159,10 @@ class Okno:
         self.f_bot.pack(fill="x", **pad)
         ttk.Label(self.f_bot, text="Token:").grid(row=0, column=0, sticky="w", **pad)
         self.v_token = tk.StringVar(value=TOKEN.read_text(encoding="utf-8").strip() if TOKEN.exists() else "")
-        ttk.Entry(self.f_bot, textvariable=self.v_token, show="•", width=40).grid(row=0, column=1, sticky="we", **pad)
-        ttk.Button(self.f_bot, text="Zapisz token", command=self.zapisz_token).grid(row=0, column=2, **pad)
+        self.e_token = ttk.Entry(self.f_bot, textvariable=self.v_token, show="•", width=40)
+        self.e_token.grid(row=0, column=1, sticky="we", **pad)
+        self.b_token = ttk.Button(self.f_bot, text="Zapisz token", command=self.zapisz_token)
+        self.b_token.grid(row=0, column=2, **pad)
         ttk.Label(self.f_bot, text="MG na Discordzie:").grid(row=1, column=0, sticky="w", **pad)
         self.v_mg = tk.StringVar(value=self.cfg.get("bot", {}).get("mg", ""))
         ttk.Entry(self.f_bot, textvariable=self.v_mg, width=40).grid(row=1, column=1, sticky="we", **pad)
@@ -268,10 +270,16 @@ class Okno:
     def tryb_zmieniony(self):
         stan = "normal" if self.tryb_bot() else "disabled"
         for w in self.f_bot.winfo_children():
+            if w in (self.e_token, self.b_token, self.l_bot):  # token można zapisać w każdym trybie
+                continue
             try:
                 w.configure(state=stan)
             except tk.TclError:
                 pass
+        if not (self.bot and self.bot.poll() is None):
+            self.l_bot.configure(text="Bot: wyłączony" if self.tryb_bot() else
+                                 "Bot: nieużywany. Żeby nagrywać botem, wybierz wyżej: Gracze → „Bot Discord”.",
+                                 foreground=self.kol["zle"] if self.tryb_bot() else self.kol["podpis"])
         self.zapisz_ustawienia()
 
     def zapisz_ustawienia(self):
@@ -285,9 +293,13 @@ class Okno:
 
     def zapisz_token(self):
         t = self.v_token.get().strip()
+        if not t:
+            messagebox.showinfo("Token", "Pole Token jest puste. Skopiuj token z Developer Portal (Bot → Reset Token → Copy) "
+                                "i wklej go tutaj Ctrl+V.")
+            return
         TOKEN.parent.mkdir(exist_ok=True)
         TOKEN.write_text(t + "\n", encoding="utf-8")
-        self.log("Token zapisany w bot/token.txt (plik jest poza gitem).")
+        self.log(f"Token zapisany w bot/token.txt (plik jest poza gitem), długość {len(t)} znaków.")
 
     # ------------------------------------------------------------ nagrywanie lokalne
     def przelacz_nagrywanie(self):
