@@ -497,6 +497,59 @@ Bez wpisu w księdze. Pierwszy raz od dziecka nikt nie rozlicza Uriela.
 „Łatam się, jestem ranny”. Osada, zapłacił wszystkim, co miał, za opatrunek; drobne roboty; ogłoszenie o radkaraluchach i mrówkach w starej stodole — i równocześnie radio o otwarciu Stajni 97.
 :::
 
+## 7. Sesja 0,5: Obserwator
+
+*Kilkanaście minut przed wyprawą do stodoły; można połączyć z wydaniem ekwipunku i Named Weapon (katana).* Ostatni dzień w osadzie, gdzie Uriela poskładali.
+
+::: side secret Obserwator to Spike
+Nigdy się nie zdradza, ale zostawia ślady: zna przedwojenną Equestrię z pierwszej ręki, „obserwuje od dawna”, sam jest innego gatunku wychowanym przez obcych (smok wśród kucyków — jak Uriel, jednorożec wśród gryfów). Mówi przez **sprite-bota z DJ Pon-3**. To ten sam **Watcher**, który na sesji zero Ricka nie przyszedł.
+→ wraca: one-shot, scena 1 (radio), scena 3 (kto płaci)
+:::
+
+**1. Radio.** Nad placem krąży sprite-bot i puszcza DJ Pon-3: stary swing i trzaski. Muzyka urywa się w pół taktu, trzy czyste tony, „Stable-Tec wita nowych sąsiadów…”. Tym razem komunikat się nie kończy: głos się rozciąga i rwie, zostaje szum, potem cisza. Bot gaśnie i wisi bez dźwięku.
+
+**2. Zagrodzona droga.** Gdy Uriel rusza za osadę, bot staje mu na drodze na wysokości oczu. Nie atakuje, czeka; obchodzony, przesuwa się razem z nim. Głośnik trzaska i odzywa się inny głos: spokojny, uprzejmy, trochę zmęczony — ktoś, kto czekał bardzo długo.
+
+::: read Obserwator · można skracać
+„Wybacz, że przerywam. Muzyka i tak była stara.
+
+Uriel. Jednorożec, którego gryfy wyniosły na Igłę, do wieży zbudowanej kiedyś dla pegazów. Wychowany wśród skrzydeł, choć sam ich nie ma. Szpon nauczył cię chodzić po linach, liczyć zwierzęta, a nie ślady, i nie pytać. To ostatnie ci nie wyszło. Dobrze.
+
+Znałem kogoś, kogo też wychowali ci, którzy nie byli tacy jak on. Długo myślał, że musi na swoje miejsce zasłużyć. Mylił się.
+
+Twoje imię… nie wiem, kto ci je dał ani dlaczego. Pustkowia są duże i nawet ja nie widzę każdego kąta. W jednej starej księdze, starszej niż Equestria, nosił je ten, który stał przy bramie z płonącym ostrzem i pilnował, kto przez nią przejdzie. W innych znaczy po prostu *światło*. Może wybrałeś je sam. Ale jeśli pytasz mnie, to pierwsze pasuje dziś najlepiej.
+
+Odszedłeś ze Szponu, bo nie bierzesz zleceń, przy których nie wolno pytać. A jednak kiedy na tablicy pojawiło się ogłoszenie o karaluchach w stodole na uboczu, za uczciwe kapsle, nie zapytałeś, kto za nie płaci. To ja. Kapsle z ogłoszenia są prawdziwe. Teraz możesz zapytać o resztę.
+
+Stodoła stoi nad bramą. Pod nią są drzwi Stajni 97. Ci, którzy z niej wyjdą, przesiedzieli za stalą dwieście lat. Według miary pustkowi to dzieci. Pierwszemu, kto się do nich uśmiechnie, oddadzą wszystko.
+
+Ten komunikat słyszy cała Equestria. Ty też. Łowcy niewolników również.
+
+Raz już stanąłeś między wilkiem a źrebięciem. Dlatego to ogłoszenie wisiało tam, gdzie ty. Nie wysłałbym tam nikogo innego.”
+:::
+
+Bot gaśnie w pół zdania albo po pytaniu Uriela. Wraca DJ Pon-3, jakby nic się nie stało, i bot odlatuje.
+
+::: side later Wątki
+- Gunther mógł słyszeć tę samą audycję — może zjawić się przy Stajni z rewolwerem Uriela (opcja: „Szpon też ma radio”).
+- Obserwator **obiecał odpowiedź** na jedno pytanie — zapisz.
+- Przyznał, że **nie widzi wszystkiego** — gracze mogą kiedyś wiedzieć więcej od niego.
+- Kto jeszcze widział ogłoszenie i pytał, kto płaci?
+:::
+
+| Gdy Uriel zapyta… | Odpowiedź (A albo B) |
+|---|---|
+| Kim jesteś? | A: „Kimś, kto obserwuje”. B: „Przyjacielem bardzo starych przyjaciół”. |
+| Skąd o mnie wiesz? | A: „Słucham. Radio działa w obie strony”. B: „Gryfy dużo mówią, kiedy myślą, że nikt nie słucha”. |
+| Czego chcesz? | A: „Żeby te dzieci przeżyły pierwszy tydzień”. B: „Żeby ktoś przy tej bramie wiedział, po co tam stoi”. |
+| Co mi z tego? | A: „Kapsle z ogłoszenia, jak obiecałem. A kiedyś zapytasz mnie o coś, na co nikt inny nie zna odpowiedzi. Odpowiem”. B: „Zapłatę już znasz. Ja tylko dopowiadam, co jest w stodole naprawdę”. |
+| Czemu nie od razu? | „Bo wtedy byłoby to zlecenie, przy którym nie wolno pytać. Wolałem poczekać, aż zapytasz sam”. |
+| Szpon / Gunther? | „Pies zawsze wraca, tak? Gryfy lubią to powtarzać. Ja wolę mówić, że każdy wraca tam, gdzie go potrzebują”. |
+
+**Imię jako „strażnik bramy”:** przy Stajni Uriel stoi dosłownie przy drzwiach — wykorzystaj przy pierwszym spotkaniu z Rickiem i przy Wrotach.
+
+<div class="clear"></div>
+
 ## Ryzyka całej sesji
 
 - **Długość:** około 2,5 godziny. Jeśli się przeciąga, skracaj reakcje Gunthera do jednego zdania; opisy scen są ważniejsze.

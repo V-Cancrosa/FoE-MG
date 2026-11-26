@@ -37,7 +37,7 @@ Tally Mark liczy w księdze jak Gunther. „Sztuka”, „należność” — te
 ## Łowcy z imieniem
 
 - **Burr** (rzep), zwiadowca do złapania w sesji 1. Pod zdrapaną farbą widać łan pszenicy: był kiedyś rolnikiem w osadzie. Daje graczom powód, żeby z nim porozmawiać, a nie tylko go przesłuchać. Jeśli zostanie złapany, nie wraca w sesji 2.
-- **Knot** (węzeł), prowodyr oprychów i jedyny szeregowy, który nie zamalował znaczka: węzeł sieci. Wysoki ziemny, ciężka budowa. Dumny z tego, co robi. To on sięga po koktajl Mołotowa i dostaje za to od Tally Mark. Poszukiwany listem gończym z Cinder Ford: porwanie Sweet Briar i pobicie Haywarda — **250 kapsli żywy, 100 martwy**.
+- **Knot** (węzeł), prowodyr oprychów i jedyny szeregowy, który nie zamalował znaczka: węzeł sieci. Wysoki ziemny, ciężka budowa. Dumny z tego, co robi. To on sięga po koktajl Mołotowa i dostaje za to od Tally Mark. Poszukiwany listem gończym z Cinder Ford: porwanie Sweet Briar i pobicie Haywarda — **250 kapsli żywy, 100 martwy**. Hayward zapłacił Rusty'emu 250 kapsli **z góry**, za przyprowadzenie Sweet Briar (sesja zero).
 
 ::: side secret Rusty · nie pomyl gangów
 **Burr = Sheaf** z Cichych Brodów, nosi serce dzwonka. Ciche Brody wymordowała **inna banda** (trzy kreski i koło); Kantar przyszedł jak sęp i zabrał ocalałych. Rusty nie wie, że to dwa gangi.

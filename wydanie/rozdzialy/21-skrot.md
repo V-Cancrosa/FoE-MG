@@ -94,6 +94,6 @@ Każda scena ma cel, tekst do przeczytania (tam, gdzie jest gotowy) i notki MG. 
 
 | Postać | Co ją tu przyciąga | Gdzie wraca |
 |---|---|---|
-| Rick | rozkaz zwiadu, meldunek co godzinę na kanale trzecim | stodoła (pierwszy świat), tunel (łamie rozkaz), Krąg (rodzina, Lily Pad), szturm (technik przy stanowisku kontroli, światła) |
-| Uriel | ogłoszenie o radkaraluchach i mrówkach w stodole — pierwsze zlecenie na własny rachunek; jednocześnie radio o Stajni | stodoła (zapłata? Scavenger: wóz i rupiecie), Krąg (złożenie katany; kieszonkowanie w Stajni), szturm (kodeks: „celem nie jest źrebak” — Pea i Pod) |
+| Rick | misja od Lily Pad: „szpica” — nawiązać przyjazne relacje z tymi z zewnątrz; meldunek co godzinę na kanale trzecim | stodoła (pierwszy świat), tunel (łamie rozkaz), Krąg (rodzina, Lily Pad), szturm (technik przy stanowisku kontroli, światła) |
+| Uriel | ogłoszenie o radkaraluchach i mrówkach w stodole — pierwsze zlecenie na własny rachunek; płaci **Obserwator** (sesja 0,5), który powiedział mu, co jest pod stodołą | stodoła (kapsle są prawdziwe; Scavenger: wóz i rupiecie), Wrota („strażnik bramy”), Krąg (złożenie katany; kieszonkowanie w Stajni), szturm (kodeks: „celem nie jest źrebak” — Pea i Pod) |
 | Rusty | Knot jedzie z Kantarem w to samo miejsce; Stajnia ma spisane prawo (art. 14); 250 kapsli Haywarda za Sweet Briar | zwiadowca Burr (sąsiad Sheaf, serce dzwonka; może wiedzieć, gdzie matka Rusty'ego i Skip; Rusty wini Kantar za spalenie osady), Krąg („w Stajni uszanuję”, oddanie Big Irona), szturm (zakładnik), Knot żywy czy martwy |
