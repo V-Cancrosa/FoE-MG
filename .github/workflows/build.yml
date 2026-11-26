@@ -9,6 +9,7 @@ on:
     branches: [main, master, "claude/**"]
     paths-ignore:
       - "index.html"
+      - "biblioteka.html"
       - "os-czasu.html"
       - "wszystko.html"
       - "404.html"

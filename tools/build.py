@@ -46,7 +46,8 @@ ROOT = Path(__file__).resolve().parent.parent
 THEME = ROOT / "theme"
 
 # pliki/katalogi generowane w katalogu docelowym (tylko te są czyszczone przy przebudowie)
-GENERATED = ["index.html", "os-czasu.html", "wszystko.html", "404.html", "search.json",
+HOME = "biblioteka.html"  # spis materiałów; index.html to interaktywne wydanie MG
+GENERATED = ["index.html", "biblioteka.html", "os-czasu.html", "wszystko.html", "404.html", "search.json",
              "e", "p", "t", "assets", ".nojekyll"]
 
 KINDS = {
@@ -560,7 +561,7 @@ class Builder:
         return self.ordered_collections().index(c) + 1
 
     def nav(self, root: str, active: str) -> str:
-        links = [("index.html", "Start", "home"), ("os-czasu.html", "Oś czasu", "timeline"),
+        links = [("index.html", "Jednostrzał (MG)", "mg"), (HOME, "Biblioteka", "home"), ("os-czasu.html", "Oś czasu", "timeline"),
                  ("wszystko.html", "Spis", "all")]
         main = "".join(f'<a href="{root}{h}" class="{"active" if active == k else ""}">{t}</a>' for h, t, k in links)
         cols = "".join(
@@ -571,7 +572,7 @@ class Builder:
                 if self.site.get("logo") else "")
         return f"""
 <header class="topbar">
-  <a class="brand" href="{root}index.html">{logo}<span>{esc(self.site.get('short') or self.site['title'])}</span></a>
+  <a class="brand" href="{root}{HOME}">{logo}<span>{esc(self.site.get('short') or self.site['title'])}</span></a>
   <button class="menu-btn" aria-label="Menu" aria-expanded="false" data-menu>☰</button>
   <nav class="mainnav" data-nav>{main}<span class="sep" aria-hidden="true"></span>{cols}</nav>
   <div class="tools">
@@ -599,7 +600,7 @@ class Builder:
     <span class="box-label">Sekret MG</span>
     <h2>Tu są spoilery</h2>
     <p>Scenariusze, sekrety Stajni i notatki prowadzącego. Rzeczy, których gracz nie może zobaczyć.</p>
-    <div class="actions"><a class="btn" href="{root}index.html">Wracam</a><button class="btn primary" data-gate-ok>Jestem MG — pokaż</button></div>
+    <div class="actions"><a class="btn" href="{root}{HOME}">Wracam</a><button class="btn primary" data-gate-ok>Jestem MG — pokaż</button></div>
   </div>
 </div>"""
         left = "Tylko dla MG" if spoiler else (self.site.get("kicker") or self.site["title"])
@@ -729,7 +730,10 @@ class Builder:
 </aside>
 {f'<section><h2 class="h-slab">Najnowsze</h2><div class="grid">{"".join(self.item_card(it, root, True) for it in recent)}</div></section>' if recent else ''}
 """
-        self.write("index.html", self.page(root, self.site["title"], body, "home", running="Spis treści"))
+        page = self.page(root, self.site["title"], body, "home", running="Spis treści")
+        self.write(HOME, page)
+        mg = ROOT / "wydanie" / "interaktywny.html"
+        self.write("index.html", mg.read_text(encoding="utf-8") if mg.exists() else page)
 
     def render_collection(self, c: Collection):
         root = "../../"
@@ -763,7 +767,7 @@ class Builder:
         if c.spoiler and desc:
             desc = f'<div class="box secret"><span class="box-label">Sekret MG</span>{c.description_html}</div>'
         body = f"""
-<nav class="crumbs"><a href="{root}index.html">Spis treści</a> / <span>{esc(c.title)}</span></nav>
+<nav class="crumbs"><a href="{root}{HOME}">Spis treści</a> / <span>{esc(c.title)}</span></nav>
 {self.chapter_head(kicker, c.title, f'{len(c.items)} {plural(len(c.items))}', c.spoiler)}
 {desc}
 {f'<nav class="subnav">{"".join(toc)}</nav>' if len(toc) > 1 else ''}
@@ -781,7 +785,7 @@ class Builder:
         i = siblings.index(it)
         prev_d = siblings[i - 1] if i > 0 else None
         next_d = siblings[i + 1] if i + 1 < len(siblings) else None
-        crumbs = [f'<a href="{root}index.html">Spis treści</a>', f'<a href="{root}e/{c.slug}/index.html">{esc(c.title)}</a>']
+        crumbs = [f'<a href="{root}{HOME}">Spis treści</a>', f'<a href="{root}e/{c.slug}/index.html">{esc(c.title)}</a>']
         if it.folder:
             crumbs.append(f'<a href="{root}e/{c.slug}/index.html#{slugify(it.folder)}">'
                           f'{esc(" / ".join(pretty_name(p) for p in it.folder.split("/")))}</a>')
@@ -889,7 +893,7 @@ class Builder:
 
     def render_404(self):
         body = self.chapter_head("Błąd 404", "Pusto tu", "Tej strony nie ma — może drzwi zamknęły się na dobre.") + \
-            '<p class="actions"><a class="btn primary" href="index.html">Wróć do spisu treści</a></p>'
+            f'<p class="actions"><a class="btn primary" href="{HOME}">Wróć do spisu treści</a></p>'
         out = self.page("", "Nie znaleziono", body)
         out = out.replace("<head>", """<head>
 <script>(function(){var p=location.pathname.split('/').filter(Boolean);var b=(location.hostname.endsWith('github.io')&&p.length)?'/'+p[0]+'/':'/';document.write('<base href="'+b+'">');})();</script>""", 1)

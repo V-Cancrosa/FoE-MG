@@ -375,6 +375,9 @@ def build():
     out_html = OUT_DIR / f"{OUT_NAME}.html"
     out_html.write_text(doc, encoding="utf-8")
     print("✔ HTML:", out_html.relative_to(ROOT))
+    from interaktywne import make_interactive
+    (HERE / "interaktywny.html").write_text(make_interactive(doc, OUT_NAME), encoding="utf-8")
+    print("✔ HTML interaktywny: wydanie/interaktywny.html (strona główna)")
 
     if "--bez-pdf" in sys.argv:
         return

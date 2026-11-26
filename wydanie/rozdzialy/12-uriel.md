@@ -45,6 +45,7 @@ Katana (w telekinezie albo w pysku), „Podmuch”, rzucanie telekinezą (Explos
 **Należność odebrana.** Źrebię jednorożca w szponach gryfa, potem psiarnia na dolnym pomoście Igły: przeszklona sala, boksy, koc w najdalszym rogu, drzwi na schody zamykane na noc. Miska mięsa o świcie i o zmierzchu, zawsze punktualnie (stąd Omnivore). Księga: „Nie płacze. Uczy się.”
 
 **Szkolenie.**
+
 - *Trzon Igły (Siła, Wytrzymałość):* nosił, ile się da naraz. „Weźmiesz też skrzynię Brannoka.” „Szybciej niż wczoraj. Wolniej, niż powinieneś.”
 - *Tor między masztami (Zwinność, Szczęście):* belka pękła, Gunther złapał go późno i rozciął sobie skrzydło o stal. **Szrama została na Guntherze.**
 - *Trop i trucizny (Percepcja, Inteligencja):* wrócił przed czasem i powiedział, ile ich było. Jedyne „Dobrze” w całej sesji. Rozdzielił korzenie na trzy kupki; trzecią Gunther schował do własnej torby.
@@ -56,6 +57,7 @@ Katana (w telekinezie albo w pysku), „Podmuch”, rzucanie telekinezą (Explos
 :::
 
 **Pierwsze zlecenia.**
+
 - *Zaginiony transport z Mudwater:* dwa kucyki, odnaleziony jeden żywy, po śladach (**Survival**).
 - *Drzewne wilki na farmie Crabgrass:* Uriel walczył sam, Gunther patrzył z dachu stodoły. Wygrał, z **dwiema ranami przedniej lewej nogi**. Trzeci wilk rzucił się na źrebię farmera; Uriel odepchnął go falą siły, a potem dobił mieczem ciśniętym telekinezą (**Melee**). Rano na boku: **trójkąt w wirach wiatru**, a z nim zaklęcie „Podmuch”. Gunther: „Kucyki mówią, że to pokazuje, do czego jesteś. Ja ci mówię, do czego jesteś.”
 - Trzecia umiejętność: **Explosives** zamiast Small Guns — rzucanie przedmiotami telekinezą.

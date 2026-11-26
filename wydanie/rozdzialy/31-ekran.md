@@ -5,6 +5,51 @@ tytul: Ekran MG
 podtytul: Zasady Fallout: Equestria V1.22 pod ręką. Numery stron według podręcznika.
 stopka: Dodatek A · Ekran MG
 ---
+## Na co kazać rzucić
+
+Najpierw: **czy porażka coś zmienia?** Jeśli nie, nie rzucaj — niech się uda. Jeśli tak, wybierz umiejętność; gdy żadna nie pasuje, atrybut × 10. Trudność ustaw drabiną MFD (niżej).
+
+| Gracz chce… | Rzut | Uwagi |
+|---|---|---|
+| zauważyć, usłyszeć, wyczuć zasadzkę | **PER** | grupa: rzuca każdy, wystarczy jeden sukces |
+| tropić, czytać ślady, znaleźć wodę lub jedzenie, rozpoznać stwora | **Survival** | Rusty, Uriel |
+| przekonać, skłamać, uspokoić, zastraszyć, negocjować | **Speechcraft** | Scarred: +15 tylko przy zastraszaniu |
+| targować się, wycenić, rozpoznać podróbkę | **Mercantile** | |
+| przejść niezauważonym, ukraść z kieszeni | **Sneak** vs PER strażnika | remis wygrywa strażnik |
+| otworzyć zamek, kłódkę, szafkę | **Lockpicking** | bez rogu i szponów −10 |
+| naprawić, zaimprowizować, odblokować mechanizm | **Repair** | Rick |
+| terminal, elektronika, chemia, „co to za urządzenie” | **Science** | Rick |
+| opatrzyć, zdiagnozować, rozpoznać truciznę | **Medicine** | |
+| zaklęcie, telekineza, wiedza o magii | **Magic** | Uriel |
+| wspiąć się, przeskoczyć, utrzymać równowagę, uniknąć | **AGI** | unik bez karty: rzut AGI, musi wejść na ¾ |
+| podnieść, pchnąć, wyważyć, przewrócić, utrzymać | **STR** | Rick S7 |
+| wytrzymać ból, gaz, truciznę, chorobę, zmęczenie | **END** | odporności z cech dodają premię |
+| przypomnieć sobie, skojarzyć fakty, oprzeć się magii umysłu | **INT** | |
+| zrobić wrażenie bez słów, utrzymać tłum, siła woli | **CHA** (siła woli: lepszy z INT i CHA) | |
+| „czy akurat mam przy sobie…?”, „czy los sprzyja?” | **Luck** | albo karta szczęścia |
+| wyrwać się z sieci oprycha | **STR** albo **AGI** vs Unarmed oprycha | |
+| strzelić, uderzyć | Small Guns, Melee, Unarmed, Explosives | półmrok, ruch, osłona: MFD niżej |
+
+#### Rzuty w jednostrzale
+
+| Scena | Kto | Rzut |
+|---|---|---|
+| Stodoła: wejście na strych | każdy | AGI (drabina w walce: ¾) |
+| Stodoła: zatrzaśnięty właz | Rick | STR, żeby trzymać; Repair, żeby odblokować |
+| Stodoła: mrówki da się odstraszyć | każdy | Survival albo INT; Rick: Science (tunel przebił kopiec) |
+| Stodoła: przewrócić belkę albo wóz | Rick | STR, MFD 1 (S7 daje radę) |
+| Zwiadowcy na grzbiecie | każdy | PER; przy porażce zauważa ten z najlepszą pozycją |
+| Pościg za zwiadowcą | Uriel, Rusty | AGI albo Survival; Big Iron z daleka: Small Guns ¾ |
+| Burr: łan pszenicy, dźwięk serca dzwonka | Rusty | PER |
+| Przesłuchanie Burra | każdy | Speechcraft; zastraszanie (Uriel, Rusty: Scarred +15) |
+| Krąg: przekonać do obcych | Rick | Speechcraft; misja szpicy jako argument: MFD 1½ |
+| Krąg: przejęzyczenie Winter Rye | Rick | PER albo INT („słyszałem to przy kolacji”) |
+| Pertraktacje z Tally Mark | każdy | Speechcraft vs jej Speechcraft; blef zauważy PER |
+| Szturm: dobiec do szafki z bronią | każdy | AGI; otwarcie bez numerka: Lockpicking |
+| Szturm: światła i syrena | Rick | Science albo Repair przy stanowisku kontroli |
+| Szturm: zakładnik przed oprychem | Rusty | Small Guns ½ (strzał obok zakładnika) albo Speechcraft |
+| Ranni po szturmie | każdy | Medicine (Willow Bark daje pomoc) |
+
 ## Rzut i TN <span class="pages">s. 6–8</span>
 
 Rzucasz d% i trzeba wyrzucić **≤ TN**. Niżej znaczy lepiej.

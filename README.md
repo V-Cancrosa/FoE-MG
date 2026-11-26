@@ -1,6 +1,8 @@
 # Stajnia 97 „Gardens” — materiały kampanii Fallout: Equestria
 
-Strona: **https://v-cancrosa.github.io/FoE-MG/**
+Strona: **https://v-cancrosa.github.io/FoE-MG/** — strona główna to interaktywne wydanie dla MG
+(najechanie na BN-a, umiejętność albo atrybut pokazuje kartkę; dane w `wydanie/leksykon.json`).
+Spis wszystkich materiałów: `biblioteka.html`.
 
 Wszystkie materiały kampanii (świat, materiały dla graczy, postacie, mapy, notatki MG) złożone
 w jedną stronę. Strona buduje się sama po każdym pushu.
