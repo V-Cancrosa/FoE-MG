@@ -58,7 +58,7 @@ Stan kart w Foundry z 25.11 (MG wydał ekwipunek).
 | zakupy | **Frag Grenade ×2**, juki, Healing Potion ×2, Canteen, Flint and Steel, Firewood ×3 | |
 | zielarstwo (Survival, Omnivore) | Cave Fungus ×5, Xander Root ×2, Zebra Herbs, Aconite | |
 | kieszeń | **50 kapsli** | |
-| do dodania przez MG | ogłoszenie/kontrakt na stodołę (od Obserwatora) | |
+| do dodania przez MG | **kontrakt ze Szponem** (z cechy Organization: Mercenary — Żelazny Szpon) | |
 
 Dawny rewolwer Uriela został u Gunthera. Explosives: granaty i rzucanie przedmiotami telekinezą (zasada „Rock”: 1d4 na każde 5 wagi + STR).
 
