@@ -105,7 +105,7 @@ W rundzie 2 inżynier mamrocze, że „szóstka znowu żre prąd”. **Rick** pr
 | 1 | Strzelcy przyszpilają Wrota, oprychy wpadają. Gracze bez broni wybierają: biec do szafki czy osłaniać mieszkańców. |
 | 2–3 | Szczyt porwań. Większość decyzji graczy zapada tutaj. Nettle sięga do szafki. Światła mrugają. |
 | 4 | Tally Mark woła „zbieramy!”. Kto trzyma jeńca, wycofuje się, reszta osłania. |
-| 5–6 | Pościg w tunelu albo opatrywanie rannych. |
+| 5–6 | Pościg w tunelu albo opatrywanie rannych. Na końcu tunelu wóz w stodole: strażnik i **Sweet Briar** w klatce — jeśli drużyna zdąży, zanim wóz odjedzie. |
 
 **Cel MG:** 1–2 porwanych. Jeśli gracze grają świetnie, mogą uratować wszystkich — to też dobre zakończenie; hakiem zostaje kontrakt.
 
@@ -118,7 +118,7 @@ W rundzie 2 inżynier mamrocze, że „szóstka znowu żre prąd”. **Rick** pr
 
 ## Ruch 3. Odwrót
 
-Gang wycofuje się, gdy padnie Tally Mark albo 2 z 5 łowców ze szturmu (oprychy i strzelcy; zwiadowców przy jeńcach nie liczysz), i najpóźniej po wołaniu „zbieramy” w rundzie 4. Zabierają tych, których zdążyli wyciągnąć.
+Gang wycofuje się, gdy padnie Tally Mark albo 3 z 7 łowców ze szturmu (oprychy i strzelcy; zwiadowców przy jeńcach nie liczysz), i najpóźniej po wołaniu „zbieramy” w rundzie 4. Zabierają tych, których zdążyli wyciągnąć.
 
 ## Ruch 4. Ślad
 
@@ -147,7 +147,7 @@ Ranny mieszkaniec: „Nie kompost… Spoczynek, jak syn Thornów?” — ślad d
 :::
 
 ::: side player Rusty i Knot
-Rusty ma już **250 kapsli Haywarda** (zaliczka za Sweet Briar, „nie wydam”). Knot żywy wie, gdzie jest Sweet Briar; martwy — to zasada 3 i zemsta za Brody, które Rusty przypisuje Kantarowi. Gdy Knot się poddaje — Code of Honor (jeśli został w karcie).
+Rusty ma już **250 kapsli Haywarda** (zaliczka za Sweet Briar, „nie wydam”) — a Sweet Briar siedzi w klatce na wozie w stodole. Knot żywy to list gończy (250); martwy — to zasada 3 i zemsta za Brody, które Rusty przypisuje Kantarowi. Gdy Knot się poddaje — Code of Honor (jeśli został w karcie).
 :::
 
 ## Ruch 6. Warunek Kręgu

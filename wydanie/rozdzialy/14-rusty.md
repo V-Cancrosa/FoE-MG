@@ -40,8 +40,8 @@ Sesja poszła wg planu poniżej, z kilkoma zmianami, które od teraz są kanonem
 **Rusty wierzy, że Ciche Brody spalił Kantar.** Nie wie o bandzie z trzema kreskami i kołem; Kantar przyszedł później jak sęp po niewolników. Nie prostuj tego — niech prawda wyjdzie od Burra albo w kampanii.
 :::
 
-::: side later Matka, Skip i jego matka
-Zabrani, nie martwi — najpewniej przez Kantar, który zgarnął ocalałych. Kierunek, nie wyrok.
+::: side secret Matka, Skip i jego matka · ustalone
+Zabrani przez Kantar i **sprzedani dalej** — nie ma ich w klatkach one-shota. **Burr wie komu.** Haczyk na kampanię.
 → wraca: Burr (sesja 1, scena 4), kampania
 :::
 
@@ -383,12 +383,13 @@ Ostatnie słowo należy do Haywarda. Niech wyjdzie z zaplecza.
 „Przyprowadź ją”, mówi. Nie „zabij go”. „Przyprowadź ją”.
 :::
 
-**Zasada 4 i Hayward.** Rusty oddaje nagrody poszkodowanym. Tutaj poszkodowany jest tym, kto płaci. Jeśli Rusty przyprowadzi Knota żywego, odbierze 250 kapsli z kieszeni Haywarda i odda mu je z powrotem. Nie musisz tego podkreślać: gracz zauważy sam albo pokaże to w grze.
+**Zasada 4 i Hayward.** Rusty oddaje nagrody poszkodowanym. Tutaj poszkodowany jest tym, kto płaci. **Zagrane:** Hayward wcisnął mu 250 kapsli z góry, za przyprowadzenie Sweet Briar; Rusty wziął, ale „nie wyda”. Nie musisz tego podkreślać: gracz zauważy sam albo pokaże to w grze.
 
-**Tajny cel na jednostrzał.** To odpowiednik rozkazu frakcji. Rusty ma dwa cele, które mogą się wykluczać: Knot żywy (bo tylko żywy powie, gdzie jest Sweet Briar, i za żywego jest 250 kapsli) oraz zemsta i zasada 3 (Knot był w Kantarze, który zabrał jego sąsiadów). Nie mów graczowi, że to konflikt. Niech sam to odkryje.
+**Tajny cel na jednostrzał.** To odpowiednik rozkazu frakcji. Rusty ma dwa cele, które mogą się wykluczać: **Sweet Briar** (siedzi w klatce na wozie Kantaru — odbić ją to spłacić dług wobec Haywarda) oraz **Knot**: list gończy chce go żywego (250 / 100 martwy), a zasada 3 i zemsta za Ciche Brody, które Rusty przypisuje Kantarowi, chcą czego innego. Nie mów graczowi, że to konflikt. Niech sam to odkryje.
 
-::: side todo Gdzie jest Sweet Briar
-Przed sesją 2 one-shota. **1:** w klatce przy punkcie zbiórki — do odbicia w szturmie. **2:** sprzedana dalej; Knot zna kupca → kampania. Opcja 2 lepiej tłumaczy, czemu Knot musi przeżyć mimo zasady 3.
+::: side player Sweet Briar · ustalone
+Jest **z Kantarem**: w klatce na wozie w stodole. Do odbicia w one-shocie (pościg w tunelu, rundy 5–6, albo zanim wóz odjedzie).
+→ wraca: one-shot, sesja 2
 :::
 
 ### Przejście do jednostrzału
