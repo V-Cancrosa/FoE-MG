@@ -6,6 +6,9 @@
 // Na stdout wypisuje linie JSON dla okna: {"log":…}, {"zdarzenie":…}, {"poziomy":{…}}.
 //
 // Token: plik bot/token.txt (poza gitem) albo zmienna środowiskowa DISCORD_TOKEN.
+//
+// Zgody: nagrywa tylko tych, którzy się zgodzili (patrz Zgody niżej). Kogo nie wolno nagrywać,
+// tego strumienia bot w ogóle nie subskrybuje — jego dźwięk nie trafia do żadnego pliku.
 // Odbiór dźwięku z szyfrowaniem end-to-end Discorda (DAVE) robi @discordjs/voice ≥ 0.19.2 (+ @snazzah/davey).
 
 import { Client, GatewayIntentBits, Events, ApplicationCommandType } from "discord.js";
@@ -37,9 +40,64 @@ function token() {
   if (process.env.DISCORD_TOKEN) return process.env.DISCORD_TOKEN.trim();
   try { return fs.readFileSync(path.join(TU, "token.txt"), "utf8").trim(); } catch { return ""; }
 }
+function kluczZgod() {
+  try { return fs.readFileSync(path.join(TU, "zgody_klucz.txt"), "utf8").trim(); } catch { return ""; }
+}
 function arg(nazwa) {
   const i = process.argv.indexOf(nazwa);
   return i > 0 ? process.argv[i + 1] : undefined;
+}
+
+// ------------------------------------------------------------------ zgody
+// Nick → porównywalny klucz: NFKC zamienia ozdobne litery Unicode (𝐳𝐲𝐜𝐡𝐮) na zwykłe (zychu).
+export const norm = (s) => String(s ?? "").normalize("NFKC").trim().toLowerCase();
+const lista = (x) => (Array.isArray(x) ? x : String(x ?? "").split(/[,;\n]/)).map(norm).filter(Boolean);
+const URL_ZGOD = "https://rozdroza.vulpescancrosa.workers.dev/api/watcher/zgody";
+
+/** Lista zgód na jedną sesję. zrodlo: "hub" (lista pobrana), "blad" (klucz jest, lista nie — nagrywa tylko MG),
+ *  "lokalnie" (brak klucza — nagrywa wszystkich poza listą „Nie nagrywaj”). */
+export class Zgody {
+  constructor(cfg, hub = null, zrodlo = "lokalnie", powod = "") {
+    const z = cfg.zgody || {};
+    this.zablokowani = new Set(lista(z.zablokowani));
+    this.dopuszczeni = new Set(lista(z.dopuszczeni));
+    this.mg = norm(cfg.bot?.mg);
+    this.zrodlo = zrodlo; this.powod = powod;
+    this.nagrywaj = new Set((hub?.nagrywaj || []).map(String));
+  }
+  static async pobierz(cfg, fetchFn = globalThis.fetch) {
+    const klucz = kluczZgod();
+    if (!klucz) return new Zgody(cfg, null, "lokalnie", "brak klucza zgód");
+    const z = cfg.zgody || {};
+    const url = `${z.url || URL_ZGOD}?kampania=${encodeURIComponent(z.kampania || "fallout-equestria")}`;
+    try {
+      const r = await fetchFn(url, { headers: { Authorization: `Bearer ${klucz}` }, signal: AbortSignal.timeout(8000) });
+      const j = await r.json().catch(() => ({}));
+      if (!r.ok) {
+        const opis = { 401: "zły klucz zgód", 503: "HUB nie ma skonfigurowanych zgód", 404: "nieznana kampania" }[r.status];
+        return new Zgody(cfg, null, "blad", `${opis || "HUB odpowiedział " + r.status}${j.error ? ` (${j.error})` : ""}`);
+      }
+      return new Zgody(cfg, j, "hub", `osoby ze zgodą: ${(j.nagrywaj || []).length}`);
+    } catch (e) {
+      return new Zgody(cfg, null, "blad", `brak połączenia z HUB-em (${e.name === "TimeoutError" ? "przekroczony czas" : e.message})`);
+    }
+  }
+  /** → [czy nagrywać, powód]. Kolejność: „Nie nagrywaj” > MG > „Dopuść” > lista HUB-a. */
+  decyzja(kto) {
+    const klucze = [kto.id, kto.uzytkownik, kto.etykieta].map(norm).filter(Boolean);
+    const jest = (zb) => klucze.some((k) => zb.has(k));
+    if (jest(this.zablokowani)) return [false, "na liście „Nie nagrywaj”"];
+    if (this.mg && klucze.includes(this.mg)) return [true, "MG"];
+    if (jest(this.dopuszczeni)) return [true, "dopuszczony ręcznie"];
+    if (this.zrodlo === "hub") return this.nagrywaj.has(String(kto.id)) ? [true, "zgoda w HUB-ie"] : [false, "brak zgody w HUB-ie"];
+    if (this.zrodlo === "blad") return [false, `lista zgód niedostępna (${this.powod}) — nagrywam tylko MG`];
+    return [true, "bez listy zgód"];
+  }
+  opis() {
+    if (this.zrodlo === "hub") return `Zgody z HUB-a: ${this.powod}. Pozostałych nie nagrywam.`;
+    if (this.zrodlo === "blad") return `⚠ Lista zgód niedostępna: ${this.powod}. Nagrywam tylko MG i dopuszczonych ręcznie.`;
+    return `Zgody: bez HUB-a (${this.powod}) — nagrywam wszystkich poza listą „Nie nagrywaj” (${this.zablokowani.size}).`;
+  }
 }
 
 // ------------------------------------------------------------------ dekoder Opus
@@ -116,13 +174,15 @@ function isoLokalny(d = new Date()) {
 }
 
 class Sesja {
-  constructor(kanal, folder) {
-    this.kanal = kanal; this.guild = kanal.guild;
+  constructor(kanal, folder, zgody) {
+    this.kanal = kanal; this.guild = kanal.guild; this.zgody = zgody;
+    this.pominieci = new Map();   // userId → {etykieta, powod}
     this.t0 = Date.now() / 1000;
     this.katalog = path.join(folder, `${znacznik()}_bot`);
     fs.mkdirSync(this.katalog, { recursive: true });
     this.sciezki = new Map();     // userId → {sciezka, meta}
-    this.meta = { start: isoLokalny(), tryb: "bot", serwer: this.guild.name, kanal: kanal.name, sciezki: [] };
+    this.meta = { start: isoLokalny(), tryb: "bot", serwer: this.guild.name, kanal: kanal.name, sciezki: [],
+                  zgody: zgody.zrodlo };
     this.zapiszMeta();
   }
   zapiszMeta() {
@@ -157,13 +217,21 @@ class Sesja {
     log(`Nagrywam kanał „${this.kanal.name}” (${this.guild.name}) do ${this.katalog}`);
   }
   async subskrybuj(uid) {
-    if (this.sciezki.has(uid) || this.zatrzymana) return;
+    if (this.sciezki.has(uid) || this.pominieci.has(uid) || this.zatrzymana) return;
     this.sciezki.set(uid, null);  // rezerwacja, zanim przyjdzie członek z API
     const m = await this.guild.members.fetch(uid).catch(() => null);
     if (m?.user?.bot) return;
     const meta = {
       etykieta: m?.displayName ?? uid, uzytkownik: m?.user?.username ?? uid, id: uid, plik: uid, rate: RATE,
     };
+    const [wolno, powod] = this.zgody.decyzja(meta);
+    if (!wolno || this.zatrzymana) {
+      this.sciezki.delete(uid);
+      this.pominieci.set(uid, { etykieta: meta.etykieta, powod });
+      wyslij({ zdarzenie: "pominiety", kto: meta.etykieta, uzytkownik: meta.uzytkownik, id: uid, powod });
+      log(`○ nie nagrywam: ${meta.etykieta} (${meta.uzytkownik}, ID ${uid}) — ${powod}`);
+      return;
+    }
     const sc = new Sciezka(path.join(this.katalog, `${uid}.wav`), this.t0);
     this.sciezki.set(uid, { sciezka: sc, meta });
     this.meta.sciezki.push(meta); this.zapiszMeta();
@@ -174,11 +242,31 @@ class Sesja {
       try { sc.blokStereo(dekoduj(pakiet)); } catch (e) { if (bledy++ < 5) log(`Uszkodzony pakiet od ${meta.etykieta}: ${e.message}`); }
     });
     strumien.on("error", (e) => log(`Strumień ${meta.etykieta}: ${e.message}`));
-    log(`● nowa ścieżka: ${meta.etykieta} (${meta.uzytkownik})`);
+    this.sciezki.get(uid).strumien = strumien;
+    log(`● nowa ścieżka: ${meta.etykieta} (${meta.uzytkownik}, ID ${uid}) — ${powod}`);
+  }
+  /** Nowa lista zgód w trakcie sesji: kto stracił zgodę — przestaje być nagrywany; pominięci są oceniani od nowa. */
+  zmienZgody(zgody) {
+    this.zgody = zgody;
+    log(zgody.opis());
+    for (const [uid, v] of this.sciezki) {
+      if (!v || v.wylaczona) continue;
+      const [wolno, powod] = zgody.decyzja(v.meta);
+      if (!wolno) {
+        v.wylaczona = true;
+        try { v.strumien?.destroy(); } catch {}
+        this.conn?.receiver?.subscriptions?.delete?.(uid);
+        v.meta.przerwana = isoLokalny(); this.zapiszMeta();
+        wyslij({ zdarzenie: "pominiety", kto: v.meta.etykieta, uzytkownik: v.meta.uzytkownik, id: uid, powod });
+        log(`○ przestaję nagrywać: ${v.meta.etykieta} — ${powod} (to, co już nagrane, zostaje w ${uid}.wav)`);
+      }
+    }
+    this.pominieci.clear();   // przy następnym odezwaniu się zdecyduje nowa lista
+    wyslij({ zdarzenie: "pominieci_wyczysc" });
   }
   poziomy() {
     const p = {};
-    for (const v of this.sciezki.values()) if (v) { p[v.meta.etykieta] = Math.round(v.sciezka.poziom * 100) / 100; v.sciezka.poziom *= 0.8; }
+    for (const v of this.sciezki.values()) if (v && !v.wylaczona) { p[v.meta.etykieta] = Math.round(v.sciezka.poziom * 100) / 100; v.sciezka.poziom *= 0.8; }
     wyslij({ poziomy: p, czas: Math.round(Date.now() / 1000 - this.t0) });
   }
   stop() {
@@ -197,7 +285,7 @@ class Sesja {
 async function main() {
   const tok = token();
   if (!tok) { wyslij({ zdarzenie: "blad", log: "Brak tokenu bota: wklej go w oknie (Bot → Token) albo do bot/token.txt." }); process.exit(2); }
-  const cfg = ustawienia();
+  let cfg = ustawienia();
   const folder = arg("--folder") || cfg.folder_nagran || path.join(GLOWNY, "nagrania");
   let sesja = null;
 
@@ -210,9 +298,14 @@ async function main() {
 
   async function zacznij(kanal) {
     if (sesja && !sesja.zatrzymana) return `Już nagrywam kanał „${sesja.kanal.name}”.`;
-    sesja = new Sesja(kanal, folder);
+    cfg = ustawienia();   // świeże ustawienia z okna (MG, „Nie nagrywaj”, „Dopuść”)
+    const zgody = await Zgody.pobierz(cfg);
+    log(zgody.opis());
+    sesja = new Sesja(kanal, folder, zgody);
     try { await sesja.start(); } catch (e) { sesja.stop(); sesja = null; return `Nie udało się wejść na kanał: ${e.message}`; }
-    return `🔴 Nagrywam kanał „${kanal.name}”. Każdy głos osobno, do transkrypcji po sesji. /stop kończy.`;
+    const tylkoZgody = zgody.zrodlo !== "lokalnie" || zgody.zablokowani.size > 0;
+    return `🔴 Nagrywam kanał „${kanal.name}”. Każdy głos osobno, do transkrypcji po sesji.` +
+      (tylkoZgody ? " Nagrywam tylko osoby, które się zgodziły." : "") + " /stop kończy.";
   }
   function zakoncz() {
     if (!sesja || sesja.zatrzymana) return "Nic nie nagrywam.";
@@ -239,6 +332,22 @@ async function main() {
     log(`Bot ${c.user.tag} gotowy. Serwery: ${c.guilds.cache.map((g) => g.name).join(", ") || "(żaden — zaproś bota)"}`);
   });
   client.on(Events.GuildCreate, zarejestruj);
+  // ktoś wchodzi na nagrywany kanał → świeża lista zgód (najwyżej raz na minutę)
+  let ostatnieOdswiezenie = 0;
+  async function odswiezZgody(wymus = false) {
+    if (!sesja || sesja.zatrzymana) return;
+    if (!wymus && Date.now() - ostatnieOdswiezenie < 60000) return;
+    ostatnieOdswiezenie = Date.now();
+    cfg = ustawienia();
+    sesja?.zmienZgody(await Zgody.pobierz(cfg));
+  }
+  client.on(Events.VoiceStateUpdate, (stary, nowy) => {
+    if (sesja && !sesja.zatrzymana && nowy.channelId === sesja.kanal.id && stary.channelId !== nowy.channelId
+        && !nowy.member?.user?.bot) {
+      log(`→ na kanał wchodzi: ${nowy.member?.displayName ?? nowy.id}`);
+      odswiezZgody().catch((e) => log(`Zgody: ${e.message}`));
+    }
+  });
   client.on(Events.InteractionCreate, async (i) => {
     if (!i.isChatInputCommand()) return;
     if (i.commandName === "nagrywaj") {
@@ -263,6 +372,8 @@ async function main() {
         "Nie wiem, który kanał nagrać: wejdź na kanał głosowy (i ustaw swój nick w polu „MG na Discordzie”) albo użyj /nagrywaj.");
     } else if (k === "stop") {
       log(zakoncz());
+    } else if (k === "zgody") {   // okno zmieniło „Nie nagrywaj” / „Dopuść” albo klucz
+      if (sesja && !sesja.zatrzymana) await odswiezZgody(true);
     } else if (k === "koniec") {
       zakoncz(); await client.destroy(); process.exit(0);
     }

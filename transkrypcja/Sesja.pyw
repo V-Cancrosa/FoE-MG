@@ -41,6 +41,7 @@ MOTYW = {  # kolory zwykłych widżetów tk (ttk koloruje motyw sv-ttk)
                  podpis="#a0a0a0", ok="#6cc483", zle="#f28b82", mowca="#f0a070", czas="#8a8a8a"),
 }
 TOKEN = TU / "bot" / "token.txt"
+KLUCZ_ZGOD = TU / "bot" / "zgody_klucz.txt"
 
 
 def python_konsolowy() -> str:
@@ -124,6 +125,7 @@ class Okno:
         self.bot_gotowy = False
         self.bot_katalog: Path | None = None
         self.bot_poziomy: dict = {}
+        self.bot_pominieci: dict = {}   # etykieta → powód (osoby, których bot nie nagrywa)
         self.t0 = 0.0
         self.transkr: subprocess.Popen | None = None
         self.sa = None
@@ -174,18 +176,43 @@ class Okno:
         ttk.Entry(self.f_bot, textvariable=self.v_mg, width=40).grid(row=1, column=1, sticky="we", **pad)
         self.b_bot = ttk.Button(self.f_bot, text="Uruchom bota", command=self.przelacz_bota)
         self.b_bot.grid(row=1, column=2, **pad)
-        ttk.Label(self.f_bot, text="Postacie\n(nick = postać):").grid(row=2, column=0, sticky="nw", **pad)
+        # zgody
+        zg = self.cfg.get("zgody", {})
+        ttk.Label(self.f_bot, text="Nie nagrywaj:").grid(row=2, column=0, sticky="w", **pad)
+        self.v_blok = tk.StringVar(value=", ".join(zg.get("zablokowani", [])))
+        e = ttk.Entry(self.f_bot, textvariable=self.v_blok, width=40)
+        e.grid(row=2, column=1, columnspan=2, sticky="we", **pad)
+        for ev in ("<FocusOut>", "<Return>"):
+            e.bind(ev, lambda _e: self.zgody_zmienione())
+        ttk.Label(self.f_bot, text="Dopuść ręcznie:").grid(row=3, column=0, sticky="w", **pad)
+        self.v_dop = tk.StringVar(value=", ".join(zg.get("dopuszczeni", [])))
+        e = ttk.Entry(self.f_bot, textvariable=self.v_dop, width=40)
+        e.grid(row=3, column=1, columnspan=2, sticky="we", **pad)
+        for ev in ("<FocusOut>", "<Return>"):
+            e.bind(ev, lambda _e: self.zgody_zmienione())
+        self.l_zg_opis = ttk.Label(self.f_bot, foreground=self.kol["podpis"], wraplength=520, justify="left",
+                                   text="Nick, login albo ID Discorda, po przecinku. „Nie nagrywaj” wygrywa zawsze, "
+                                        "też z listą HUB-a. „Dopuść” — osoby „na własnych warunkach”.")
+        self.l_zg_opis.grid(row=4, column=1, columnspan=2, sticky="w", padx=8)
+        ttk.Label(self.f_bot, text="Klucz zgód (HUB):").grid(row=5, column=0, sticky="w", **pad)
+        self.v_klucz = tk.StringVar(value=KLUCZ_ZGOD.read_text(encoding="utf-8").strip() if KLUCZ_ZGOD.exists() else "")
+        self.e_klucz = ttk.Entry(self.f_bot, textvariable=self.v_klucz, show="•", width=40)
+        self.e_klucz.grid(row=5, column=1, sticky="we", **pad)
+        self.b_klucz = ttk.Button(self.f_bot, text="Zapisz klucz", command=self.zapisz_klucz)
+        self.b_klucz.grid(row=5, column=2, **pad)
+
+        ttk.Label(self.f_bot, text="Postacie\n(nick = postać):").grid(row=6, column=0, sticky="nw", **pad)
         self.t_post = tk.Text(self.f_bot, height=3, width=40, font=("Consolas", 10), relief="flat",
                               bg=self.kol["pole"], fg=self.kol["tekst"], insertbackground=self.kol["tekst"],
                               highlightthickness=1, highlightbackground=self.kol["ramka"])
-        self.t_post.grid(row=2, column=1, columnspan=2, sticky="we", **pad)
+        self.t_post.grid(row=6, column=1, columnspan=2, sticky="we", **pad)
         self.t_post.insert("1.0", "\n".join(f"{k} = {v}" for k, v in self.cfg.get("postacie", {}).items())
-                           or "# przykład:\n# zychu = Uriel (zychu)")
+                           or "# przykład:\n# Erwin = Rusty (Erwin)")
         self.v_zapas = tk.BooleanVar(value=self.cfg.get("bot", {}).get("zapas", True))
         ttk.Checkbutton(self.f_bot, text="Nagrywaj też mój mikrofon lokalnie (zapas)",
-                        variable=self.v_zapas).grid(row=3, column=1, sticky="w", **pad)
+                        variable=self.v_zapas).grid(row=7, column=1, sticky="w", **pad)
         self.l_bot = ttk.Label(self.f_bot, text="Bot: wyłączony", foreground=self.kol["zle"])
-        self.l_bot.grid(row=4, column=0, columnspan=3, sticky="w", **pad)
+        self.l_bot.grid(row=8, column=0, columnspan=3, sticky="w", **pad)
         self.f_bot.columnconfigure(1, weight=1)
 
         # nagrywanie
@@ -276,7 +303,7 @@ class Okno:
     def tryb_zmieniony(self):
         stan = "normal" if self.tryb_bot() else "disabled"
         for w in self.f_bot.winfo_children():
-            if w in (self.e_token, self.b_token, self.l_bot):  # token można zapisać w każdym trybie
+            if w in (self.e_token, self.b_token, self.e_klucz, self.b_klucz, self.l_bot):  # token można zapisać w każdym trybie
                 continue
             try:
                 w.configure(state=stan)
@@ -295,7 +322,34 @@ class Okno:
                         model=self.model_klucz(),
                         postacie=parsuj_postacie(self.t_post.get("1.0", "end")))
         self.cfg["bot"] = {"mg": self.v_mg.get().strip(), "zapas": bool(self.v_zapas.get())}
+        rozbij = lambda s: [x.strip() for x in s.replace(";", ",").split(",") if x.strip()]
+        self.cfg["zgody"] = {**self.cfg.get("zgody", {}), "zablokowani": rozbij(self.v_blok.get()),
+                             "dopuszczeni": rozbij(self.v_dop.get())}
         N.zapisz_ustawienia(self.cfg)
+
+    def zgody_zmienione(self):
+        """Zapis „Nie nagrywaj”/„Dopuść”; w trakcie nagrania bot od razu stosuje nową listę."""
+        stare = json.dumps(self.cfg.get("zgody", {}), sort_keys=True)
+        self.zapisz_ustawienia()
+        if json.dumps(self.cfg.get("zgody", {}), sort_keys=True) != stare:
+            self.log(f"Zgody: nie nagrywam {', '.join(self.cfg['zgody']['zablokowani']) or '—'}; "
+                     f"dopuszczeni ręcznie {', '.join(self.cfg['zgody']['dopuszczeni']) or '—'}.")
+            self.bot_pisz("zgody")
+
+    def zapisz_klucz(self):
+        k = self.v_klucz.get().strip()
+        if not k:
+            if KLUCZ_ZGOD.exists() and messagebox.askyesno("Klucz zgód", "Usunąć zapisany klucz? Bot przestanie "
+                                                           "pytać HUB i będzie pomijał tylko listę „Nie nagrywaj”."):
+                KLUCZ_ZGOD.unlink()
+                self.log("Klucz zgód usunięty.")
+                self.bot_pisz("zgody")
+            return
+        KLUCZ_ZGOD.parent.mkdir(exist_ok=True)
+        KLUCZ_ZGOD.write_text(k + "\n", encoding="utf-8")
+        self.log(f"Klucz zgód zapisany w bot/zgody_klucz.txt (poza gitem), długość {len(k)} znaków. "
+                 "Bot pobierze listę z HUB-a przy następnym starcie nagrania.")
+        self.bot_pisz("zgody")
 
     def zapisz_token(self):
         t = self.v_token.get().strip()
@@ -336,6 +390,9 @@ class Okno:
         for et, _, d in self.nagr.zrodla:
             self.log(f"● {et} ← {d['name']}")
         self.log(f"Nagrywam do {k}")
+        if self.cfg.get("zgody", {}).get("zablokowani") or KLUCZ_ZGOD.exists():
+            self.log("⚠ Tryb lokalny nagrywa wszystko, co słychać z Discorda — także osoby bez zgody. "
+                     "Żeby je pominąć, nagrywaj botem.")
         self.b_nagr.configure(text="■ Stop")
 
     def zatrzymaj(self):
@@ -414,6 +471,10 @@ class Okno:
             self.log(f"[bot] {z['log']}")
         if "poziomy" in z:
             self.bot_poziomy = z["poziomy"]
+        if z.get("zdarzenie") == "pominiety":
+            self.bot_pominieci[z["kto"]] = z.get("powod", "")
+        elif z.get("zdarzenie") == "pominieci_wyczysc":
+            self.bot_pominieci = {}
         ev = z.get("zdarzenie")
         if ev == "gotowy":
             self.bot_gotowy = True
@@ -424,6 +485,7 @@ class Okno:
                 self.bot_pisz("start")
         elif ev == "start":
             self.bot_katalog = Path(z["katalog"])
+            self.bot_pominieci = {}
             self.t0 = time.time()
             self.b_nagr.configure(text="■ Stop", state="normal")
             self.log(f"Bot nagrywa „{z['kanal']}” do {self.bot_katalog}")
@@ -571,11 +633,17 @@ class Okno:
                 for s in self.zapas.sciezki:
                     poz["MG (lokalnie)"] = s.poziom
                     s.poziom *= 0.8
+        pomin = self.bot_pominieci if self.bot_katalog is not None else {}
         c = self.c_poz
         c.delete("all")
         w = max(c.winfo_width(), 200)
         h = 16
-        c.configure(height=max(28, len(poz) * (h + 4) + 8))
+        c.configure(height=max(28, (len(poz) + len(pomin)) * (h + 4) + 8))
+        for i, (n, powod) in enumerate(pomin.items()):
+            y = 4 + (len(poz) + i) * (h + 4)
+            c.create_text(8, y + h / 2, text=n[:22], anchor="w", font=("Segoe UI", 9), fill=self.kol["czas"])
+            c.create_text(170, y + h / 2, text=f"⊘ nie nagrywam — {powod}", anchor="w",
+                          font=("Segoe UI", 9, "italic"), fill=self.kol["czas"])
         for i, (n, v) in enumerate(poz.items()):
             y = 4 + i * (h + 4)
             c.create_text(8, y + h / 2, text=n[:22], anchor="w", font=("Segoe UI", 9), fill=self.kol["tekst"])

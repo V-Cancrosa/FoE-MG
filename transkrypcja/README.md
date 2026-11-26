@@ -88,6 +88,21 @@ Tymianox = Rick (Tymek)
 Erwin = Rusty (Erwin)
 ```
 
+**Zgody — kogo bot nie nagrywa.** Osoby bez zgody bot pomija całkowicie: nie subskrybuje ich dźwięku,
+więc nie powstaje ich plik ani tekst. W oknie mają szary wiersz „⊘ nie nagrywam — powód”.
+
+- **Nie nagrywaj:** nick, login albo ID Discorda, po przecinku. Wygrywa zawsze. Ozdobne litery w nickach
+  (np. 𝐳𝐲𝐜𝐡𝐮) są porównywane jak zwykłe. Najpewniejsze jest ID: Discord → Ustawienia → Zaawansowane →
+  Tryb dewelopera, potem prawy klik na osobę → Kopiuj ID użytkownika.
+- **Klucz zgód (HUB):** gdy jest zapisany (`bot/zgody_klucz.txt`, poza gitem), bot przy starcie nagrania pobiera
+  z HUB-a Rozdroża listę osób ze zgodą i nagrywa tylko je oraz MG. Gdy HUB nie odpowiada albo klucz jest zły —
+  nagrywa tylko MG i pisze to w logu. Bez klucza nagrywa wszystkich poza listą „Nie nagrywaj”.
+- **Dopuść ręcznie:** osoby „na własnych warunkach”, które MG dopuszcza na tę sesję.
+- Zmiana list w trakcie nagrania działa od razu (Enter albo kliknięcie poza pole). Ktoś, kto wchodzi
+  na kanał, powoduje odświeżenie listy z HUB-a.
+- Ograniczenie: głos osoby bez zgody może być słychać w mikrofonie kogoś, kto gra bez słuchawek. Tego bot nie wytnie.
+  Tryb lokalny (ze słuchawek) nagrywa wszystkich — gdy ktoś nie zgadza się na nagrywanie, nagrywaj botem.
+
 **Czy lokalny mikrofon jest jeszcze potrzebny?** Nie — bot nagrywa też Ciebie, bo jesteś na kanale.
 Opcja *Nagrywaj też mój mikrofon lokalnie (zapas)* zapisuje kopię do podfolderu `zapas\`, której transkrypcja nie używa.
 Przyda się, gdyby ścieżka bota była pusta: `.venv\Scripts\python transkrybuj.py --plik nagrania\…\zapas\mikrofon.flac --mowca MG`.
