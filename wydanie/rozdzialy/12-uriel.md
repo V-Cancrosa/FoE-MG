@@ -24,13 +24,13 @@ To, co zagrane, jest kanonem. Wątki niezagrane wiszą i mogą wrócić, o ile �
 | **Cechy** | Omnivore (+3 Survival), Organization: Mercenary — Żelazny Szpon (2 pkt) |
 | **Nie wziął** | Slave ani Prideful („tak po prostu jest”), Stubby Little Horn, Enemy. Named Weapon nie jako osobną cechę — dostaje go z Organization: Mercenary |
 | **Broń** | **katana** wydarta Guntherowi (stawka) → Named Weapon w przeskoku; **rewolwer został u Gunthera** |
-| **Wyposażenie startowe** | Mercenary: **Mercenary/Slaver Barding** (DT 8; Combat Barding z DT 22 był zbyt mocny), Combat Knife; **.357 Magnum Revolver** kupiony za pierwsze kapsle po ucieczce (tak na karcie); z 300 kapsli: amunicja, 2 granaty, torby, 2 mikstury, hełm Talonów — szczegóły w one-shocie, „Z czym przychodzą” |
+| **Wyposażenie (karta 25.11)** | Mercenary Barding – Ladra Szponu (DT 8; Combat Barding z DT 22 był zbyt mocny), Combat Knife, **9mm Pistol** + 30 naboi, 2 granaty, juki, 2 mikstury, zioła i grzyby; **50 kapsli** — pełna lista w one-shocie, „Z czym przychodzą” |
 | **Rany** | 2 rany przedniej lewej nogi po drzewnych wilkach; opatrzony w osadzie (zapłacił wszystkim, co miał) |
 | **Księga** | „Pozycja 112: strata. Nie spisano ze stanu. Miecz utracony. Rewolwer odzyskany. Gunther bez ran.” (tak zagrane; z perspektywy Gunthera) |
 {: .plain}
 
 ::: side player Do one-shota
-Uriel przychodzi z **kataną** (w telekinezie albo w pysku), „Podmuchem” i rzucaniem telekinezą (Explosives) — dawny rewolwer został u Gunthera; ma prosty **.357** kupiony za pierwsze kapsle. Scavenger: zbiera wszystko, co ma wartość — także w pacyfistycznej Stajni.
+Uriel przychodzi z **kataną** (w telekinezie albo w pysku), „Podmuchem” i rzucaniem telekinezą (Explosives) — dawny rewolwer został u Gunthera; ma **9mm Pistol** z Mercenary. Scavenger: zbiera wszystko, co ma wartość — także w pacyfistycznej Stajni.
 → wraca: one-shot, sesja 1 (stodoła, Krąg)
 :::
 

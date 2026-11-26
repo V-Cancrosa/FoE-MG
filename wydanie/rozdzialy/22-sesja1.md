@@ -92,7 +92,7 @@ Coś szeleści w sianie. Coś, co ma więcej nóg niż cokolwiek, co widziałeś
 **Notka MG.**
 
 - **Potrzask bez bezradności.** Rick nie może kilka rund tylko rzucać na obronę. Daj mu konkretne opcje: zatrzasnąć i przytrzymać właz, wspiąć się na strych, odciągnąć uwagę, rzucić bloatsprite'owi jabłko — i je stracić.
-- **Wejście każdego obcego to jego moment.** Jedno zdanie opisu, pierwsza akcja z bonusem zaskoczenia albo dobrą pozycją. Uriel: **Podmuch** (Aard), katana w telekinezie albo rzut telekinezą (Explosives) — jego dawny rewolwer został u Gunthera; ma prosty **.357** kupiony za pierwsze kapsle. Uriel ma też rewolwer .357, nóż, **dwa granaty** i lekki barding najemnika (DT 8) — granat w stodole pełnej siana to pożar (zapowiedz to). Rusty: **Big Iron** (rewolwer ojca, Named Weapon) i Zwinność 8; zasada 5 — „jak nie wiem, to nie strzelam”: na kogo celuje w półmroku?
+- **Wejście każdego obcego to jego moment.** Jedno zdanie opisu, pierwsza akcja z bonusem zaskoczenia albo dobrą pozycją. Uriel: **Podmuch** (Aard), katana w telekinezie albo rzut telekinezą (Explosives) — jego dawny rewolwer został u Gunthera; ma **9mm Pistol** z Mercenary. Uriel ma też 9mm, nóż, **dwa granaty** i lekki barding najemnika (DT 8) — granat w stodole pełnej siana to pożar (zapowiedz to). Rusty: **Big Iron** (rewolwer ojca, Named Weapon) i Zwinność 8; zasada 5 — „jak nie wiem, to nie strzelam”: na kogo celuje w półmroku?
 - **Wyjście bez zabijania.** Pacyfista może przekonać resztę, żeby odpędzić mrówki zamiast je wybić. Zapamiętaj, kto co zrobił.
 - **Kopiec przy wylocie tunelu** to zaczepka na później: mrówki mogą kiedyś pójść tunelem do Stajni.
 - **Ściąga tempa:** jeśli walka przekracza 6 rund, kolonia się wycofuje, a bloatsprite odlatuje z łupem.

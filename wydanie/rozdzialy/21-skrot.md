@@ -48,15 +48,19 @@ Zasada: każdy zaczyna z wyposażeniem, jakie powinien mieć ktoś taki jak on. 
 
 #### Uriel — najemnik Żelaznego Szponu
 
-| Skąd | Przedmiot | Parametry |
-|---|---|---|
-| stawka z Gunthera | **Katana — Named Weapon** (dopracowana w przeskoku przed stodołą) | 4d8+STR, ×2, SATS 20 + 5 pkt ulepszeń |
-| Organization: Mercenary | **Mercenary/Slaver Barding** (decyzja MG zamiast Equestrian Combat Barding z DT 22) | DT 8, tułów i 4 nogi, +2 Melee, +2 Small Guns, waga 10 |
-| Organization: Mercenary | **Combat Knife** | 3d6+STR, ×3, SATS 15 |
-| pierwsze kapsle po ucieczce | **.357 Magnum Revolver** (zwykły, nie nazwany; tak na karcie) | 4d8, ×2; mag. 6 |
-| 300 kapsli (zarobione po opatrunku) | 30 naboi .357 (60), **Frag Grenade ×2** (80), Saddlebags/Backpack (25), Healing Potion ×2 (50), Talon Combat Helmet (40) | razem 255, zostaje **45** (propozycja — wyda w sesji 0,5) |
+Stan kart w Foundry z 25.11 (MG wydał ekwipunek).
 
-Bez rewolweru — został u Gunthera. Explosives: granaty i rzucanie przedmiotami telekinezą (zasada „Rock”: 1d4 na każde 5 wagi + STR).
+| Skąd | Przedmiot | Uwagi |
+|---|---|---|
+| stawka z Gunthera | **Katana** — Named Weapon (cecha na karcie, ulepszenia w sesji 0,5) | 4d8+STR, ×2 przed ulepszeniami |
+| Organization: Mercenary | **Mercenary Barding – Ladra Szponu** (zamiast Equestrian Combat Barding z DT 22, który był zbyt mocny) | DT 8, tułów i 4 nogi, +2 Melee, +2 Small Guns |
+| Organization: Mercenary | **Combat Knife**, **9mm Pistol** + 30 naboi 9mm | zwykłe, nie nazwane |
+| zakupy | **Frag Grenade ×2**, juki, Healing Potion ×2, Canteen, Flint and Steel, Firewood ×3 | |
+| zielarstwo (Survival, Omnivore) | Cave Fungus ×5, Xander Root ×2, Zebra Herbs, Aconite | |
+| kieszeń | **50 kapsli** | |
+| do dodania przez MG | ogłoszenie/kontrakt na stodołę (od Obserwatora) | |
+
+Dawny rewolwer Uriela został u Gunthera. Explosives: granaty i rzucanie przedmiotami telekinezą (zasada „Rock”: 1d4 na każde 5 wagi + STR).
 
 #### Rick Scrapper — prosto ze Stajni
 
@@ -64,8 +68,8 @@ Bez rewolweru — został u Gunthera. Explosives: granaty i rzucanie przedmiotam
 |---|---|---|
 | Stable Dweller (**za darmo, decyzja MG**) | **Pipbuck 3000**, **Jumpsuit, Utility (Stable)** | DT 0, +5 Repair, +5 Lockpicking |
 | przydział z magazynu | Wrench, Duct Tape, Hammer, Scrap Electronics, Lead Pipe (długi pręt, 3d8+STR), InstaMash ×3 (racje), Healing Potion | wartość 139; reszta budżetu niewydana albo jako dodatkowy przydział |
-| prezenty z sesji zero | Fresh Apple (jabłko z kolacji), Fresh Seeds (koperta od Frozen Seed przez Willow Bark), szczepka rodzinnej roślinki | fabularne |
-| kieszeń | **0 kapsli**; garść przedwojennych **bitów** | na pustkowiach ciekawostka; kolekcjoner albo stary ghul coś za nie da, handlarz pozna świeżaka |
+| prezenty z sesji zero | Fresh Apple (jabłko z kolacji), Fresh Seeds (koperta od Frozen Seed przez Willow Bark), szczepka rodzinnej roślinki | **jeszcze nie na karcie** (stan 25.11) — dodaj przynajmniej jabłko, bo gra w stodole |
+| kieszeń | **0 kapsli**; **125 bitów** (przedwojennych) | na pustkowiach ciekawostka; kolekcjoner albo stary ghul coś za nie da, handlarz pozna świeżaka |
 
 Specialization: **Sneak** (+15 w oknie rzutu) — poza listą podręcznika (Survival, Mercantile, Speechcraft, Magic, Medicine, Repair, Science). Od v0.74.2 karta działa po staremu, dopóki nie otworzysz kreatora; wtedy wybierz umiejętność z listy albo ręcznie ustaw cel efektu „Skill rolls” na Sneak. Good Natured: −10 do walki — w swojej chwili walki niech błyszczy siłą (S 7) i techniką, nie prętem.
 
@@ -84,7 +88,7 @@ Ustalone na sesji zero 24.11 (bez liczenia 300 kapsli: sprzęt z historii, broń
 | 4 paczki naboi .357 po 6 | jedna w bębenku |
 | **39 kapsli** | + 250 kapsli od Haywarda, „nietykalne” |
 
-Fabularne: dzwonek bez serca, zeszyt „Spisane Prawo”, list gończy Knota. Na sesji dochodzą już tylko drobiazgi. Filtry do hełmu to dobra nagroda w Stajni (Rick jest technikiem).
+Fabularne: dzwonek bez serca, zeszyt „Spisane Prawo” (MG doda na kartę), list gończy Knota. Na sesji dochodzą już tylko drobiazgi. Filtry do hełmu to dobra nagroda w Stajni (Rick jest technikiem).
 
 ## Jak czytać tę część
 
